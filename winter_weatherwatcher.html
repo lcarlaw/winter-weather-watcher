@@ -1155,7 +1155,7 @@ $.ajax({
                                     if ((milliseconds/1000) < tabExp1) {
                                          var otherTabs = 0;
                                          var tabDesc1 = $(this).find("description").text();
-                                         $('#graphicast').html('<center><a class="highslide" href="http://www.weather.gov/images/lot/wxstory/Tab1FileL.png" id="wxstorygraphictab1" onclick="return hs.expand(this, {captionId:\'wxstorygraphictab1\'})"><img style="width: 50%; border-style: solid; border-width: 1px; border-radius: 1px; border-color: #c8c8c8;" src="/images/lot/wxstory/Tab1FileL.png"/></a></center>');
+                                         $('#graphicast').html('<center><a class="highslide" href="http://www.weather.gov/images/lot/wxstory/Tab1FileL.png" id="wxstorygraphictab1" onclick="return hs.expand(this, {captionId:\'wxstorygraphictab1\'})"><img style="width: 500px; height: 300px; border-style: solid; border-width: 1px; border-radius: 1px; border-color: #c8c8c8;" src="/images/lot/wxstory/Tab1FileL.png"/></a></center>');
                                          $('#graphicastDesc').html(tabDesc1);
                                     }  else {
                                          $('#graphicastDesc').html('<center>No short term graphicast is currently in  effect.</center>');
@@ -1326,12 +1326,8 @@ $(document).ready(function(){
 
 <hr style="margin-bottom: 7px;" />
 <p style="text-align: center;"><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Hourly Precipitation Graphs</span></strong></p>
-<!-- -------------------- GRAPHICS SECTION -------------------- -->
-
 <p style="text-align: center;"><span style="font-size:16px;"><strong>Click on a location for hourly precipitation plot</strong></span></p>
-
 <p style="text-align: center;">NOTE: This information is experimental</p>
-
 <table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
 	<tbody>
 		<tr>
@@ -1344,12 +1340,28 @@ $(document).ready(function(){
 	</tbody>
 </table>
 
+<!-- ------------------------------------------------ GRAPHICS SECTION ------------------------------------------------ -->
 <hr style="margin-bottom: 7px;" />
 <center><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Graphical Nowcast, Weather Stories, and SitRep</span></strong></center>
-
 <center>&nbsp;</center>
-
-<center>&nbsp;
+<center>
+<table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
+	<colgroup>
+		<col span="1" style="width: 25%;" />
+		<col span="2" style="width: 75%;" />
+	</colgroup>
+	<tbody>
+		<tr>
+			<td>
+			<center><span style="font-size:16px;">Situation Report (If Active)</span></center>
+			</td>
+			<td>
+			<center><span style="font-size:16px;">Graphical Nowcast (If Active)</span></center>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!-- -------------------- SitRep and GNOW -------------------- -->
 <table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
 	<colgroup>
 		<col span="1" style="width: 25%;" />
@@ -1358,22 +1370,21 @@ $(document).ready(function(){
 	<tbody>
 		<tr>
 			<td bgcolor="#f4ff8a">
-			<div id="sitreport1" style="text-align: center;"><strong>Situation Report (If Active)</strong></div>
-
-			<div style="text-align: center;">&nbsp;</div>
+			<center>&nbsp;</center>
+			<div id="SitRepDesc1">&nbsp;</div>
 			</td>
 			<td>
-			<div id="graphicast" style="text-align: center;"><strong>Graphical Nowcast (If Active)</strong></div>
-
-			<div>
+			<center>&nbsp;</center>
+			<div id="graphicast">&nbsp;</div>
+			<center>
 			<div id="graphicastDesc">&nbsp;</div>
-			</div>
+			</center>
 			</td>
 		</tr>
 	</tbody>
 </table>
 &nbsp;
-
+<!-- -------------------- Weather Story Graphics -------------------- -->
 <table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
 	<colgroup>
 		<col span="1" style="width: 25%;" />
@@ -1396,8 +1407,7 @@ $(document).ready(function(){
 		</tr>
 	</tbody>
 </table>
-<!-- -------------------- CAPTIONS FOR GRAPHICS SECTION -------------------- -->
-
+<!-- -------------------- Captions For Graphics -------------------- -->
 <table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
 	<colgroup>
 		<col span="1" style="width: 25%;" />
@@ -1416,26 +1426,23 @@ $(document).ready(function(){
 		</tr>
 	</tbody>
 </table>
-
 <p>&nbsp;</p>
 </center>
-<!-- -------------------- OBSERVED SNOWFALL SECTION -------------------- -->
+	
+<!-- ------------------------------------------------ OBSERVED SNOWFALL ------------------------------------------------ -->
 
 <hr style="margin-bottom: 7px;" />
 <center><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Observed Snowfall Reports</span></strong><br />
 &nbsp;</center>
-
 <center><span style="font-size:16px;"><a href="https://www.weather.gov/source/crh/snowmap.html?sid=lot" target="_blank"><span style="color: blue;">Observed Snowfall Interactive Map</span></a></span></center>
-
 <center>&nbsp;</center>
-&nbsp; &nbsp; <!-- -------------------- PROBABILISTIC SNOWFALL OUTPUT? (BRETT'S BATCH JOB GRAPHIDSS IMAGES) -------------------- -->
+&nbsp; &nbsp; 
+	
+<!-- ------------------------------------------------ PROBABILISTIC SNOW AND ICE IMAGES ------------------------------------------------ -->
 
-<hr style="margin-bottom: 7px;" /><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Probabilistic Snow and Ice Forecasts</span></strong>
-
+<hr style="margin-bottom: 7px;" />
+<p style="text-align: center;"><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Probabilistic Snow and Ice Forecasts</span></strong></p>
 <center>&nbsp;</center>
-
-<center>&nbsp;</center>
-
 <center>
 <table border="0" cellpadding="1" cellspacing="5" width="700">
 	<tbody>
