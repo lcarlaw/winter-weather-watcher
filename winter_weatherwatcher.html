@@ -45,11 +45,11 @@
 
 <div class="highslide-caption" id="d1wo">SPC Day 1 Wind Outlook</div>
 
-<div class="highslide-caption" id="d2co">SPC Day 2 Categorical Outlook</div>
+<div class="highslide-caption" id="cpct610">6-10 Day Temperature Outlook</div>
 
-<div class="highslide-caption" id="d2to">SPC Day 2 Tornado Outlook</div>
+<div class="highslide-caption" id="cpcp610">6-10 Day Precipitation Outlook</div>
 
-<div class="highslide-caption" id="d2ho">SPC Day 2 Hail Outlook</div>
+<div class="highslide-caption" id="d37">3-7 Day Hazards Outlook</div>
 
 <div class="highslide-caption" id="d2wo">SPC Day 2 Wind Outlook</div>
 
@@ -1685,11 +1685,12 @@ $(document).ready(function(){
 
 <hr style="margin-bottom: 7px;" />
 <p><!-- -------------------- IDSS FORECAST POINTS SECTION -------------------- --></p>
-
-<p style="text-align: center;"><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Detailed Forecasts</span></strong></p>
-
+<p>&nbsp;</p>
+<center><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Detailed Hourly Forecasts</span></strong></center>
+<center>&nbsp;</center>
 <center><span style="font-size:16px;"><a href="https://go.usa.gov/x7Y4J" target="_blank"><span style="color: blue;">Interactive Detailed Forecast Webpage</span></a></span></center>
 
+<center>&nbsp;</center>
 <center>&nbsp;</center>
 
 <hr style="margin-bottom: 7px;" />
@@ -1891,7 +1892,7 @@ $(document).ready(function(){
 			<br />
 			<a class="highslide" href="https://www.weather.gov/images/lot/wxstory/Tab2FileL.png" id="wxstory" onclick="return hs.expand(this,
 
-{captionId: 'wxstory'})"><img alt="Weather Story" src="https://www.weather.gov/images/lot/wxstory/Tab2FileL.png" style="border-width: 1px; border-style: solid; width: 441px; height: 340px;" /></a><br />
+{captionId: 'wxstory'})"><img alt="Weather Story" src="https://www.weather.gov/images/lot/wxstory/Tab2FileL.png" style="border-width: 1px; border-style: solid; width: 440px; height: 280px;" /></a><br />
 			&nbsp;
 			<table border="0" width="440">
 				<tbody>
@@ -1991,65 +1992,12 @@ $(document).ready(function(){
 
 <hr style="margin-bottom: 7px;" />
 <p>&nbsp;</p>
+<center><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Detailed Hourly Forecasts</span></strong></center>
+<center>&nbsp;</center>
+<center><span style="font-size:16px;"><a href="https://go.usa.gov/x7Y4J" target="_blank"><span style="color: blue;">Interactive Detailed Forecast Webpage</span></a></span></center>
 
 <center>&nbsp;</center>
-
-<center><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Detailed Forecasts</span></center>
-
-<p>&nbsp;</p>
-
-<div align="center" id="forecastLink2">
-<table border="0" cellpadding="1" cellspacing="1" width="900">
-	<tbody>
-		<tr>
-			<td align="center" valign="top"><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Current Conditions and<br />
-			Seven Day Forecast</span>
-
-			<p>&nbsp;</p>
-
-			<form action="http://forecast.weather.gov/zipcity.php" id="fcst2" method="post" target="_new"><input name="inputstring" onfocus="this.value='';" size="20" type="text" value="City, St, or Zip Code" /> <input id="Go2" name="Go2" type="submit" value="Go" /> <input name="siteid" type="hidden" value="lot" /></form>
-			&nbsp;
-
-			<p>&nbsp;</p>
-			</td>
-			<td align="center" style="width: 100px;" valign="top"><strong><i>-- OR -- </i></strong></td>
-			<td align="center" valign="top"><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Hourly Weather Graph<br />
-			(click on your location on the map)</span><br />
-			<script language="javascript">
-                $(document).ready(function(){
-                   $("#wwamapImage2").click(function(e){
-                        var offset_l = $(this).offset().left - $(window).scrollLeft();
-			var offset_t = $(this).offset().top - $(window).scrollTop();
-			var left =  Math.round( (e.clientX - offset_l) );
-			var top = Math.round( (e.clientY - offset_t) );
-			//console.log("click position result --> X: " + left + ", Y: " + top);
-			$('#mapx2').val(left);
-			$('#mapy2').val(top);
-                   });
-                });
-		</script>
-			<div id="wfomap_container2">
-			<form action="http://forecast.weather.gov/MapClick.php" method="get" name="HWGform2" target="new"><input align="middle" alt="Map of Forecast Area" id="wwamapImage2" src="/wwamap/png/lot.png" title="Map of Forecast Area" type="image" /> <input name="site" type="hidden" value="lot" /> <input name="zmx" type="hidden" value="" /> <input name="zmy" type="hidden" value="" /> <input id="mapx2" name="map_x" type="hidden" value="" /> <input id="mapy2" name="map_y" type="hidden" value="" /> <input id="FcstType" name="FcstType" type="hidden" value="graphical" /> <input id="w0" name="w0" type="hidden" value="t" /> <input id="w2" name="w2" type="hidden" value="hi" /> <input id="w3" name="w3" type="hidden" value="wc" /> <input id="w4" name="w4" type="hidden" value="sfcwind" /> <input id="w4u" name="w4u" type="hidden" value="1" /> <input id="w5" name="w5" type="hidden" value="pop" /> <input id="w7" name="w7" type="hidden" value="rain" /> <input id="w8" name="w8" type="hidden" value="thunder" /></form>
-			</div>
-			</td>
-		</tr>
-	</tbody>
-</table>
-</div>
-
-<hr style="margin-bottom: 7px;" />
-<table align="center" border="0" cellpadding="1" cellspacing="1" class="images" style="width: 920px;">
-	<tbody>
-		<tr>
-			<td colspan="4" style="text-align: center;">
-			<p><iframe frameborder="0" height="700" scrolling="yes" src="https://forecast.weather.gov/product.php?
-site=NWS&amp;issuedby=lot&amp;product=AFD&amp;format=txt&amp;version=1&amp;glossary=0" width="600"></iframe></p>
-
-			<p>&nbsp;</p>
-			</td>
-		</tr>
-	</tbody>
-</table>
+<center>&nbsp;</center>
 
 <center>
 <hr style="margin-bottom: 7px;" /></center>
@@ -2072,7 +2020,6 @@ site=NWS&amp;issuedby=lot&amp;product=AFD&amp;format=txt&amp;version=1&amp;gloss
 </table>
 
 <p>&nbsp;</p>
-
 <p>&nbsp;</p>
 
 <table align="center" border="0" cellpadding="1" cellspacing="1" style="width: 920px;">
@@ -2867,22 +2814,17 @@ style: solid;" /></a></div>
 </table>
 
 <hr style="margin-bottom: 7px;" />
-<center><br />
-<span style="font-size: 18px;"><a href="http://www.spc.noaa.gov/products/outlook/day2otlk.html" target="_blank"><font color="blue">Tomorrow&#39;s&nbsp;Thunderstorm Outlooks</font></a></span><br />
-&nbsp;</center>
-
+<center><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Extended Outlooks</span></strong></center>
+<center>&nbsp;</center>
+<center><span style="font-size: 18px;">CPC 6-10 Day Outlooks</font></a></span></center>
 <center>
 <table align="center" border="0" cellpadding="1" cellspacing="1" width="920">
 	<tbody>
 		<tr>
-			<td align="center"><strong>Categorical Outlook</strong><br />
-			<a class="highslide" href="http://www.spc.noaa.gov/public/cwa/images/LOT_swody2.png" id="d2co" onclick="return hs.expand(this, {captionId: 'd2co'})" target="_blank"><img align="middle" alt="Day 2 Categorical  Outlook" src="http://www.spc.noaa.gov/public/cwa/images/LOT_swody2.png" style="height: 150px; margin-top: 4px; margin-bottom: 4px; width: 200px;" title="Day 2 Categorical Outlook" /></a></td>
-			<td align="center"><strong>Tornado Probabilistic Outlook</strong><br />
-			<a class="highslide" href="http://www.spc.noaa.gov/products/outlook/day2probotlk_torn.gif" id="d2to" onclick="return hs.expand(this, {captionId: 'd2to'})" target="_blank"><img align="middle" alt="Day 2 Tornado Outlook" src="https://www.spc.noaa.gov/products/outlook/day2probotlk_torn.gif" style="height: 150px; margin-top: 4px; margin-bottom: 4px; width: 220px;" title="Day 2 Tornado Outlook" /></a></td>
-			<td align="center"><strong>Hail Probabilistic Outlook</strong><br />
-			<a class="highslide" href="http://www.spc.noaa.gov/products/outlook/day2probotlk_hail.gif" id="d2ho" onclick="return hs.expand(this, {captionId: 'd2ho'})" target="_blank"><img align="middle" alt="Day 2 Hail Outlook" src="http://www.spc.noaa.gov/products/outlook/day2probotlk_hail.gif" style="height: 150px; margin-top: 4px; margin-bottom: 4px; width: 220px;" title="Day 2 Hail Outlook" /></a></td>
-			<td align="center"><strong>Severe Wind Probabilistic Outlook</strong><br />
-			<a class="highslide" href="http://www.spc.noaa.gov/products/outlook/day2probotlk_wind.gif" id="d2wo" onclick="return hs.expand(this, {captionId: 'd2wo'})" target="_blank"><img align="middle" alt="Day 2 Severe  Wind Outlook" src="http://www.spc.noaa.gov/products/outlook/day2probotlk_wind.gif" style="height: 150px; margin-top: 4px; margin-bottom: 4px; width: 220px;" title="Day 2 Severe Thunderstorm Wind Outlook" /></a></td>
+			<td align="center"><strong>6-10 Day Temperature Outlook</strong><br />
+			<a class="highslide" href="https://www.wrh.noaa.gov/images/sto/GIS/610temp.jpg" id="cpct610" onclick="return hs.expand(this, {captionId: 'cpct610'})" target="_blank"><img align="middle" alt="6-10 Day Temperature Outlook" src="https://www.wrh.noaa.gov/images/sto/GIS/610temp.jpg" style="height: 250px; margin-top: 4px; margin-bottom: 4px; width: 350px;" title="6-10 Day Temperature Outlook" /></a></td>
+			<td align="center"><strong>6-10 Day Precipitation Outlook</strong><br />
+			<a class="highslide" href="https://www.wrh.noaa.gov/images/sto/GIS/610prcp.jpg" id="cpcp610" onclick="return hs.expand(this, {captionId: 'cpcp610'})" target="_blank"><img align="middle" alt="6-10 Day Precipitation Outlook" src="https://www.wrh.noaa.gov/images/sto/GIS/610prcp.jpg" style="height: 250px; margin-top: 4px; margin-bottom: 4px; width: 350px;" title="6-10 Day Precipitation Outlook" /></a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2890,19 +2832,14 @@ style: solid;" /></a></div>
 
 <center>&nbsp;</center>
 
-<center><span style="font-size: 18px;"><a href="http://www.spc.noaa.gov/products/outlook/day3otlk.html" target="_blank"><font color="blue">Day 3 Thunderstorm Outlooks</font></a></span></center>
-
+<center><span style="font-size: 18px;">Day 3-7 U.S. Hazards Outlook</font></a></span></center>
 <center>&nbsp;</center>
-
 <center>
 <table border="0" cellpadding="1" cellspacing="1" style="width: 500px;" width="930">
 	<tbody>
 		<tr>
-			<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td align="center"><strong>Day 3 Categorical Outlook</strong><br />
-			<a class="highslide" href="http://www.spc.noaa.gov/public/cwa/images/LOT_swody3.png" id="d3co" onclick="return hs.expand(this, {captionId: 'd3co'})" target="_blank"><img align="middle" alt="Day 3 Categorical  Outlook" src="http://www.spc.noaa.gov/public/cwa/images/LOT_swody3.png" style="height: 150px; margin-top: 4px; margin-bottom: 4px; width: 200px;" title="Day 2 Categorical Outlook" /></a></td>
-			<td align="center"><strong>Day 3 Probabilistic Outlook</strong><br />
-			<a class="highslide" href="http://www.spc.noaa.gov/products/outlook/day3prob.gif" id="d3po" onclick="return hs.expand(this, {captionId: 'd3po'})" target="_blank"><img align="middle" alt="Day 3 Probabilistic Outlook" src="http://www.spc.noaa.gov/products/outlook/day3prob.gif" style="height: 150px; margin-top: 4px; margin-bottom: 4px;" title="Day 3 Probabilistic Outlook" /></a></td>
+			<td align="center"><strong>Day 3-7 Hazards Outlook</strong><br />
+			<a class="highslide" href="https://www.wpc.ncep.noaa.gov/threats/final/hazards_d3_7_contours.png" id="d37" onclick="return hs.expand(this, {captionId: 'd37'})" target="_blank"><img align="middle" alt="Day 3-7 Hazards Outlook" src="https://www.wpc.ncep.noaa.gov/threats/final/hazards_d3_7_contours.png" style="height: 300px; margin-top: 4px; margin-bottom: 4px; width: 400px;" title="Day 3-7 Hazards Outlook" /></a></td>
 		</tr>
 	</tbody>
 </table>
