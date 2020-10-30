@@ -1331,7 +1331,7 @@ $(document).ready(function(){
 <hr style="margin-bottom: 7px;" />
 <p style="text-align: center;"><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Hourly Precipitation Graphs</span></strong></p>
 
-<p style="text-align: center;"><span style="font-size:16px;"><strong>Click on a location for hourly precipitation plot</strong></span></p>
+<p style="text-align: center;"><span style="font-size:16px;"><strong>Click on a location for hourly precipitation plot. Click the plot to clear the display.</strong></span></p>
 
 <p style="text-align: center;">NOTE: This information is experimental</p>
 
@@ -1339,7 +1339,25 @@ $(document).ready(function(){
 	<tbody>
 		<tr>
 			<td>
-			<center><img alt="" src="https://www.weather.gov/images/mkx/aviation/hourly-precip-map.png" style="width: 700px; height: 526px;" /></center>
+			<center><img alt="" src="/images/lot/winter_weatherwatcher/hourly_precip_map.png" style="width: 925px; height: 669px; float: left;" usemap="#hourlyprecip" /></center>
+			<map name="hourlyprecip"><area alt="Rockford" coords="257,96,275,112" href="https://www.weather.gov/images/lot/winter/KRFD.png" shape="rect" title="Rockford" onclick="return hs.expand(this)"/>
+			<map name="hourlyprecip"><area alt="Aurora" coords="403,238,419,252" href="https://www.weather.gov/images/lot/winter/KARR.png" shape="rect" title="Aurora" onclick="return hs.expand(this)"/>	
+			<map name="hourlyprecip"><area alt="DeKalb" coords="344,185,362,201" href="https://www.weather.gov/images/lot/winter/KDKB.png" shape="rect" title="DeKalb" onclick="return hs.expand(this)"/>	
+			<map name="hourlyprecip"><area alt="DuPage" coords="453,195,471,209" href="https://www.weather.gov/images/lot/winter/KDPA.png" shape="rect" title="DuPage" onclick="return hs.expand(this)"/>	
+			<map name="hourlyprecip"><area alt="Gary" coords="644,284,661,299" href="https://www.weather.gov/images/lot/winter/KGYY.png" shape="rect" title="Gary" onclick="return hs.expand(this)"/>	
+				
+			<map name="hourlyprecip"><area alt="Lansing" coords="617,310,634,325" href="https://www.weather.gov/images/lot/winter/KIGQ.png" shape="rect" title="Lansing" onclick="return hs.expand(this)"/>
+			<map name="hourlyprecip"><area alt="Kankakee" coords="545,457,563,472" href="https://www.weather.gov/images/lot/winter/KIKK.png" shape="rect" title="Kankakee" onclick="return hs.expand(this)"/>	
+			<map name="hourlyprecip"><area alt="Joliet" coords="485,299,502,315" href="https://www.weather.gov/images/lot/winter/KJOT.png" shape="rect" title="Joliet" onclick="return hs.expand(this)"/>	
+			<map name="hourlyprecip"><area alt="Midway" coords="557,242,576,257" href="https://www.weather.gov/images/lot/winter/KMDW.png" shape="rect" title="Midway" onclick="return hs.expand(this)"/>	
+			<map name="hourlyprecip"><area alt="O'Hare" coords="530,172,548,188" href="https://www.weather.gov/images/lot/winter/KORD.png" shape="rect" title="O'Hare" onclick="return hs.expand(this)"/>
+				
+			<map name="hourlyprecip"><area alt="Pontiac" coords="362,509,380,525" href="https://www.weather.gov/images/lot/winter/KPNT.png" shape="rect" title="Pontiac" onclick="return hs.expand(this)"/>
+			<map name="hourlyprecip"><area alt="Rochelle" coords="250,202,267,216" href="https://www.weather.gov/images/lot/winter/KRPJ.png" shape="rect" title="Rochelle" onclick="return hs.expand(this)"/>	
+			<map name="hourlyprecip"><area alt="Rensselaer" coords="705,478,720,495" href="https://www.weather.gov/images/lot/winter/KRZL.png" shape="rect" title="Rensselaer" onclick="return hs.expand(this)"/>	
+			<map name="hourlyprecip"><area alt="Waukegan" coords="538,49,553,65" href="https://www.weather.gov/images/lot/winter/KUGN.png" shape="rect" title="Waukegan" onclick="return hs.expand(this)"/>	
+			<map name="hourlyprecip"><area alt="Valparaiso" coords="732,334,751,348" href="https://www.weather.gov/images/lot/winter/KVPZ.png" shape="rect" title="Valparaiso" onclick="return hs.expand(this)"/>
+			</map>
 
 			<center>&nbsp;</center>
 			</td>
@@ -1685,12 +1703,17 @@ $(document).ready(function(){
 
 <hr style="margin-bottom: 7px;" />
 <p><!-- -------------------- IDSS FORECAST POINTS SECTION -------------------- --></p>
+
 <p>&nbsp;</p>
+
 <center><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Detailed Hourly Forecasts</span></strong></center>
+
 <center>&nbsp;</center>
+
 <center><span style="font-size:16px;"><a href="https://go.usa.gov/x7Y4J" target="_blank"><span style="color: blue;">Interactive Detailed Forecast Webpage</span></a></span></center>
 
 <center>&nbsp;</center>
+
 <center>&nbsp;</center>
 
 <hr style="margin-bottom: 7px;" />
@@ -1731,7 +1754,6 @@ $(document).ready(function(){
 
 			<table bordercolor="#ffffff" width="100%">
 				<tbody>
-					
 					<tr style="vertical-align: middle; border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; bgcolor: #dde8ff;">
 						<td valign="middle">
 						<div align="center" valign="middle">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
@@ -1746,7 +1768,6 @@ $(document).ready(function(){
 						<div align="center" class="day-of-week-container"><strong><img class="day-of-week-image" src="https://www.weather.gov/images/lot/EHWO/risk/date_5.png" /></strong></div>
 						</td>
 					</tr>
-					
 					<tr style="vertical-align: middle; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; bgcolor: #dde8ff; horizontal-align: center;">
 						<td>
 						<div align="center">Snow and Sleet</div>
@@ -1761,7 +1782,6 @@ $(document).ready(function(){
 						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day5/SnowSleetDay5.png" id="snow5" onclick="return hs.expand(this, {captionId: snow5'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/snowsleet5.png" style="border-width: 0px; border-style: solid;" /></a></div>
 						</td>
 					</tr>
-					
 					<tr style="vertical-align: middle; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; bgcolor: #dde8ff; horizontal-align: center;">
 						<td nowrap="nowrap">
 						<div align="center">Ice Accumulation</div>
@@ -1776,8 +1796,7 @@ $(document).ready(function(){
 						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day5/IceAccumulationDay5.png" id="ice5" onclick="return hs.expand(this, {captionId: 'ice5'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/ice5.png" style="border-width: 0px; border-style: solid;" /></a></div>
 						</td>
 					</tr>
-					
-	  			<tr style="vertical-align: middle; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; bgcolor: #dde8ff; horizontal-align: center;">
+					<tr style="vertical-align: middle; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; bgcolor: #dde8ff; horizontal-align: center;">
 						<td nowrap="nowrap">
 						<div align="center">Fog</div>
 						</td>
@@ -1791,7 +1810,6 @@ $(document).ready(function(){
 						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day5/FogDay5.png" id="fog5" onclick="return hs.expand(this, {captionId: 'fog5'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/fog5.png" style="border-width: 0px; border-style: solid;" /></a></div>
 						</td>
 					</tr>
-					
 					<tr style="vertical-align: middle; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; bgcolor: #dde8ff; horizontal-align: center;">
 						<td nowrap="nowrap">
 						<div align="center">Non-Thunderstorm Wind</div>
@@ -1806,7 +1824,6 @@ $(document).ready(function(){
 						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day5/NonThunderstormWindDay5.png" id="wind5" onclick="return hs.expand(this, {captionId: 'wind5'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/nonconwind5.png" style="border-width: 0px; border-style: solid;" /></a></div>
 						</td>
 					</tr>
-					
 					<tr style="vertical-align: middle; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; bgcolor: #dde8ff; horizontal-align: center;">
 						<td nowrap="nowrap">
 						<div align="center">Excessive Cold</div>
@@ -1821,7 +1838,6 @@ $(document).ready(function(){
 						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day5/ExcessiveColdDay5.png" id="cold5" onclick="return hs.expand(this, {captionId: 'cold5'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/cold5.png" style="border-width: 0px;" /></a></div>
 						</td>
 					</tr>
-				
 					<tr style="vertical-align: middle; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; bgcolor: #dde8ff; horizontal-align: center;">
 						<td nowrap="nowrap">
 						<div align="center">Coastal Flooding</div>
@@ -1836,7 +1852,6 @@ $(document).ready(function(){
 						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day4/CoastalFloodDay4.png" id="coast4" onclick="return hs.expand(this, {captionId: 'coast4'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/cf4.png" style="border-width: 0px; border-style: solid;" /></a></div>
 						</td>
 					</tr>
-					
 				</tbody>
 			</table>
 
@@ -1984,7 +1999,11 @@ $(document).ready(function(){
 		<tr>
 			<td>
 			<p style="text-align: center;"><strong><span style="font-size: 16px;">What is this?</span></strong></p>
-			<center><a class="highslide" href="/images/lot/winter_weatherwatcher/WSSI_Infographic.png" id="wssiinfo" onclick="return hs.expand(this, {captionId: 'wssiinfo'})" target="_blank"><img align="middle" alt="WSSI Information" src="/images/lot/winter_weatherwatcher/WSSI_Infographic.png" style="height: 520px; width: 925px;" title="WSSI Information" /></a></p></center>
+
+			<center><a class="highslide" href="/images/lot/winter_weatherwatcher/WSSI_Infographic.png" id="wssiinfo" onclick="return hs.expand(this, {captionId: 'wssiinfo'})" target="_blank"><img align="middle" alt="WSSI Information" src="/images/lot/winter_weatherwatcher/WSSI_Infographic.png" style="height: 520px; width: 925px;" title="WSSI Information" /></a>
+
+			<p>&nbsp;</p>
+			</center>
 			</td>
 		</tr>
 	</tbody>
@@ -1994,11 +2013,15 @@ $(document).ready(function(){
 
 <hr style="margin-bottom: 7px;" />
 <p>&nbsp;</p>
+
 <center><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Detailed Hourly Forecasts</span></strong></center>
+
 <center>&nbsp;</center>
+
 <center><span style="font-size:16px;"><a href="https://go.usa.gov/x7Y4J" target="_blank"><span style="color: blue;">Interactive Detailed Forecast Webpage</span></a></span></center>
 
 <center>&nbsp;</center>
+
 <center>&nbsp;</center>
 
 <center>
@@ -2022,6 +2045,7 @@ $(document).ready(function(){
 </table>
 
 <p>&nbsp;</p>
+
 <p>&nbsp;</p>
 
 <table align="center" border="0" cellpadding="1" cellspacing="1" style="width: 920px;">
@@ -2817,8 +2841,11 @@ style: solid;" /></a></div>
 
 <hr style="margin-bottom: 7px;" />
 <center><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">CPC and WPC Outlooks</span></strong></center>
+
 <center>&nbsp;</center>
-<center><span style="font-size: 18px;">3-10 Day Outlooks</font></a></span></center>
+
+<center><span style="font-size: 18px;">3-10 Day Outlooks</span></center>
+
 <center>
 <table align="center" border="0" cellpadding="1" cellspacing="1" width="920">
 	<tbody>
@@ -2836,7 +2863,8 @@ style: solid;" /></a></div>
 
 <center>&nbsp;</center>
 
-<center><span style="font-size: 18px;">Extended Outlooks</font></a></span></center>
+<center><span style="font-size: 18px;">Extended Outlooks</span></center>
+
 <center>
 <table align="center" border="0" cellpadding="1" cellspacing="1" width="920">
 	<tbody>
@@ -2903,7 +2931,6 @@ style: solid;" /></a></div>
 <p style="text-align: center;"><br />
 <a href="https://nwschat.weather.gov/" target="_blank"><span style="color: blue; font-size: 20px; font-face: trebuchet MS;">Link to NWSChat</span></a></p>
 </div>
-</center>
 </div>
 <!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- -->
 
