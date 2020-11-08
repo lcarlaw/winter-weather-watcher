@@ -39,6 +39,8 @@
 
 <div class="highslide-caption" id="wssiinfo">Winter Storm Severity Index General Information</div>
 
+<div class="highslide-caption" id="pointsinfo">Prototype IDSS Point Forecasts Page</div>
+
 <div class="highslide-caption" id="cpct610">6-10 Day Temperature Outlook</div>
 
 <div class="highslide-caption" id="cpcp610">6-10 Day Precipitation Outlook</div>
@@ -1041,17 +1043,32 @@ $(document).ready(function(){
 <p><!-- -------------------- IDSS FORECAST POINTS SECTION -------------------- --></p>
 
 <hr style="margin-bottom: 7px;" />
-<p>&nbsp;</p>
-
-<center><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Detailed Hourly Forecasts</span></strong></center>
+<p style="text-align: center;"><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Detailed Hourly Forecasts</span></strong></p>
 
 <center>&nbsp;</center>
 
-<center><span style="font-size:16px;"><a href="https://go.usa.gov/x7Y4J" target="_blank"><span style="color: blue;">Interactive Detailed Forecast Webpage</span></a></span></center>
+<center>
+<table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
+	<colgroup>
+		<col span="1" style="width: 60%;" />
+		<col span="1" style="width: 40%;" />
+	</colgroup>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">
+			<p><span style="font-size:16px;"><a href="https://go.usa.gov/x7Y4J" target="_blank"><span style="color: blue;">Interactive Detailed Forecast Webpage</span></a></span></p>
 
-<center>&nbsp;</center>
+			<p><a href="http://go.usa.gov/x7Y4J"><span style="font-size:16px;"><span style="color: blue;"><img alt="" src="/images/lot/winter_weatherwatcher/ForecastPoints_image.PNG" style="width: 400px; height: 222px;" /></span></span></a></p>
+			</td>
+			<td>
+			<p>&nbsp;</p>
 
-<center>&nbsp;</center>
+			<p><a class="highslide" href="/images/lot/winter_weatherwatcher/ForecastPoints_HowTo.png" id="pointsinfo" onclick="return hs.expand(this, {captionId: 'pointsinfo'})" target="_blank"><img align="middle" alt="Forecast Points Information" src="/images/lot/winter_weatherwatcher/ForecastPoints_HowTo.png" style="width: 400px; height: 225px;" title="Forecast Points Information" /></a></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
 <!-- ------------------------------------------------ GRAPHICS SECTION ------------------------------------------------ -->
 
 <hr style="margin-bottom: 7px;" />
@@ -1120,6 +1137,8 @@ $(document).ready(function(){
 				</tbody>
 			</table>
 
+			<p>&nbsp;</p>
+
 			<table align="center" bgcolor="#eeeeee" border="0">
 				<tbody>
 					<tr>
@@ -1163,7 +1182,9 @@ $(document).ready(function(){
 			</table>
 
 			<hr /></td>
-			<td>&nbsp;&nbsp;&nbsp;</td>
+			<td>
+			<p>&nbsp;&nbsp;&nbsp;</p>
+			</td>
 			<!--  END Day 1 EHWO SECTION -->
 			<td align="center" rowspan="2" valign="top">
 			<center><span style="font-size: 18px;"><font color="blue">Graphical NOWCast</font></span></center>
@@ -1601,6 +1622,8 @@ $(document).ready(function(){
 					</tr>
 				</tbody>
 			</table>
+
+			<p style="text-align: center;">&nbsp;</p>
 
 			<p style="text-align: center;">&nbsp;</p>
 
