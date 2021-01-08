@@ -1,17 +1,22 @@
+<style type="text/css">/* Defining captions outside of tables */
+
+/*Titles for Photos/Radar Sections */
+p.subsec {
+font-family: verdana,geneva,sans-serif;
+font-weight:bold;
+font-size: 14px;
+}
+</style>
 <h1 class="alert" style="text-align: center;">This webpage is in active development. Data is not considered current!</h1>
 <meta content="600" http-equiv="REFRESH" />
 
-<div class="highslide-caption" id="snow1in">Threat of 1&quot; Snow or More</div>
+<div class="highslide-caption" id="snowtotal">Expected Snowfall Forecast</div>
 
-<div class="highslide-caption" id="snow2in">Threat of 2&quot; Snow or More</div>
+<div class="highslide-caption" id="snow_90th">High-End Snowfall Potential</div>
 
-<div class="highslide-caption" id="snow4in">Threat of 4&quot; Snow or More</div>
+<div class="highslide-caption" id="icetotal">Expected Ice Forecast</div>
 
-<div class="highslide-caption" id="snow6in">Threat of 6&quot; Snow or More</div>
-
-<div class="highslide-caption" id="snow8in">Threat of 8&quot; Snow or More</div>
-
-<div class="highslide-caption" id="snow12in">Threat of 12&quot; Snow or More</div>
+<div class="highslide-caption" id="ice_90th">High-End Ice Potential</div>
 
 <div class="highslide-caption" id="wxstorygraphictab1">Graphicast</div>
 
@@ -989,18 +994,168 @@ $(document).ready(function(){
     }
     onload=init;
 </script>
+<div class="cms-content"><script type='text/javascript'>
+   "use strict";  
+
+// script below will allow to select the initial display tab by id, not by number
+//$('input[name="first"]:checked').val();
+
+     $(document).ready(function(){
+	    
+	    $.fn.tabIndex = function () {
+	     //  return $(this).parent().find(this).index() - 1; 
+	    	return $(this).parent().find(this).index();
+	    };
+	    $.fn.selectTabByID = function (tabID) {
+	        $(this).tabs("option", "active", $('#' + tabID).tabIndex());
+	    };
+	   // $.fn.selectTabByIndex = function (tabIndex) {
+	   //     $(this).tabs("option", "active", tabIndex);
+	  //  };
+
+	  // script below checks variable - if none forces the top listed tab for opened tab
+	var firsttab = "Webcams"; 
+	if (firsttab == null) {
+		 $("#tabs").tabs();
+	}
+	else {
+		$("#tabs").tabs();
+		 $("#tabs").selectTabByID(firsttab);
+	}
+	
+	
+//   $("#tabs").tabs();
+ //  $("#tabs").selectTabByID('During');
+ // $("#tabs").selectTabByID(firsttab);
+ //  $("#tabs").tabs("select", firsttab);
+   
+});
+          
+         
+</script><!-- END CODE FOR SETTING ORDER OF TABS BY ID. -->
 <h1><a href="http://www.weather.gov/lot" target="top">NWS Chicago, IL Winter Weather Watcher Briefing</a></h1>
+
+<p><span style="font-size:14px;">This page will auto-update every 10 minutes</span></p>
 
 <p><a href="http://www.weather.gov/lot" target="self"><span style="color: blue; font-size: 14px; font-face: trebuchet MS;">Back to NWS Chicago, IL Main Page</span></a><br />
 <!-- --------------------------------------------------------------------------------------------------- --> <!-- --------------------------------------------------------------------------------------------------- --> <!-- --------------------------------------------------------------------------------------------------- --> <!-- --------------------------------------------------------------------------------------------------- --> <!-- --------------------------------------------------------------------------------------------------- --></p>
 
 <div id="tabs" style="width: 950px;">
 <ul>
+	<li><strong><span style="color: black; font-size: 14px;"><a href="#Webcams">Webcams</a></span></strong></li>
 	<li><strong><span style="color: black; font-size: 14px;"><a href="#During">0-36 Hours</a></span></strong></li>
 	<li><strong><span style="color: black; font-size: 14px;"><a href="#Days2_4">Days 1.5-4</a></span></strong></li>
 	<li><strong><span style="color: black; font-size: 14px;"><a href="#Days4_7">Days 4-7+</a></span></strong></li>
 	<li><strong><span style="color: black; font-size: 14px;"><a href="#Planning">Planning &amp; Resources</a></span></strong></li>
 </ul>
+
+<div id="Webcams">
+<p><!-- -------------------- Webcams Section -------------------- --></p>
+
+<p style="text-align: center;"><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Webcams</span></strong></p>
+
+<p><span style="font-size:11px;"><strong>Note:</strong> Webcams are provided through third parties and may not always be up to date. Please check the time stamp on each image to ensure the image is current. </span></p>
+
+<p class="subsec">Northwest&nbsp;and North Central Illinois</p>
+
+<p class="subsec"><em>&nbsp; &nbsp; &nbsp;<span style="font-size:12px;">Rockford:</span></em></p>
+
+<table align="center" border="0" cellpadding="1" cellspacing="1" class="images" style="width: 820px; color: rgb(34, 34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Verdana, Arial, sans-serif; font-size: 13.33px; font-style: normal; font-weight: 400; margin-bottom: 10px; word-spacing: 0px; white-space: normal; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+	<tbody>
+		<tr style="vertical-align: top;">
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://webpubcontent.gray.tv/wifr/Stream%20Thumbnail%20Main%20St%20Cam.jpg" onclick="return hs.expand(this)"><img align="middle" src="https://webpubcontent.gray.tv/wifr/Stream%20Thumbnail%20Main%20St%20Cam.jpg" style="width: 280px; height: 180px;" /></a></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://webpubcontent.gray.tv/wifr/Stream%20Thumbnail%20State%20St%20Cam.jpg" onclick="return hs.expand(this)"><img align="middle" src="https://webpubcontent.gray.tv/wifr/Stream%20Thumbnail%20State%20St%20Cam.jpg" style="width: 270px; height: 180px;" /></a></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://webpubcontent.gray.tv/wifr/Stream%20Thumbnail%20Rivercam.jpg" onclick="return hs.expand(this)"><img align="middle" src="https://webpubcontent.gray.tv/wifr/Stream%20Thumbnail%20Rivercam.jpg" style="width: 270px; height: 180px;" /></a></td>
+		</tr>
+		<tr style="vertical-align: top;">
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">Downtown Rockford</td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">State Street Webcam in Rockford</td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">Rock River in Rockford</td>
+		</tr>
+	</tbody>
+</table>
+
+<table align="center" border="0" cellpadding="1" cellspacing="1" class="images" style="width: 820px; color: rgb(34, 34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Verdana, Arial, sans-serif; font-size: 13.33px; font-style: normal; font-weight: 400; margin-bottom: 10px; word-spacing: 0px; white-space: normal; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+	<tbody>
+		<tr style="vertical-align: top;">
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="http://s3.amazonaws.com/nxsglobal/mystateline/weather/cameras/ChicagoSkydiving01.jpg" onclick="return hs.expand(this)"><img align="middle" src="http://s3.amazonaws.com/nxsglobal/mystateline/weather/cameras/ChicagoSkydiving01.jpg" style="width: 300px; height: 190px;" /></a></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://www.travelmidwest.com/lmiga/snapshot?id=IL-IDOTD4-camera_305&amp;direction=S" onclick="return hs.expand(this)"><img align="middle" src="https://www.travelmidwest.com/lmiga/snapshot?id=IL-IDOTD4-camera_305&amp;direction=S" style="width: 300px; height: 190px;" /></a></td>
+		</tr>
+		<tr style="vertical-align: top;">
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">Rochelle Airport</td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">I-39/80 Interchange near La Salle</td>
+		</tr>
+	</tbody>
+</table>
+
+<p class="subsec">&nbsp;</p>
+
+<p class="subsec">Northeast Illinois</p>
+
+<table align="center" border="0" cellpadding="1" cellspacing="1" class="images" style="width: 820px; color: rgb(34, 34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Verdana, Arial, sans-serif; font-size: 13.33px; font-style: normal; font-weight: 400; margin-bottom: 10px; word-spacing: 0px; white-space: normal; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+	<tbody>
+		<tr style="vertical-align: top;">
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://weather.cod.edu/skycam/current/skycam_ani.gif" onclick="return hs.expand(this)"><img align="middle" src="https://weather.cod.edu/skycam/current/skycam_ani.gif" style="width: 270px; height: 180px;" /></a></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://www.lakecountypassage.com/snapshots/I-94_@_Lake_Cook_W_Ramp_cctv_North_Leg.jpg?x=1426097096000" onclick="return hs.expand(this)"><img align="middle" src="https://www.lakecountypassage.com/snapshots/I-94_@_Lake_Cook_W_Ramp_cctv_North_Leg.jpg?x=1426097096000" style="width: 260px; height: 180px;" /></a></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://www.travelmidwest.com/lmiga/snapshot?id=IL-ISTHA-bkWelUZ79reGAKdLMh%2BMlC6jVSo%3D&amp;direction=S" onclick="return hs.expand(this)"><img align="middle" src="https://www.travelmidwest.com/lmiga/snapshot?id=IL-ISTHA-bkWelUZ79reGAKdLMh%2BMlC6jVSo%3D&amp;direction=S" style="width: 270px; height: 180px;" /></a></td>
+		</tr>
+		<tr style="vertical-align: top;">
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">College of DuPage, Glen Ellyn</td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">I-94 at Lake/Cook broder looking North</td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">I-355 near Lockport</td>
+		</tr>
+	</tbody>
+</table>
+
+<p class="subsec"><em>&nbsp; &nbsp; &nbsp; <span style="font-size:12px;">Chicago:</span></em></p>
+
+<table align="center" border="0" cellpadding="1" cellspacing="1" class="images" style="width: 820px; color: rgb(34, 34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Verdana, Arial, sans-serif; font-size: 13.33px; font-style: normal; font-weight: 400; margin-bottom: 10px; word-spacing: 0px; white-space: normal; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+	<tbody>
+		<tr style="vertical-align: top;">
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://www.travelmidwest.com/lmiga/snapshot?id=IL-ISTHA-2541&amp;direction=S" onclick="return hs.expand(this)"><img align="middle" src="https://www.travelmidwest.com/lmiga/snapshot?id=IL-ISTHA-2541&amp;direction=S" style="width: 270px; height: 180px;" /></a></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="http://www.glerl.noaa.gov/metdata/chi/chi1.jpg" onclick="return hs.expand(this)"><img align="middle" src="http://www.glerl.noaa.gov/metdata/chi/chi1.jpg" style="width: 270px; height: 180px;" /></a></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://www.travelmidwest.com/lmiga/snapshot?id=IL-IDOT-DR7" onclick="return hs.expand(this)"><img align="middle" src="https://www.travelmidwest.com/lmiga/snapshot?id=IL-IDOT-DR7" style="width: 270px; height: 180px;" /></a></td>
+		</tr>
+		<tr style="vertical-align: top;">
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">O&#39;Hare Airport</td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">Harrison-Dever Crib Looking west</td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">Dan Ryan at 63rd Street</td>
+		</tr>
+	</tbody>
+</table>
+
+<p class="subsec">&nbsp;</p>
+
+<p class="subsec">Northwest Indiana and Central Illinois</p>
+
+<table align="center" border="0" cellpadding="1" cellspacing="1" class="images" style="width: 820px; color: rgb(34, 34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Verdana, Arial, sans-serif; font-size: 13.33px; font-style: normal; font-weight: 400; margin-bottom: 10px; word-spacing: 0px; white-space: normal; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+	<tbody>
+		<tr style="vertical-align: top;">
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://www.travelmidwest.com/lmiga/snapshot?id=IN-InDOT-1-094-009-9-1" onclick="return hs.expand(this)"><img align="middle" src="https://www.travelmidwest.com/lmiga/snapshot?id=IN-InDOT-1-094-009-9-1" style="width: 280px; height: 180px;" /></a></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="http://pws.trafficwise.org/pullover/1-065-242-2-1.jpg" onclick="return hs.expand(this)"><img align="middle" src="https://www.travelmidwest.com/lmiga/snapshot?id=IL-IDOTD4-camera_324&amp;direction=N" style="width: 280px; height: 180px;" /></a></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://webpubcontent.gray.tv/wifr/Stream%20Thumbnail%20Main%20St%20Cam.jpg" onclick="return hs.expand(this)"><img align="middle" src="http://wwc.instacam.com/instacamimg/MCHLP/MCHLP_l.jpg?rnd=15-031620151001" style="width: 290px; height: 180px;" /></a></td>
+		</tr>
+		<tr style="vertical-align: top;">
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">I-80/65 Interchange near Gary</td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">---</td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">Michigan City</td>
+		</tr>
+	</tbody>
+</table>
+
+<table align="center" border="0" cellpadding="1" cellspacing="1" class="images" style="width: 820px; color: rgb(34, 34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Verdana, Arial, sans-serif; font-size: 13.33px; font-style: normal; font-weight: 400; margin-bottom: 10px; word-spacing: 0px; white-space: normal; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
+	<tbody>
+		<tr style="vertical-align: top;">
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://www.travelmidwest.com/lmiga/snapshot?id=IL-IDOTD4-camera_301&amp;direction=N" onclick="return hs.expand(this)"><img align="middle" src="https://www.travelmidwest.com/lmiga/snapshot?id=IL-IDOTD4-camera_301&amp;direction=N" style="width: 280px; height: 191px;" /></a></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://webpubcontent.gray.tv/wifr/Stream%20Thumbnail%20Main%20St%20Cam.jpg" onclick="return hs.expand(this)"><img align="middle" src="http://www.glerl.noaa.gov/metdata/chi/chi1.jpg" style="width: 280px; height: 180px;" /></a></td>
+		</tr>
+		<tr style="vertical-align: top;">
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">I-39 near Streator</td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">--</td>
+		</tr>
+	</tbody>
+</table>
+</div>
 
 <div id="During">
 <p><!-- -------------------- REGIONAL RADAR SECTION -------------------- --></p>
@@ -1027,14 +1182,16 @@ $(document).ready(function(){
 
 <p style="text-align: center;"><span style="font-size:16px;"><strong>Click on a location for hourly precipitation plot. Click the plot to clear the display.</strong></span></p>
 
-<p style="text-align: center;">NOTE: This information is experimental</p>
+<p style="text-align: center;">This images will update around: 3:30 AM, 11:00 AM, 3:30 PM, 6:00 PM, and 9:30 PM.</p>
+
+<p style="text-align: center;">NOTE: This information is experimental and may not always be available.</p>
 
 <table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
 	<tbody>
 		<tr>
 			<td>
-			<center><img alt="" src="/images/lot/winter_weatherwatcher/Hourly_graph_basemap_1522x1123.png" style="width: 926px; height: 683px; float: left;" usemap="#hourlyprecip" /></center>
-			<map name="hourlyprecip"><area alt="Rockford" coords="259,88,278,103" href="https://www.weather.gov/images/lot/winter/KRFD.png" onclick="return hs.expand(this)" shape="rect" title="Rockford" /><area alt="Woodstock" coords="410,71,427,87" href="https://www.weather.gov/images/lot/winter/WOODSTOCK.png" onclick="return hs.expand(this)" shape="rect" title="Woodstock" /><area alt="Waukegan" coords="540,42,557,59" href="https://www.weather.gov/images/lot/winter/KUGN.png" onclick="return hs.expand(this)" shape="rect" title="Waukegan" /><area alt="Chicago" coords="592,193,607,211" href="https://www.weather.gov/images/lot/winter/CHICAGO.png" onclick="return hs.expand(this)" shape="rect" title="Chicago" /><area alt="O'Hare" coords="529,177,546,191" href="https://www.weather.gov/images/lot/winter/KORD.png" onclick="return hs.expand(this)" shape="rect" title="O'Hare" /><area alt="Midway" coords="558,236,575,253" href="https://www.weather.gov/images/lot/winter/KMDW.png" onclick="return hs.expand(this)" shape="rect" title="Midway" /><area alt="DuPage" coords="455,195,472,210" href="https://www.weather.gov/images/lot/winter/KDPA.png" onclick="return hs.expand(this)" shape="rect" title="DuPage" /><area alt="Aurora" coords="398,232,415,250" href="https://www.weather.gov/images/lot/winter/KARR.png" onclick="return hs.expand(this)" shape="rect" title="Aurora" /><area alt="DeKalb" coords="344,180,358,195" href="https://www.weather.gov/images/lot/winter/KDKB.png" onclick="return hs.expand(this)" shape="rect" title="DeKalb" /><area alt="Rochelle" coords="253,192,271,208" href="https://www.weather.gov/images/lot/winter/KRPJ.png" onclick="return hs.expand(this)" shape="rect" title="Rochelle" /><area alt="Yorkville" coords="403,282,420,299" href="https://www.weather.gov/images/lot/winter/YORKVILLE.png" onclick="return hs.expand(this)" shape="rect" title="Yorkville" /><area alt="Joliet" coords="484,302,501,320" href="https://www.weather.gov/images/lot/winter/KJOT.png" onclick="return hs.expand(this)" shape="rect" title="Lansing" /><area alt="DeKalb" coords="616,308,631,324" href="https://www.weather.gov/images/lot/winter/KIGQ.png" onclick="return hs.expand(this)" shape="rect" title="Lansing" /><area alt="Gary" coords="645,280,662,297" href="https://www.weather.gov/images/lot/winter/KGYY.png" onclick="return hs.expand(this)" shape="rect" title="Gary" /><area alt="Valparaiso" coords="731,324,751,341" href="https://www.weather.gov/images/lot/winter/KVPZ.png" onclick="return hs.expand(this)" shape="rect" title="Valparaiso" /><area alt="Rensselaer" coords="707,475,725,492" href="https://www.weather.gov/images/lot/winter/KRZL.png" onclick="return hs.expand(this)" shape="rect" title="Rensselaer" /><area alt="Kankakee" coords="546,451,563,470" href="https://www.weather.gov/images/lot/winter/KIKK.png" onclick="return hs.expand(this)" shape="rect" title="Kankakee" /><area alt="Pontiac" coords="359,509,375,525" href="https://www.weather.gov/images/lot/winter/KPNT.png" onclick="return hs.expand(this)" shape="rect" title="Pontiac" /><area alt="Paxton" coords="486,636,504,655" href="https://www.weather.gov/images/lot/winter/PAXTON.png" onclick="return hs.expand(this)" shape="rect" title="Paxton" /><area alt="Watseka" coords="572,540,591,557" href="https://www.weather.gov/images/lot/winter/WATSEKA.png" onclick="return hs.expand(this)" shape="rect" title="Watseka" /><area alt="Fowler" coords="672,593,690,609" href="https://www.weather.gov/images/lot/winter/FOWLER.png" onclick="return hs.expand(this)" shape="rect" title="Fowler" /></map></td>
+			<center><img alt="" src="/images/lot/winter_weatherwatcher/Hourly_graph_basemap_FINAL.png" style="width: 926px; height: 683px; float: left;" usemap="#hourlyprecip" /></center>
+			<map name="hourlyprecip"><area alt="Rockford" coords="259,88,278,103" href="https://www.weather.gov/images/lot/winter/KRFD.png" onclick="return hs.expand(this)" shape="rect" title="Rockford" /><area alt="Woodstock" coords="410,71,427,87" href="https://www.weather.gov/images/lot/winter/WOODSTOCK.png" onclick="return hs.expand(this)" shape="rect" title="Woodstock" /><area alt="Waukegan" coords="540,42,557,59" href="https://www.weather.gov/images/lot/winter/KUGN.png" onclick="return hs.expand(this)" shape="rect" title="Waukegan" /><area alt="Chicago" coords="592,193,607,211" href="https://www.weather.gov/images/lot/winter/CHICAGO.png" onclick="return hs.expand(this)" shape="rect" title="Chicago" /><area alt="O'Hare" coords="529,177,546,191" href="https://www.weather.gov/images/lot/winter/KORD.png" onclick="return hs.expand(this)" shape="rect" title="O'Hare" /><area alt="Midway" coords="558,236,575,253" href="https://www.weather.gov/images/lot/winter/KMDW.png" onclick="return hs.expand(this)" shape="rect" title="Midway" /><area alt="DuPage" coords="455,195,472,210" href="https://www.weather.gov/images/lot/winter/KDPA.png" onclick="return hs.expand(this)" shape="rect" title="DuPage" /><area alt="Aurora" coords="398,232,415,250" href="https://www.weather.gov/images/lot/winter/KARR.png" onclick="return hs.expand(this)" shape="rect" title="Aurora" /><area alt="DeKalb" coords="344,180,358,195" href="https://www.weather.gov/images/lot/winter/KDKB.png" onclick="return hs.expand(this)" shape="rect" title="DeKalb" /><area alt="Rochelle" coords="253,192,271,208" href="https://www.weather.gov/images/lot/winter/KRPJ.png" onclick="return hs.expand(this)" shape="rect" title="Rochelle" /><area alt="Yorkville" coords="403,282,420,299" href="https://www.weather.gov/images/lot/winter/YORKVILLE.png" onclick="return hs.expand(this)" shape="rect" title="Yorkville" /><area alt="Joliet" coords="484,302,501,320" href="https://www.weather.gov/images/lot/winter/KJOT.png" onclick="return hs.expand(this)" shape="rect" title="Lansing" /><area alt="DeKalb" coords="616,308,631,324" href="https://www.weather.gov/images/lot/winter/KIGQ.png" onclick="return hs.expand(this)" shape="rect" title="Lansing" /><area alt="Gary" coords="645,280,662,297" href="https://www.weather.gov/images/lot/winter/KGYY.png" onclick="return hs.expand(this)" shape="rect" title="Gary" /><area alt="Valparaiso" coords="731,324,751,341" href="https://www.weather.gov/images/lot/winter/KVPZ.png" onclick="return hs.expand(this)" shape="rect" title="Valparaiso" /><area alt="Rensselaer" coords="707,475,725,492" href="https://www.weather.gov/images/lot/winter/KRZL.png" onclick="return hs.expand(this)" shape="rect" title="Rensselaer" /><area alt="Kankakee" coords="546,451,563,470" href="https://www.weather.gov/images/lot/winter/KIKK.png" onclick="return hs.expand(this)" shape="rect" title="Kankakee" /><area alt="Pontiac" coords="359,509,375,525" href="https://www.weather.gov/images/lot/winter/KPNT.png" onclick="return hs.expand(this)" shape="rect" title="Pontiac" /><area alt="Paxton" coords="486,636,504,655" href="https://www.weather.gov/images/lot/winter/PAXTON.png" onclick="return hs.expand(this)" shape="rect" title="Paxton" /><area alt="Watseka" coords="572,540,591,557" href="https://www.weather.gov/images/lot/winter/WATSEKA.png" onclick="return hs.expand(this)" shape="rect" title="Watseka" /><area alt="Fowler" coords="672,593,690,609" href="https://www.weather.gov/images/lot/winter/FOWLER.png" onclick="return hs.expand(this)" shape="rect" title="Fowler" /><area alt="La Salle/Peru" coords="250,370,268,388" href="https://www.weather.gov/images/lot/winter/KVYS.png" onclick="return hs.expand(this)" shape="rect" title="La Salle/Peru" /></map></td>
 		</tr>
 	</tbody>
 </table>
@@ -1057,9 +1214,9 @@ $(document).ready(function(){
 	<tbody>
 		<tr>
 			<td style="text-align: center;">
-			<p><span style="font-size:16px;"><a href="https://go.usa.gov/x7Y4J" target="_blank"><span style="color: blue;">Interactive Detailed Forecast Webpage</span></a></span></p>
+			<p><span style="font-size:16px;"><a href="https://go.usa.gov/x7Y4J" rel="noopener noreferrer" target="_blank"><span style="color: blue;">Interactive Detailed Forecast Webpage</span></a></span></p>
 
-			<p><a href="http://go.usa.gov/x7Y4J"><span style="font-size:16px;"><span style="color: blue;"><img alt="" src="/images/lot/winter_weatherwatcher/ForecastPoints_image.PNG" style="width: 400px; height: 222px;" /></span></span></a></p>
+			<p><a href="http://go.usa.gov/x7Y4J" rel="noopener noreferrer" target="_blank"><span style="font-size:16px;"><span style="color: blue;"><img alt="" src="/images/lot/winter_weatherwatcher/ForecastPoints_image.PNG" style="width: 400px; height: 222px;" /></span></span></a></p>
 			</td>
 			<td>
 			<p>&nbsp;</p>
@@ -1265,34 +1422,46 @@ $(document).ready(function(){
 
 <p><!-- ------------------------------------------------ PROBABILISTIC SNOW AND ICE IMAGES ------------------------------------------------ --></p>
 
-<p style="text-align: center;"><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Probabilistic Snow and Ice Forecasts</span></strong></p>
-
-<p style="text-align: center;"><span style="font-size: 20px;"><b>Information/Infographic for general use.</b></span></p>
+<p style="text-align: center;"><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Snow and Ice Forecasts</span></strong></p>
 
 <center>
 <table border="0" cellpadding="1" cellspacing="5" width="850">
 	<tbody>
 		<tr style="font-weight: bold; color: rgb(204,0,0)">
-			<td align="center" bgcolor="#000099" colspan="3" width="100%"><span style="font-size:18px;"><font color="#ffff00"><strong>Storm Total Snowfall Probabilities</strong></font></span></td>
+			<td align="center" bgcolor="#000099" colspan="2" width="100%"><span style="font-size:18px;"><font color="#ffff00"><strong>Snow Accumulation</strong></font></span></td>
 		</tr>
 		<tr>
-			<td align="center"><span style="font-size:16px;"><strong>&gt;= 6&quot; Snow</strong></span><br />
-			<a class="highslide" href="https://www.weather.gov/images/lot/winter/ProbSnowGE01.png" id="snow1in" onclick="return hs.expand(this, {captionId: 'snow1in'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/ProbSnowGE01.png" style="height: 150px; margin-top: 4px; margin-bottom: 4px;" title="Threat of 1" /></a></td>
-			<td align="center"><span style="font-size:16px;"><strong>&gt;= 8&quot; Snow</strong></span><br />
-			<a class="highslide" href="https://www.weather.gov/images/lot/winter/ProbSnowGE02.png" id="snow2in" onclick="return hs.expand(this, {captionId: 'snow2in'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/ProbSnowGE02.png" style="height: 150px; margin-top: 4px; margin-bottom: 4px;" title="Threat of 2" /></a></td>
-			<td align="center"><span style="font-size:16px;"><strong>&gt;= 12&quot; Snow</strong></span><br />
-			<a class="highslide" href="https://www.weather.gov/images/lot/winter/ProbSnowGE04.png" id="snow4in" onclick="return hs.expand(this, {captionId: 'snow4in'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/ProbSnowGE04.png" style="height: 150px; margin-top: 4px; margin-bottom: 4px;" title="Threat of 4" /></a></td>
-		</tr>
-		<tr style="font-weight: bold; color: rgb(204,0,0)">
-			<td align="center" bgcolor="#000099" colspan="3" width="100%"><span style="font-size:18px;"><font color="#ffff00"><strong>Ice Accumulation Probabilities</strong></font></span></td>
+			<td align="center" bgcolor="#000099" colspan="2" width="100%"><span style="font-size:11px;"><font color="#ffff00">Please be sure to check the &quot;Valid&quot; time range at the top of each image, as well as the last update time at the bottom.</font></span></td>
 		</tr>
 		<tr>
-			<td align="center"><span style="font-size:16px;"><strong>&gt;= 0.15&quot; Ice</strong></span><br />
-			<a class="highslide" href="https://www.weather.gov/images/lot/winter/ProbSnowGE06.png" id="snow6in" onclick="return hs.expand(this, {captionId: 'snow6in'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/ProbSnowGE06.png" style="height: 150px; margin-top: 4px; margin-bottom: 4px;" title="Threat of 6" /></a></td>
-			<td align="center"><span style="font-size:16px;"><strong>&gt;= 0.25&quot; Ice</strong></span><br />
-			<a class="highslide" href="https://www.weather.gov/images/lot/winter/ProbSnowGE08.png" id="snow8in" onclick="return hs.expand(this, {captionId: 'snow8in'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/ProbSnowGE08.png" style="height: 150px; margin-top: 4px; margin-bottom: 4px;" title="Threat of 8" /></a></td>
-			<td align="center"><span style="font-size:16px;"><strong>&gt;= 0.50&quot; Ice</strong></span><br />
-			<a class="highslide" href="https://www.weather.gov/images/lot/winter/ProbSnowGE12.png" id="snow12in" onclick="return hs.expand(this, {captionId: 'snow12in'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/ProbSnowGE12.png" style="height: 150px; margin-top: 4px; margin-bottom: 4px;" title="Threat of 12" /></a></td>
+			<td align="center">
+			<p><span style="font-size:16px;"><strong>Expected Snowfall Forecast</strong></span><br />
+			<a class="highslide" href="https://www.weather.gov/images/lot/winter/StormTotalSnowWeb.png" id="snowtotal" onclick="return hs.expand(this, {captionId: 'snowtotal'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/StormTotalSnowWeb.png" style="height: 644px; margin-top: 4px; margin-bottom: 4px; width: 600px;" title="Expected Snowfall Forecast" /></a></p>
+			</td>
+			<td align="center">
+			<p><span style="font-size:16px;"><strong>High-End Snowfall Potential</strong></span><br />
+			<a class="highslide" href="https://www.weather.gov/images/lot/winter/SnowAmt90Prcntl.png" id="snow_90th" onclick="return hs.expand(this, {captionId: 'snow_90th'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/SnowAmt90Prcntl.png" style="height: 301px; margin-top: 4px; margin-bottom: 4px; width: 280px;" title="High-End Snowfall Potential" /></a></p>
+			</td>
+		</tr>
+		<tr color:="" rgb="">
+			<td align="center" bgcolor="#000099" colspan="2" width="100%">
+			<table border="0" cellpadding="1" cellspacing="5" width="850">
+				<tbody>
+					<tr style="font-weight: bold; color: rgb(204,0,0)">
+						<td align="center" bgcolor="#000099" colspan="3" width="100%"><span style="font-size:18px;"><font color="#ffff00"><strong>Ice Accumulation</strong></font></span></td>
+					</tr>
+					<tr>
+						<td align="center" bgcolor="#000099" colspan="2" width="100%"><span style="font-size:11px;"><font color="#ffff00">Please be sure to check the &quot;Valid&quot; time range at the top of each image, as well as the last update time at the bottom.</font></span></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td align="center"><span style="font-size:16px;"><strong>Expected Ice Accumulation Forecast</strong></span><br />
+			<a class="highslide" href="https://www.weather.gov/images/lot/winter/StormTotalIceWeb.png" id="icetotal" onclick="return hs.expand(this, {captionId: 'icetotal'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/StormTotalIceWeb.png" style="height: 644px; margin-top: 4px; margin-bottom: 4px; width: 600px;" title="Expected Ice Forecast" /></a></td>
+			<td align="center"><span style="font-size:16px;"><strong>High-End Ice Potential</strong></span><br />
+			<a class="highslide" href="https://www.weather.gov/images/lot/winter/IceAccum90Prcntl.png" id="ice_90th" onclick="return hs.expand(this, {captionId: 'ice_90th'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/IceAccum90Prcntl.png" style="height: 301px; margin-top: 4px; margin-bottom: 4px; width: 280px;" title="High-End Ice Potential" /></a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1306,10 +1475,34 @@ $(document).ready(function(){
 <hr style="margin-bottom: 7px;" />
 <p style="text-align: center;">&nbsp;</p>
 
-<p style="text-align: center;"><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Observed Snowfall Reports</span></strong><br />
-&nbsp;</p>
+<p style="text-align: center;"><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Snowfall Observations</span></strong></p>
 
-<center><span style="font-size:16px;"><a href="https://www.weather.gov/source/crh/snowmap.html?sid=lot" target="_blank"><span style="color: blue;">Observed Snowfall Interactive Map</span></a></span></center>
+<center>
+<table align="center" border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
+	<colgroup>
+		<col span="1" style="width: 70%;" />
+		<col span="1" style="width: 30%;" />
+	</colgroup>
+	<tbody>
+		<tr>
+			<td>
+			<p class="subsec" style="text-align: center;"><span style="font-size:18px;">12-Hour Observed Snowfall Map (courtesy of IEM)</span></p>
+
+			<p><img align="middle" alt="Forecast Points Information" src="https://mesonet.agron.iastate.edu/plotting/auto/plot/207/t:cwa::network:WFO::wfo:LOT::csector:cornbelt::p:both::endts:::hours:12::sz:50::f:linear::z:yes::coop:no::dpi:100.png" style="width: 700px; height: 400px;" title="Observed snowfall map" /></p>
+			</td>
+			<td style="text-align: center;">
+			<p><span style="font-size:16px;"><a href="https://www.weather.gov/source/crh/snowmap.html?sid=lot" rel="noopener noreferrer" target="_blank"><span style="color:#0000FF;">Color-Coded Local and National Snow Report Map</span></a></span></p>
+
+			<p><span style="font-size:20px;"><span style="color:#0000FF;"><a href="https://www.weather.gov/source/crh/snowmap.html?sid=lot" rel="noopener noreferrer" target="_blank"><img alt="" src="/images/lot/winter_weatherwatcher/LSR_inset.png" style="width: 180px; height: 181px;" /></a></span></span></p>
+
+			<p><span style="color: blue;"><span style="font- size:18px;">&lt;/handlerclass=TextProductIncludeWidget&siteid=lot&pil=PNS&description=Text%20Summary&headline=1&wrapperStart=&wrapperEnd=&hideIssuance=0&nullProduct=all&link=1&noProductText=&newline=0/&gt;</span></span></p>
+
+			<p><span style="font-size:20px;"><span style="color:#0000FF;"><a href="https://forecast.weather.gov/product.php?issuedby=LOT&amp;product=PNS&amp;site=lot" rel="noopener noreferrer" target="_blank"><img alt="" src="/images/lot/winter_weatherwatcher/PNS_inset.png" style="width: 180px; height: 150px;" /></a></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
 
 <center>&nbsp;</center>
 <!-- ------------------------------------------------ PROBABILISTIC SNOW AND ICE IMAGES ------------------------------------------------ -->
@@ -1721,10 +1914,10 @@ $(document).ready(function(){
 					</tr>
 					<tr>
 						<td style="padding: 10px; vertical-align: middle;">
-						<div id="sitreport2">&nbsp;</div>
+						<div id="sitreport1">&nbsp;</div>
 						</td>
 						<td style="padding: 10px; text-align: left; vertical-align: middle;">
-						<div id="SitRepDesc2">&nbsp;</div>
+						<div id="SitRepDesc1">&nbsp;</div>
 						</td>
 					</tr>
 				</tbody>
@@ -4387,4 +4580,5 @@ hs.addEventListener(window, 'load', hs.preloadImages);
     hs.outlineType = 'rounded-white';
 </script><!--*******************END OF REALLY UNNECESSARILY LONG BLOCK OF CODE*****************************************************-->
 <div style="clear: both;">&nbsp;</div>
-</div> 
+</div>
+</div>
