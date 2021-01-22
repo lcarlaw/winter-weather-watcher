@@ -1004,7 +1004,7 @@ $(document).ready(function(){
 	    
 	    $.fn.tabIndex = function () {
 	     //  return $(this).parent().find(this).index() - 1; 
-	    	return $(this).parent().find(this).index();
+	    	return $(this).parent().find(this).index()- 5;
 	    };
 	    $.fn.selectTabByID = function (tabID) {
 	        $(this).tabs("option", "active", $('#' + tabID).tabIndex());
@@ -1043,6 +1043,7 @@ $(document).ready(function(){
 <div id="tabs" style="width: 950px;">
 <ul>
 	<li><strong><span style="color: black; font-size: 14px;"><a href="#Webcams">Webcams</a></span></strong></li>
+	<li><strong><span style="color: black; font-size: 14px;"><a href="#Snowfall_Reports">Snowfall Reports</a></span></strong></li>
 	<li><strong><span style="color: black; font-size: 14px;"><a href="#During">0-36 Hours</a></span></strong></li>
 	<li><strong><span style="color: black; font-size: 14px;"><a href="#Days2_4">Days 1.5-4</a></span></strong></li>
 	<li><strong><span style="color: black; font-size: 14px;"><a href="#Days4_7">Days 4-7+</a></span></strong></li>
@@ -1153,6 +1154,41 @@ $(document).ready(function(){
 		</tr>
 	</tbody>
 </table>
+</div>
+
+<div id="Snowfall_Reports">
+<p><!-- -------------------- SNOWFALL TAB -------------------- --></p>
+
+<p style="text-align: center;"><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Snowfall Observations</span></strong></p>
+
+<center>
+<table align="center" border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
+	<colgroup>
+		<col span="1" style="width: 70%;" />
+		<col span="1" style="width: 30%;" />
+	</colgroup>
+	<tbody>
+		<tr>
+			<td>
+			<p class="subsec" style="text-align: center;"><span style="font-size:18px;">12-Hour Observed Snowfall Map (courtesy of IEM)</span></p>
+
+			<p class="subsec" style="text-align: center;"><img align="middle" alt="Forecast Points Information" src="https://mesonet.agron.iastate.edu/plotting/auto/plot/207/t:cwa::network:WFO::wfo:LOT::csector:cornbelt::p:both::endts:::hours:12::sz:50::f:linear::z:yes::coop:no::dpi:100.png" style="width: 700px; height: 400px;" title="Observed snowfall map" /></p>
+			</td>
+			<td style="text-align: center;">
+			<p><span style="font-size:16px;"><a href="https://www.weather.gov/source/crh/snowmap.html?sid=lot" rel="noopener noreferrer" target="_blank"><span style="color:#0000FF;">Color-Coded Local and National Snow Report Map</span></a></span></p>
+
+			<p><span style="font-size:20px;"><span style="color:#0000FF;"><a href="https://www.weather.gov/source/crh/snowmap.html?sid=lot" rel="noopener noreferrer" target="_blank"><img alt="" src="/images/lot/winter_weatherwatcher/LSR_inset.png" style="width: 180px; height: 181px;" /></a></span></span></p>
+
+			<p><span style="color: blue;"><span style="font- size:18px;">&lt;/handlerclass=TextProductIncludeWidget&siteid=lot&pil=PNS&description=Text%20Summary&headline=1&wrapperStart=&wrapperEnd=&hideIssuance=0&nullProduct=all&link=1&noProductText=&newline=0/&gt;</span></span></p>
+
+			<p><span style="font-size:20px;"><span style="color:#0000FF;"><a href="https://forecast.weather.gov/product.php?issuedby=LOT&amp;product=PNS&amp;site=lot" rel="noopener noreferrer" target="_blank"><img alt="" src="/images/lot/winter_weatherwatcher/PNS_inset.png" style="width: 180px; height: 150px;" /></a></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<center>&nbsp;</center>
 </div>
 
 <div id="During">
@@ -1428,35 +1464,19 @@ $(document).ready(function(){
 <table border="0" cellpadding="1" cellspacing="5" width="850">
 	<tbody>
 		<tr style="font-weight: bold; color: rgb(204,0,0)">
-			<td align="center" bgcolor="#000099" colspan="2" width="100%"><span style="font-size:20px;"><font color="#ffff00"><strong>Snow Accumulation</strong></font></span></td>
+			<td align="center" bgcolor="#000099" colspan="1" width="100%"><span style="font-size:20px;"><font color="#ffff00"><strong>Snow Accumulation</strong></font></span></td>
 		</tr>
 		<tr>
-			<td align="center" bgcolor="#000099" colspan="2" width="100%"><span style="font-size:11px;"><font color="#ffff00">Please be sure to check the &quot;Valid&quot; time range at the top of each image, as well as the last update time at the bottom.</font></span></td>
+			<td align="center" bgcolor="#000099" colspan="1" width="100%"><span style="font-size:11px;"><font color="#ffff00">Please be sure to check the &quot;Valid&quot; time range at the top of each image, as well as the last update time at the bottom.</font></span></td>
 		</tr>
 		<tr>
 			<td align="center">
 			<p><span style="font-size:18px;"><strong>Expected Snowfall Forecast</strong></span><br />
-			<a class="highslide" href="https://www.weather.gov/images/lot/winter/StormTotalSnowWeb.png" id="snowtotal" onclick="return hs.expand(this, {captionId: 'snowtotal'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/StormTotalSnowWeb.png" style="height: 644px; margin-top: 4px; margin-bottom: 4px; width: 600px;" title="Expected Snowfall Forecast" /></a></p>
-			</td>
-			<td align="center">
-			<p><span style="font-size:18px;"><strong>High-End Snowfall Potential</strong></span><br />
-			<a class="highslide" href="https://www.weather.gov/images/lot/winter/SnowAmt90Prcntl.png" id="snow_90th" onclick="return hs.expand(this, {captionId: 'snow_90th'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/SnowAmt90Prcntl.png" style="height: 301px; margin-top: 4px; margin-bottom: 4px; width: 280px;" title="High-End Snowfall Potential" /></a></p>
-
-			<p>&nbsp;</p>
-
-			<p>&nbsp;</p>
-
-			<p>&nbsp;</p>
-
-			<p>&nbsp;</p>
-
-			<p>&nbsp;</p>
-
-			<p>Interpreting these products</p>
+			<a class="highslide" href="https://www.weather.gov/images/lot/winter/StormTotalSnowWeb.png" id="snowtotal" onclick="return hs.expand(this, {captionId: 'snowtotal'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/StormTotalSnowWeb.png" style="margin-top: 4px; margin-bottom: 4px; width: 700px; height: 751px;" title="Expected Snowfall Forecast" /></a></p>
 			</td>
 		</tr>
 		<tr style="font-weight: bold; color: rgb(204,0,0)">
-			<td align="center" colspan="2" style="background-color: rgb(0, 0, 0);" width="100%"><span style="font-size:18px;"><font color="#ffff00">Snow Exceedance Probabilities</font></span></td>
+			<td align="center" colspan="1" style="background-color: rgb(0, 0, 0);" width="100%"><span style="font-size:18px;"><font color="#ffff00">Snow Exceedance Probabilities</font></span></td>
 		</tr>
 	</tbody>
 </table>
@@ -1474,9 +1494,9 @@ $(document).ready(function(){
 			<td align="center"><span style="font-size:16px;"><strong>&gt;= 6&quot;</strong></span></td>
 		</tr>
 		<tr>
-			<td align="center">&nbsp;</td>
-			<td align="center">&nbsp;</td>
-			<td align="center">&nbsp;</td>
+			<td align="center">Placeholders</td>
+			<td align="center"><img alt="" src="/images/lot/winter_weatherwatcher/ProbSnowGE04_SFC.png" style="width: 200px; height: 215px;" /></td>
+			<td align="center"><img alt="" src="/images/lot/winter_weatherwatcher/ProbSnowGE06_SFC.png" style="width: 200px; height: 215px;" /></td>
 		</tr>
 	</tbody>
 </table>
@@ -1486,7 +1506,7 @@ $(document).ready(function(){
 <table border="0" cellpadding="1" cellspacing="5" width="850">
 	<tbody>
 		<tr style="font-weight: bold; color: rgb(204,0,0)">
-			<td align="center" bgcolor="#000099" colspan="2" width="100%">
+			<td align="center" bgcolor="#000099" colspan="1" width="100%">
 			<table border="0" cellpadding="1" cellspacing="5" width="850">
 				<tbody>
 					<tr style="font-weight: bold; color: rgb(204,0,0)">
@@ -1502,27 +1522,11 @@ $(document).ready(function(){
 		<tr>
 			<td align="center">
 			<p><span style="font-size:18px;"><strong>Expected Ice Accumulation Forecast</strong></span><br />
-			<a class="highslide" href="https://www.weather.gov/images/lot/winter/StormTotalIceWeb.png" id="icetotal" onclick="return hs.expand(this, {captionId: 'icetotal'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/StormTotalIceWeb.png" style="height: 644px; margin-top: 4px; margin-bottom: 4px; width: 600px;" title="Expected Ice Forecast" /></a></p>
-			</td>
-			<td align="center">
-			<p><span style="font-size:18px;"><strong>High-End Ice Potential</strong></span><br />
-			<a class="highslide" href="https://www.weather.gov/images/lot/winter/IceAccum90Prcntl.png" id="ice_90th" onclick="return hs.expand(this, {captionId: 'ice_90th'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/IceAccum90Prcntl.png" style="height: 301px; margin-top: 4px; margin-bottom: 4px; width: 280px;" title="High-End Ice Potential" /></a></p>
-
-			<p>&nbsp;</p>
-
-			<p>&nbsp;</p>
-
-			<p>&nbsp;</p>
-
-			<p>&nbsp;</p>
-
-			<p>&nbsp;</p>
-
-			<p>Interpreting these products</p>
+			<a class="highslide" href="https://www.weather.gov/images/lot/winter/StormTotalIceWeb.png" id="icetotal" onclick="return hs.expand(this, {captionId: 'icetotal'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/StormTotalIceWeb.png" style="height: 751px; margin-top: 4px; margin-bottom: 4px; width: 700px;" title="Expected Ice Forecast" /></a></p>
 			</td>
 		</tr>
 		<tr style="font-weight: bold; color: rgb(204,0,0)">
-			<td align="center" colspan="2" style="background-color: rgb(0, 0, 0);" width="100%"><span style="font-size:18px;"><font color="#ffff00">Ice Exceedance Probabilities</font></span></td>
+			<td align="center" colspan="1" style="background-color: rgb(0, 0, 0);" width="100%"><span style="font-size:18px;"><font color="#ffff00">Ice Exceedance Probabilities</font></span></td>
 		</tr>
 	</tbody>
 </table>
@@ -1540,9 +1544,13 @@ $(document).ready(function(){
 			<td align="center"><span style="font-size:16px;"><strong>&gt;= 0.5&quot;</strong></span></td>
 		</tr>
 		<tr>
-			<td align="center">&nbsp;</td>
-			<td align="center">&nbsp;</td>
-			<td align="center">&nbsp;</td>
+			<td align="center"><img alt="" src="/images/lot/winter_weatherwatcher/ProbIceGE010_SFC.png" style="width: 200px; height: 215px;" /></td>
+			<td align="center"><img alt="" src="/images/lot/winter_weatherwatcher/ProbIceGE025_SFC.png" style="width: 200px; height: 215px;" /></td>
+			<td align="center">
+			<p>&nbsp;</p>
+
+			<p>Placeholders</p>
+			</td>
 		</tr>
 	</tbody>
 </table>
@@ -1555,39 +1563,6 @@ $(document).ready(function(){
 
 <hr style="margin-bottom: 7px;" />
 <p style="text-align: center;">&nbsp;</p>
-
-<p style="text-align: center;"><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Snowfall Observations</span></strong></p>
-
-<center>
-<table align="center" border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
-	<colgroup>
-		<col span="1" style="width: 70%;" />
-		<col span="1" style="width: 30%;" />
-	</colgroup>
-	<tbody>
-		<tr>
-			<td>
-			<p class="subsec" style="text-align: center;"><span style="font-size:18px;">12-Hour Observed Snowfall Map (courtesy of IEM)</span></p>
-
-			<p class="subsec" style="text-align: center;">&nbsp;</p>
-
-			<p><img align="middle" alt="Forecast Points Information" src="https://mesonet.agron.iastate.edu/plotting/auto/plot/207/t:cwa::network:WFO::wfo:LOT::csector:cornbelt::p:both::endts:::hours:12::sz:50::f:linear::z:yes::coop:no::dpi:100.png" style="width: 700px; height: 400px;" title="Observed snowfall map" /></p>
-			</td>
-			<td style="text-align: center;">
-			<p><span style="font-size:16px;"><a href="https://www.weather.gov/source/crh/snowmap.html?sid=lot" rel="noopener noreferrer" target="_blank"><span style="color:#0000FF;">Color-Coded Local and National Snow Report Map</span></a></span></p>
-
-			<p><span style="font-size:20px;"><span style="color:#0000FF;"><a href="https://www.weather.gov/source/crh/snowmap.html?sid=lot" rel="noopener noreferrer" target="_blank"><img alt="" src="/images/lot/winter_weatherwatcher/LSR_inset.png" style="width: 180px; height: 181px;" /></a></span></span></p>
-
-			<p><span style="color: blue;"><span style="font- size:18px;">&lt;/handlerclass=TextProductIncludeWidget&siteid=lot&pil=PNS&description=Text%20Summary&headline=1&wrapperStart=&wrapperEnd=&hideIssuance=0&nullProduct=all&link=1&noProductText=&newline=0/&gt;</span></span></p>
-
-			<p><span style="font-size:20px;"><span style="color:#0000FF;"><a href="https://forecast.weather.gov/product.php?issuedby=LOT&amp;product=PNS&amp;site=lot" rel="noopener noreferrer" target="_blank"><img alt="" src="/images/lot/winter_weatherwatcher/PNS_inset.png" style="width: 180px; height: 150px;" /></a></span></span></p>
-			</td>
-		</tr>
-	</tbody>
-</table>
-</center>
-
-<center>&nbsp;</center>
 <!-- ------------------------------------------------ PROBABILISTIC SNOW AND ICE IMAGES ------------------------------------------------ -->
 
 <p style="text-align: center;"><!-- -------------------- WWA INFORMATION -------------------- --></p>
