@@ -10,13 +10,19 @@ font-size: 14px;
 <h1 class="alert" style="text-align: center;">This webpage is in active development. Data is not considered current!</h1>
 <meta content="600" http-equiv="REFRESH" />
 
-<div class="highslide-caption" id="snowtotal">Expected Snowfall Forecast</div>
+<div class="highslide-caption" id="probsnow02">Potential for at least 2 inches of snow</div>
 
-<div class="highslide-caption" id="snow_90th">High-End Snowfall Potential</div>
+<div class="highslide-caption" id="probsnow04">Potential for at least 4 inches of snow</div>
+
+<div class="highslide-caption" id="probsnow06">Potential for at least 6 inches of snow</div>
+
+<div class="highslide-caption" id="probice010">Potential for at least 0.10 inches of ice</div>
+
+<div class="highslide-caption" id="probice025">Potential for at least 0.25 inches of ice</div>
+
+<div class="highslide-caption" id="probice050">Potential for at least 0.50 inches of ice</div>
 
 <div class="highslide-caption" id="icetotal">Expected Ice Forecast</div>
-
-<div class="highslide-caption" id="ice_90th">High-End Ice Potential</div>
 
 <div class="highslide-caption" id="wxstorygraphictab1">Graphicast</div>
 
@@ -1175,7 +1181,7 @@ $(document).ready(function(){
 			<p class="subsec" style="text-align: center;"><img align="middle" alt="Forecast Points Information" src="https://mesonet.agron.iastate.edu/plotting/auto/plot/207/t:cwa::network:WFO::wfo:LOT::csector:cornbelt::p:both::endts:::hours:12::sz:50::f:linear::z:yes::coop:no::dpi:100.png" style="width: 700px; height: 400px;" title="Observed snowfall map" /></p>
 			</td>
 			<td style="text-align: center;">
-			<p><span style="font-size:16px;"><a href="https://www.weather.gov/source/crh/snowmap.html?sid=lot" rel="noopener noreferrer" target="_blank"><span style="color:#0000FF;">Color-Coded Local and National Snow Report Map</span></a></span></p>
+			<p><span style="font-size:18px;"><a href="https://www.weather.gov/source/crh/snowmap.html?sid=lot" rel="noopener noreferrer" target="_blank"><span style="color:#0000FF;">Color-Coded Local and National Snow Report Map</span></a></span></p>
 
 			<p><span style="font-size:20px;"><span style="color:#0000FF;"><a href="https://www.weather.gov/source/crh/snowmap.html?sid=lot" rel="noopener noreferrer" target="_blank"><img alt="" src="/images/lot/winter_weatherwatcher/LSR_inset.png" style="width: 180px; height: 181px;" /></a></span></span></p>
 
@@ -1183,6 +1189,9 @@ $(document).ready(function(){
 
 			<p><span style="font-size:20px;"><span style="color:#0000FF;"><a href="https://forecast.weather.gov/product.php?issuedby=LOT&amp;product=PNS&amp;site=lot" rel="noopener noreferrer" target="_blank"><img alt="" src="/images/lot/winter_weatherwatcher/PNS_inset.png" style="width: 180px; height: 150px;" /></a></span></span></p>
 			</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="text-align: center;"><span style="font-size:20px;"><span style="color:#0000FF;"><a href="https://www.weather.gov/lot/6hour_snow"><span style="color:#0000FF;">6-hour Snowfall and Snow Depth Reports (O&#39;Hare, Rockford, and NWS Chicago)</span></a></span></span></td>
 		</tr>
 	</tbody>
 </table>
@@ -1489,14 +1498,14 @@ $(document).ready(function(){
 	</colgroup>
 	<tbody>
 		<tr>
-			<td align="center"><span style="font-size:16px;"><strong>&gt;= 2&quot;</strong></span></td>
-			<td align="center"><span style="font-size:16px;"><strong>&gt;= 4&quot;</strong></span></td>
-			<td align="center"><span style="font-size:16px;"><strong>&gt;= 6&quot;</strong></span></td>
+			<td align="center"><span style="font-size:18px;"><strong>&gt;= 2&quot;</strong></span></td>
+			<td align="center"><span style="font-size:18px;"><strong>&gt;= 4&quot;</strong></span></td>
+			<td align="center"><span style="font-size:18px;"><strong>&gt;= 6&quot;</strong></span></td>
 		</tr>
 		<tr>
-			<td align="center">Placeholders</td>
-			<td align="center"><img alt="" src="/images/lot/winter_weatherwatcher/ProbSnowGE04_SFC.png" style="width: 200px; height: 215px;" /></td>
-			<td align="center"><img alt="" src="/images/lot/winter_weatherwatcher/ProbSnowGE06_SFC.png" style="width: 200px; height: 215px;" /></td>
+			<td align="center"><a class="highslide" href="https://www.weather.gov/images/lot/winter/ProbSnowGE02SFC.png" id="probsnow02" onclick="return hs.expand(this, {captionId: 'probsnow02'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/ProbSnowGE02SFC.png" style="margin-top: 4px; margin-bottom: 4px; width: 250px; height: 268px;" title="Potential for at least 2 inches of snow" /></a></td>
+			<td align="center"><a class="highslide" href="https://www.weather.gov/images/lot/winter/ProbSnowGE04SFC.png" id="probsnow04" onclick="return hs.expand(this, {captionId: 'probsnow04'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/ProbSnowGE04SFC.png" style="margin-top: 4px; margin-bottom: 4px; width: 250px; height: 268px;" title="Potential for at least 4 inches of snow" /></a></td>
+			<td align="center"><a class="highslide" href="https://www.weather.gov/images/lot/winter/ProbSnowGE06SFC.png" id="probsnow06" onclick="return hs.expand(this, {captionId: 'probsnow06'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/ProbSnowGE06SFC.png" style="margin-top: 4px; margin-bottom: 4px; width: 250px; height: 268px;" title="Potential for at least 6 inches of snow" /></a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1544,24 +1553,15 @@ $(document).ready(function(){
 			<td align="center"><span style="font-size:16px;"><strong>&gt;= 0.5&quot;</strong></span></td>
 		</tr>
 		<tr>
-			<td align="center"><img alt="" src="/images/lot/winter_weatherwatcher/ProbIceGE010_SFC.png" style="width: 200px; height: 215px;" /></td>
-			<td align="center"><img alt="" src="/images/lot/winter_weatherwatcher/ProbIceGE025_SFC.png" style="width: 200px; height: 215px;" /></td>
-			<td align="center">
-			<p>&nbsp;</p>
-
-			<p>Placeholders</p>
-			</td>
+			<td align="center"><a class="highslide" href="https://www.weather.gov/images/lot/winter/ProbIceGE010SFC.png" id="probice010" onclick="return hs.expand(this, {captionId: 'probice010'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/ProbIceGE010SFC.png" style="margin-top: 4px; margin-bottom: 4px; width: 250px; height: 268px;" title="Potential for at least 0.10 inch of ice" /></a></td>
+			<td align="center"><a class="highslide" href="https://www.weather.gov/images/lot/winter/ProbIceGE025SFC.png" id="probice025" onclick="return hs.expand(this, {captionId: 'probice025'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/ProbIceGE025SFC.png" style="margin-top: 4px; margin-bottom: 4px; width: 250px; height: 268px;" title="Potential for at least 0.25 inch of ice" /></a></td>
+			<td align="center"><a class="highslide" href="https://www.weather.gov/images/lot/winter/ProbIceGE050SFC.png" id="probice050" onclick="return hs.expand(this, {captionId: 'probice050'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/ProbIceGE050SFC.png" style="margin-top: 4px; margin-bottom: 4px; width: 250px; height: 268px;" title="Potential for at least 0.50 inch of ice" /></a></td>
 		</tr>
 	</tbody>
 </table>
 
-<p>&nbsp;</p>
-
-<p>&nbsp;</p>
-
 <p style="text-align: center;"><!-- -------------------- WWA INFORMATION -------------------- --></p>
 
-<hr style="margin-bottom: 7px;" />
 <p style="text-align: center;">&nbsp;</p>
 <!-- ------------------------------------------------ PROBABILISTIC SNOW AND ICE IMAGES ------------------------------------------------ -->
 
