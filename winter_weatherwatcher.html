@@ -6,6 +6,27 @@ font-family: verdana,geneva,sans-serif;
 font-weight:bold;
 font-size: 14px;
 }
+
+/* Styling for images that are designed to be enlarged via jquery script */
+img.magnify {
+	background-color:#ffffff;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	padding: 4px;
+	-webkit-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+	-moz-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+	box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+img.magnify:hover {
+	-webkit-box-shadow: 0 0 0px rgba(132, 132, 132, .75);
+	-moz-box-shadow: 0 0 0px rgba(132, 132, 132, .75);
+	box-shadow: 0 0 0px rgba(132, 132, 132, .75);
+}
 </style>
 <meta content="900" http-equiv="REFRESH" />
 <div class="highslide-caption" id="probsnow02">Potential for at least 2 inches of snow</div>
@@ -19,6 +40,8 @@ font-size: 14px;
 <div class="highslide-caption" id="probice025">Potential for at least 0.25 inches of ice</div>
 
 <div class="highslide-caption" id="probice050">Potential for at least 0.50 inches of ice</div>
+
+<div class="highslide-caption" id="stormtotal">Expected Snow Forecast</div>
 
 <div class="highslide-caption" id="icetotal">Expected Ice Forecast</div>
 
@@ -958,6 +981,8 @@ $.ajax({
 $(document).ready(function(){
     $("button").click(function(){
         $("#wwa").toggle();
+        $("#wwa1").toggle();
+        $("#wwa2").toggle();
     });
 });
 </script><script type="text/javascript">
@@ -1041,9 +1066,11 @@ $(document).ready(function(){
           
          
 </script><!-- END CODE FOR SETTING ORDER OF TABS BY ID. -->
-<h1>NWS Chicago, IL Winter Weather Watcher Briefing</h1>
+<h1>NWS Chicago, IL *Experimental* Winter Weather Watcher Briefing</h1>
 
-<p><span style="font-size:14px;">This page will auto-update every 15 minutes</span></p>
+<p><span style="font-size:14px;">This page will auto-update every 15 minutes.</span></p>
+
+<p><span style="font-size:14px;">If you notice old data, try reloading the page while ignoring caching by hitting Shift + F5 on a PC, or Command + R on a Mac.&nbsp;</span></p>
 
 <p><a href="http://www.weather.gov/lot" target="self"><span style="color: blue; font-size: 14px; font-face: trebuchet MS;">Back to NWS Chicago, IL Main Page</span></a><br />
 <!-- --------------------------------------------------------------------------------------------------- --> <!-- --------------------------------------------------------------------------------------------------- --> <!-- --------------------------------------------------------------------------------------------------- --> <!-- --------------------------------------------------------------------------------------------------- --> <!-- --------------------------------------------------------------------------------------------------- --></p>
@@ -1061,9 +1088,9 @@ $(document).ready(function(){
 <div id="Webcams">
 <p><!-- -------------------- Webcams Section -------------------- --></p>
 
-<p style="text-align: center;"><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Webcams</span></strong></p>
+<p style="text-align: center;"><span style="font-size:24px;"><strong><span style="color: black;">Webcams</span></strong></span></p>
 
-<p><span style="font-size:11px;"><strong>Note:</strong> Webcams are provided through third parties and may not always be up to date. Please check the time stamp on each image to ensure the image is current. </span></p>
+<p><span style="font-size:11px;"><strong>Note:</strong> Webcams are provided through third parties and may not always be up to date. Please check the time stamp on each image (where available) to ensure the image is current. Not all webcams have time stamp labels.</span></p>
 
 <p class="subsec">Northwest&nbsp;and North Central Illinois</p>
 
@@ -1072,9 +1099,9 @@ $(document).ready(function(){
 <table align="center" border="0" cellpadding="1" cellspacing="1" class="images" style="width: 820px; color: rgb(34, 34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Verdana, Arial, sans-serif; font-size: 13.33px; font-style: normal; font-weight: 400; margin-bottom: 10px; word-spacing: 0px; white-space: normal; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
 	<tbody>
 		<tr style="vertical-align: top;">
-			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://webpubcontent.gray.tv/wifr/Stream%20Thumbnail%20Main%20St%20Cam.jpg" onclick="return hs.expand(this)"><img align="middle" src="https://webpubcontent.gray.tv/wifr/Stream%20Thumbnail%20Main%20St%20Cam.jpg" style="width: 280px; height: 180px;" /></a></td>
-			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://webpubcontent.gray.tv/wifr/Stream%20Thumbnail%20State%20St%20Cam.jpg" onclick="return hs.expand(this)"><img align="middle" src="https://webpubcontent.gray.tv/wifr/Stream%20Thumbnail%20State%20St%20Cam.jpg" style="width: 270px; height: 180px;" /></a></td>
-			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://webpubcontent.gray.tv/wifr/Stream%20Thumbnail%20Rivercam.jpg" onclick="return hs.expand(this)"><img align="middle" src="https://webpubcontent.gray.tv/wifr/Stream%20Thumbnail%20Rivercam.jpg" style="width: 270px; height: 180px;" /></a></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><img alt="" class="magnify" data-magnifyby="4" src="https://webpubcontent.gray.tv/wifr/Stream%20Thumbnail%20Main%20St%20Cam.jpg" style="width: 280px; height: 158px;" /></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><img alt="" class="magnify" data-magnifyby="4" src="https://webpubcontent.gray.tv/wifr/Stream%20Thumbnail%20State%20St%20Cam.jpg" style="height: 169px; width: 280px;" /></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><img alt="" class="magnify" data-magnifyby="4" src="https://webpubcontent.gray.tv/wifr/Stream%20Thumbnail%20Rivercam.jpg" style="height: 169px; width: 280px;" /></td>
 		</tr>
 		<tr style="vertical-align: top;">
 			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">Downtown Rockford</td>
@@ -1087,8 +1114,8 @@ $(document).ready(function(){
 <table align="center" border="0" cellpadding="1" cellspacing="1" class="images" style="width: 820px; color: rgb(34, 34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Verdana, Arial, sans-serif; font-size: 13.33px; font-style: normal; font-weight: 400; margin-bottom: 10px; word-spacing: 0px; white-space: normal; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
 	<tbody>
 		<tr style="vertical-align: top;">
-			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="http://s3.amazonaws.com/nxsglobal/mystateline/weather/cameras/ChicagoSkydiving01.jpg" onclick="return hs.expand(this)"><img align="middle" src="http://s3.amazonaws.com/nxsglobal/mystateline/weather/cameras/ChicagoSkydiving01.jpg" style="width: 300px; height: 190px;" /></a></td>
-			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://www.travelmidwest.com/lmiga/snapshot?id=IL-IDOTD4-camera_305&amp;direction=S" onclick="return hs.expand(this)"><img align="middle" src="https://www.travelmidwest.com/lmiga/snapshot?id=IL-IDOTD4-camera_305&amp;direction=S" style="width: 300px; height: 190px;" /></a></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><img alt="" class="magnify" data-magnifyby="4" src="http://s3.amazonaws.com/nxsglobal/mystateline/weather/cameras/ChicagoSkydiving01.jpg" style="height: 190px; width: 300px;" /></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><img alt="" class="magnify" data-magnifyby="4" src="https://www.travelmidwest.com/lmiga/snapshot?id=IL-IDOTD4-camera_305&amp;direction=S" style="height: 190px; width: 300px;" /></td>
 		</tr>
 		<tr style="vertical-align: top;">
 			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">Rochelle Airport</td>
@@ -1104,9 +1131,9 @@ $(document).ready(function(){
 <table align="center" border="0" cellpadding="1" cellspacing="1" class="images" style="width: 820px; color: rgb(34, 34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Verdana, Arial, sans-serif; font-size: 13.33px; font-style: normal; font-weight: 400; margin-bottom: 10px; word-spacing: 0px; white-space: normal; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
 	<tbody>
 		<tr style="vertical-align: top;">
-			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://weather.cod.edu/skycam/current/skycam_ani.gif" onclick="return hs.expand(this)"><img align="middle" src="https://weather.cod.edu/skycam/current/skycam_ani.gif" style="width: 270px; height: 180px;" /></a></td>
-			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://www.lakecountypassage.com/snapshots/I-94_@_Lake_Cook_W_Ramp_cctv_North_Leg.jpg?x=1426097096000" onclick="return hs.expand(this)"><img align="middle" src="https://www.lakecountypassage.com/snapshots/I-94_@_Lake_Cook_W_Ramp_cctv_North_Leg.jpg?x=1426097096000" style="width: 260px; height: 180px;" /></a></td>
-			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://www.travelmidwest.com/lmiga/snapshot?id=IL-ISTHA-bkWelUZ79reGAKdLMh%2BMlC6jVSo%3D&amp;direction=S" onclick="return hs.expand(this)"><img align="middle" src="https://www.travelmidwest.com/lmiga/snapshot?id=IL-ISTHA-bkWelUZ79reGAKdLMh%2BMlC6jVSo%3D&amp;direction=S" style="width: 270px; height: 180px;" /></a></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><img alt="" class="magnify" data-magnifyby="4" src="https://weather.cod.edu/skycam/current/skycam_ani.gif" style="height: 190px; width: 270px;" /></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><img alt="" class="magnify" data-magnifyby="4" src="https://www.lakecountypassage.com/snapshots/I-94_@_Lake_Cook_W_Ramp_cctv_North_Leg.jpg?x=1426097096000" style="height: 190px; width: 270px;" /></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><img alt="" class="magnify" data-magnifyby="4" src="https://www.travelmidwest.com/lmiga/snapshot?id=IL-ISTHA-bkWelUZ79reGAKdLMh%2BMlC6jVSo%3D&amp;direction=S" style="height: 190px; width: 270px;" /></td>
 		</tr>
 		<tr style="vertical-align: top;">
 			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">College of DuPage, Glen Ellyn</td>
@@ -1121,9 +1148,9 @@ $(document).ready(function(){
 <table align="center" border="0" cellpadding="1" cellspacing="1" class="images" style="width: 820px; color: rgb(34, 34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Verdana, Arial, sans-serif; font-size: 13.33px; font-style: normal; font-weight: 400; margin-bottom: 10px; word-spacing: 0px; white-space: normal; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
 	<tbody>
 		<tr style="vertical-align: top;">
-			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://www.travelmidwest.com/lmiga/snapshot?id=IL-ISTHA-2541&amp;direction=S" onclick="return hs.expand(this)"><img align="middle" src="https://www.travelmidwest.com/lmiga/snapshot?id=IL-ISTHA-2541&amp;direction=S" style="width: 270px; height: 180px;" /></a></td>
-			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="http://www.glerl.noaa.gov/metdata/chi/chi1.jpg" onclick="return hs.expand(this)"><img align="middle" src="http://www.glerl.noaa.gov/metdata/chi/chi1.jpg" style="width: 270px; height: 180px;" /></a></td>
-			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://www.travelmidwest.com/lmiga/snapshot?id=IL-IDOT-DR7" onclick="return hs.expand(this)"><img align="middle" src="https://www.travelmidwest.com/lmiga/snapshot?id=IL-IDOT-DR7" style="width: 270px; height: 180px;" /></a></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><img alt="" class="magnify" data-magnifyby="4" src="https://www.travelmidwest.com/lmiga/snapshot?id=IL-ISTHA-2541&amp;direction=S" style="height: 180px; width: 270px;" /></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><img alt="" class="magnify" data-magnifyby="4" src="http://www.glerl.noaa.gov/metdata/chi/chi1.jpg" style="height: 180px; width: 270px;" /></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><img alt="" class="magnify" data-magnifyby="4" src="https://www.travelmidwest.com/lmiga/snapshot?id=IL-IDOT-DR7" style="height: 180px; width: 270px;" /></td>
 		</tr>
 		<tr style="vertical-align: top;">
 			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">O&#39;Hare Airport</td>
@@ -1135,13 +1162,13 @@ $(document).ready(function(){
 
 <p class="subsec">&nbsp;</p>
 
-<p class="subsec">Northwest Indiana and Central Illinois</p>
+<p class="subsec">Northwest Indiana</p>
 
 <table align="center" border="0" cellpadding="1" cellspacing="1" class="images" style="width: 820px; color: rgb(34, 34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Verdana, Arial, sans-serif; font-size: 13.33px; font-style: normal; font-weight: 400; margin-bottom: 10px; word-spacing: 0px; white-space: normal; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
 	<tbody>
 		<tr style="vertical-align: top;">
-			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://www.travelmidwest.com/lmiga/snapshot?id=IN-InDOT-1-094-009-9-1" onclick="return hs.expand(this)"><img align="middle" src="https://www.travelmidwest.com/lmiga/snapshot?id=IN-InDOT-1-094-009-9-1" style="width: 280px; height: 180px;" /></a></td>
-			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://www.travelmidwest.com/lmiga/snapshot?id=IN-InDOT-1-094-019-0-2" onclick="return hs.expand(this)" target="_blank"><img 280px="" align="middle" src="https://www.travelmidwest.com/lmiga/snapshot?id=IN-InDOT-1-094-019-0-2" style="width: 280px; height: 180px;" /></a></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><img alt="" class="magnify" data-magnifyby="4" src="https://www.travelmidwest.com/lmiga/snapshot?id=IN-InDOT-1-094-009-9-1" style="height: 180px; width: 280px;" /></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><img alt="" class="magnify" data-magnifyby="4" src="https://www.travelmidwest.com/lmiga/snapshot?id=IN-InDOT-1-094-019-0-2" style="height: 180px; width: 280px;" /></td>
 		</tr>
 		<tr style="vertical-align: top;">
 			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">I-80/65 Interchange near Gary</td>
@@ -1150,11 +1177,15 @@ $(document).ready(function(){
 	</tbody>
 </table>
 
+<p>&nbsp;</p>
+
+<p class="subsec">North Central Illinois</p>
+
 <table align="center" border="0" cellpadding="1" cellspacing="1" class="images" style="width: 820px; color: rgb(34, 34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Verdana, Arial, sans-serif; font-size: 13.33px; font-style: normal; font-weight: 400; margin-bottom: 10px; word-spacing: 0px; white-space: normal; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">
 	<tbody>
 		<tr style="vertical-align: top;">
-			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://www.travelmidwest.com/lmiga/snapshot?id=IL-IDOTD4-camera_301&amp;direction=N" onclick="return hs.expand(this)"><img align="middle" src="https://www.travelmidwest.com/lmiga/snapshot?id=IL-IDOTD4-camera_301&amp;direction=N" style="width: 280px; height: 191px;" /></a></td>
-			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><a class="highslide" href="https://www.travelmidwest.com/lmiga/snapshot?id=IL-IDOTD4-camera_324&amp;direction=N" onclick="return hs.expand(this)"><img align="middle" src="https://www.travelmidwest.com/lmiga/snapshot?id=IL-IDOTD4-camera_324&amp;direction=N" style="width: 280px; height: 191px;" /></a></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><img alt="" class="magnify" data-magnifyby="4" src="https://www.travelmidwest.com/lmiga/snapshot?id=IL-IDOTD4-camera_301&amp;direction=N" style="height: 190px; width: 280px;" /></td>
+			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;"><img alt="" class="magnify" data-magnifyby="4" src="https://www.travelmidwest.com/lmiga/snapshot?id=IL-IDOTD4-camera_324&amp;direction=N" style="height: 190px; width: 280px;" /></td>
 		</tr>
 		<tr style="vertical-align: top;">
 			<td style="padding: 5px 10px; width: 205px; text-align: center; font-size: 11px; vertical-align: top;">I-39 near LaSalle, IL</td>
@@ -1167,7 +1198,7 @@ $(document).ready(function(){
 <div id="Snowfall_Reports">
 <p><!-- -------------------- SNOWFALL TAB -------------------- --></p>
 
-<p style="text-align: center;"><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Snowfall Observations</span></strong></p>
+<p style="text-align: center;"><span style="font-size:24px;"><strong><span style="color: black;">Snowfall Observations</span></strong></span></p>
 
 <center>
 <table align="center" border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
@@ -1178,7 +1209,9 @@ $(document).ready(function(){
 	<tbody>
 		<tr>
 			<td>
-			<p class="subsec" style="text-align: center;"><span style="font-size:18px;">12-Hour Observed Snowfall Map (courtesy of IEM)</span></p>
+			<p class="subsec" style="text-align: center;"><span style="font-size:20px;">Observed Snowfall Analysis</span></p>
+
+			<p class="subsec" style="text-align: center;"><span style="font-size:14px;">Based on reports over the past 12 hours</span></p>
 
 			<p class="subsec" style="text-align: center;"><img align="middle" alt="Forecast Points Information" src="https://mesonet.agron.iastate.edu/plotting/auto/plot/207/v:snow::t:cwa::network:WFO::wfo:LOT::csector:IL::p:both::endts:::hours:24::sz:20::f:linear::z:yes::coop:no::dpi:100.png" style="width: 700px; height: 400px;" title="Observed snowfall map" /></p>
 			</td>
@@ -1204,6 +1237,8 @@ $(document).ready(function(){
 
 <div id="During">
 <p><!-- -------------------- REGIONAL RADAR SECTION -------------------- --></p>
+
+<p style="text-align: center;"><span style="font-size:24px;"><strong><span style="color: black;">0-36 Hours</span></strong></span></p>
 
 <p style="text-align: center;"><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Interactive Radar Display</span></strong></p>
 
@@ -1467,8 +1502,6 @@ $(document).ready(function(){
 
 <p><!-- ------------------------------------------------ PROBABILISTIC SNOW AND ICE IMAGES ------------------------------------------------ --></p>
 
-<p style="text-align: center;">These images will update around 3:45&nbsp;AM/PM, and additionally as needed.</p>
-
 <center>
 <table border="0" cellpadding="1" cellspacing="5" width="850">
 	<tbody>
@@ -1480,8 +1513,10 @@ $(document).ready(function(){
 		</tr>
 		<tr>
 			<td align="center">
-			<p><span style="font-size:18px;"><strong>Expected Snowfall Forecast</strong></span><br />
-			<a class="highslide" href="https://www.weather.gov/images/lot/winter/StormTotalSnowWeb.png" id="stormtotal" onclick="return hs.expand(this, {captionId: 'stormtotal'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/StormTotalSnow.png" style="height: 590px; margin-top: 4px; margin-bottom: 4px; width: 550px;" title="Expected Ice Forecast" /></a></p>
+			<p><span style="font-size:18px;"><strong>Expected Snowfall Forecast</strong></span></p>
+
+			<p>This image&nbsp;will update around 3:35&nbsp;AM/PM, and additionally as needed.<br />
+			<a class="highslide" href="https://www.weather.gov/images/lot/winter/StormTotalSnow.png" id="stormtotal" onclick="return hs.expand(this, {captionId: 'stormtotal'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/StormTotalSnow.png" style="height: 590px; margin-top: 4px; margin-bottom: 4px; width: 550px;" title="Expected SnowForecast" /></a></p>
 			</td>
 		</tr>
 		<tr style="font-weight: bold; color: rgb(204,0,0)">
@@ -1489,7 +1524,9 @@ $(document).ready(function(){
 		</tr>
 	</tbody>
 </table>
+</center>
 
+<center>These images will&nbsp;update around 3:45&nbsp;AM/PM
 <table border="0" cellpadding="1" cellspacing="5" width="890">
 	<colgroup>
 		<col span="1" style="width: 33.333%;" />
@@ -1530,7 +1567,9 @@ $(document).ready(function(){
 		</tr>
 		<tr>
 			<td align="center">
-			<p><span style="font-size:18px;"><strong>Expected Ice Accumulation Forecast</strong></span><br />
+			<p><span style="font-size:18px;"><strong>Expected Ice Accumulation Forecast</strong></span></p>
+
+			<p>This image&nbsp;will update around 3:35&nbsp;AM/PM, and additionally as needed.<br />
 			<a class="highslide" href="https://www.weather.gov/images/lot/winter/StormTotalIceWeb.png" id="icetotal" onclick="return hs.expand(this, {captionId: 'icetotal'})" target="_blank"><img align="middle" more="" or="" snow="" src="https://www.weather.gov/images/lot/winter/StormTotalIce.png" style="height: 590px; margin-top: 4px; margin-bottom: 4px; width: 550px;" title="Expected Ice Forecast" /></a></p>
 			</td>
 		</tr>
@@ -1539,7 +1578,9 @@ $(document).ready(function(){
 		</tr>
 	</tbody>
 </table>
+</center>
 
+<center>These images will&nbsp;update around 3:45&nbsp;AM/PM
 <table border="0" cellpadding="1" cellspacing="5" width="890">
 	<colgroup>
 		<col span="1" style="width: 33.333%;" />
@@ -1584,19 +1625,19 @@ $(document).ready(function(){
 			(click on your location on the map)</span><br />
 			<script language="javascript">
                 $(document).ready(function(){
-                   $("#wwamapImage3").click(function(e){
+                   $("#wwamapImage1").click(function(e){
                         var offset_l = $(this).offset().left - $(window).scrollLeft();
 			var offset_t = $(this).offset().top - $(window).scrollTop();
 			var left =  Math.round( (e.clientX - offset_l) );
 			var top = Math.round( (e.clientY - offset_t) );
 			//console.log("click position result --> X: " + left + ", Y: " + top);
-			$('#mapx3').val(left);
-			$('#mapy3').val(top);
+			$('#mapx1').val(left);
+			$('#mapy1').val(top);
                    });
                 });
 		</script>
 			<div id="wfomap_container3">
-			<form action="https://forecast.weather.gov/MapClick.php" method="get" name="HWGform3" target="new"><input align="middle" alt="Map of Forecast Area" id="wwamapImage3" src="/wwamap/png/lot.png" title="Map of Forecast Area" type="image" /> <input name="site" type="hidden" value="lot" /> <input name="zmx" type="hidden" value="" /> <input name="zmy" type="hidden" value="" /> <input id="mapx3" name="map_x" type="hidden" value="" /> <input id="mapy3" name="map_y" type="hidden" value="" /> <input id="FcstType" name="FcstType" type="hidden" value="graphical" /> <input id="w0" name="w0" type="hidden" value="t" /> <input id="w2" name="w2" type="hidden" value="hi" /> <input id="w3" name="w3" type="hidden" value="wc" /> <input id="w4" name="w4" type="hidden" value="sfcwind" /> <input id="w4u" name="w4u" type="hidden" value="1" /> <input id="w5" name="w5" type="hidden" value="pop" /> <input id="w7" name="w7" type="hidden" value="rain" /> <input id="w8" name="w8" type="hidden" value="thunder" /></form>
+			<form action="https://forecast.weather.gov/MapClick.php" method="get" name="HWGform3" target="new"><input align="middle" alt="Map of Forecast Area" id="wwamapImage1" src="/wwamap/png/lot.png" title="Map of Forecast Area" type="image" /> <input name="site" type="hidden" value="lot" /> <input name="zmx" type="hidden" value="" /> <input name="zmy" type="hidden" value="" /> <input id="mapx1" name="map_x" type="hidden" value="" /> <input id="mapy1" name="map_y" type="hidden" value="" /> <input id="FcstType" name="FcstType" type="hidden" value="graphical" /> <input id="w0" name="w0" type="hidden" value="t" /> <input id="w2" name="w2" type="hidden" value="hi" /> <input id="w3" name="w3" type="hidden" value="wc" /> <input id="w4" name="w4" type="hidden" value="sfcwind" /> <input id="w4u" name="w4u" type="hidden" value="1" /> <input id="w5" name="w5" type="hidden" value="pop" /> <input id="w7" name="w7" type="hidden" value="rain" /> <input id="w8" name="w8" type="hidden" value="thunder" /></form>
 			</div>
 			</td>
 		</tr>
@@ -1763,9 +1804,10 @@ $(document).ready(function(){
 
 <p style="text-align: center;">&nbsp;</p>
 </div>
-<!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- -->
 
 <div id="Days2_4"><!--  ------------------------------- HAZARDOUS WEATHER OUTLOOK ------------------------------- -->
+<p style="text-align: center;"><span style="font-size:24px;"><strong><span style="color: black;">Days 1.5 - 4</span></strong></span></p>
+
 <table align="center" border="0" cellpadding="1" cellspacing="1" class="images" style="width: 920px;">
 	<tbody>
 		<tr>
@@ -2084,19 +2126,19 @@ $(document).ready(function(){
 			(click on your location on the map)</span><br />
 			<script language="javascript">
                 $(document).ready(function(){
-                   $("#wwamapImage3").click(function(e){
+                   $("#wwamapImage2").click(function(e){
                         var offset_l = $(this).offset().left - $(window).scrollLeft();
 			var offset_t = $(this).offset().top - $(window).scrollTop();
 			var left =  Math.round( (e.clientX - offset_l) );
 			var top = Math.round( (e.clientY - offset_t) );
 			//console.log("click position result --> X: " + left + ", Y: " + top);
-			$('#mapx3').val(left);
-			$('#mapy3').val(top);
+			$('#mapx2').val(left);
+			$('#mapy2').val(top);
                    });
                 });
 		</script>
 			<div id="wfomap_container3">
-			<form action="https://forecast.weather.gov/MapClick.php" method="get" name="HWGform3" target="new"><input align="middle" alt="Map of Forecast Area" id="wwamapImage3" src="/wwamap/png/lot.png" title="Map of Forecast Area" type="image" /> <input name="site" type="hidden" value="lot" /> <input name="zmx" type="hidden" value="" /> <input name="zmy" type="hidden" value="" /> <input id="mapx3" name="map_x" type="hidden" value="" /> <input id="mapy3" name="map_y" type="hidden" value="" /> <input id="FcstType" name="FcstType" type="hidden" value="graphical" /> <input id="w0" name="w0" type="hidden" value="t" /> <input id="w2" name="w2" type="hidden" value="hi" /> <input id="w3" name="w3" type="hidden" value="wc" /> <input id="w4" name="w4" type="hidden" value="sfcwind" /> <input id="w4u" name="w4u" type="hidden" value="1" /> <input id="w5" name="w5" type="hidden" value="pop" /> <input id="w7" name="w7" type="hidden" value="rain" /> <input id="w8" name="w8" type="hidden" value="thunder" /></form>
+			<form action="https://forecast.weather.gov/MapClick.php" method="get" name="HWGform3" target="new"><input align="middle" alt="Map of Forecast Area" id="wwamapImage2" src="/wwamap/png/lot.png" title="Map of Forecast Area" type="image" /> <input name="site" type="hidden" value="lot" /> <input name="zmx" type="hidden" value="" /> <input name="zmy" type="hidden" value="" /> <input id="mapx2" name="map_x" type="hidden" value="" /> <input id="mapy2" name="map_y" type="hidden" value="" /> <input id="FcstType" name="FcstType" type="hidden" value="graphical" /> <input id="w0" name="w0" type="hidden" value="t" /> <input id="w2" name="w2" type="hidden" value="hi" /> <input id="w3" name="w3" type="hidden" value="wc" /> <input id="w4" name="w4" type="hidden" value="sfcwind" /> <input id="w4u" name="w4u" type="hidden" value="1" /> <input id="w5" name="w5" type="hidden" value="pop" /> <input id="w7" name="w7" type="hidden" value="rain" /> <input id="w8" name="w8" type="hidden" value="thunder" /></form>
 			</div>
 			</td>
 		</tr>
@@ -2110,7 +2152,7 @@ $(document).ready(function(){
 
 <p align="center" style="margin-top: 10px; margin-bottom: 10px;"><button>Show/Hide Map Key</button></p>
 
-<div id="wwa" style="display: none;">
+<div id="wwa1" style="display: none;">
 <table align="center" border="0" cellpadding="1" cellspacing="3" width="400">
 	<tbody>
 		<tr valign="middle">
@@ -2263,6 +2305,8 @@ $(document).ready(function(){
 <!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- -->
 
 <div id="Days4_7">
+<p style="text-align: center;"><span style="font-size:24px;"><strong><span style="color: black;">Days 4 - 7+</span></strong></span></p>
+
 <table align="center" border="0" cellpadding="1" cellspacing="1" class="images" style="width: 920px;">
 	<tbody>
 		<tr>
@@ -2601,7 +2645,7 @@ $(document).ready(function(){
 
 <p align="center" style="margin-top: 10px; margin-bottom: 10px;"><button>Show/Hide Map Key</button></p>
 
-<div id="wwa" style="display: none;">
+<div id="wwa2" style="display: none;">
 <table align="center" border="0" cellpadding="1" cellspacing="3" width="400">
 	<tbody>
 		<tr valign="middle">
@@ -2756,7 +2800,11 @@ $(document).ready(function(){
 <p><span style="color: black; font-size: 18px; font-face: trebuchet MS;">Winter Weather Watcher Training</span></p>
 
 <ul>
-	<li><span style="color: blue; font-size: 18px; font-face: trebuchet MS;"><a href="https://nwschat.weather.gov/" target="_blank">T</a>o be updated</span></li>
+	<li><a href="https://youtu.be/iEHCG13ykis"><span style="color:#0000FF;"><span style="font-size: 18px;">Winter Weather Watcher Video Tutorial (Youtube)</span></span></a></li>
+	<li><span style="font-size: 18px;">Winter Weather Watcher Quickstart Guide</span></li>
+	<li><span style="font-size: 18px;">Product Interpretation Tutorial Video (Coming Soon!)</span></li>
+	<li><span style="font-size: 18px;">Product Interpretation Guide (Coming Soon!)</span></li>
+	<li><a href="https://www.weather.gov/images/lot/winter_weatherwatcher/WSSI_Infographic.png"><span style="color:#0000FF;"><span style="font-size: 18px;">Winter Storm Severity Index Infographic</span></span></a><span style="font-size: 18px;">​</span></li>
 </ul>
 
 <p><span style="color: black; font-size: 18px; font-face: trebuchet MS;">Winter Weather Watching Tools</span></p>
@@ -4838,4 +4886,139 @@ BORDER-LEFT: black 2px solid; Z-INDEX: 100; PADDING-RIGHT: 2px; VISIBILITY: hidd
   display: block;
 }
 </style>
-</div>
+<p><!-- ************** PASTE Interactive Damage Map JAVASCRIPT *****************************
+*******************          in place of the          ***********************************					
+*******************       ENTIRE string of lines      *********************************** --></p>
+<!--CODE FOR EXPANDING IMAGES. DO NOT MODIFY.--><script type="text/javascript">
+
+/* jQuery Image Magnify script v1.1
+* This notice must stay intact for usage 
+* Author: Dynamic Drive at https://www.dynamicdrive.com/
+* Visit https://www.dynamicdrive.com/ for full source code
+*/
+
+jQuery.imageMagnify={
+	dsettings: {
+		magnifyby: 4, //default increase factor of enlarged image (was set to 3 originally)
+		duration: 500, //default duration of animation, in millisec
+		imgopacity: 0.2 //opacify of original image when enlarged image overlays it
+ 	},
+	zIndexcounter: 100,
+
+	refreshoffsets:function($window, $target, warpshell){
+		var $offsets=$target.offset()
+		var winattrs={x:$window.scrollLeft(), y:$window.scrollTop(), w:$window.width(), h:$window.height()}
+		warpshell.attrs.x=$offsets.left //update x position of original image relative to page
+		warpshell.attrs.y=$offsets.top
+		warpshell.newattrs.x=winattrs.x+winattrs.w/2-warpshell.newattrs.w/2
+		warpshell.newattrs.y=winattrs.y+winattrs.h/2-warpshell.newattrs.h/2
+		if (warpshell.newattrs.x<winattrs.x+5){ //no space to the left?
+			warpshell.newattrs.x=winattrs.x+5	
+		}
+		else if (warpshell.newattrs.x+warpshell.newattrs.w > winattrs.x+winattrs.w){//no space to the right?
+			warpshell.newattrs.x=winattrs.x+5
+		}
+		if (warpshell.newattrs.y<winattrs.y+5){ //no space at the top?
+			warpshell.newattrs.y=winattrs.y+5
+		}
+	},
+
+	magnify:function($, $target, options){
+		var setting={} //create blank object to store combined settings
+		var setting=jQuery.extend(setting, this.dsettings, options)
+		var attrs=(options.thumbdimensions)? {w:options.thumbdimensions[0], h:options.thumbdimensions[1]} : {w:$target.outerWidth(), h:$target.outerHeight()}
+		var newattrs={}
+		newattrs.w=(setting.magnifyto)? setting.magnifyto : Math.round(attrs.w*setting.magnifyby)
+		newattrs.h=(setting.magnifyto)? Math.round(attrs.h*newattrs.w/attrs.w) : Math.round(attrs.h*setting.magnifyby)
+		if ($target.data('imgshell')){
+			$target.data('imgshell').$clone.remove()
+			$target.css({opacity:1}).unbind('click.magnify')
+		}	
+		var $clone=$target.clone().css({position:'absolute', left:0, top:0, visibility:'hidden', border:'1px solid gray', cursor:'pointer'}).appendTo(document.body)
+		$clone.data('$relatedtarget', $target) //save $target image this enlarged image is associated with
+		$target.data('imgshell', {$clone:$clone, attrs:attrs, newattrs:newattrs})
+		$target.bind('click.magnify', function(e){ //action when original image is clicked on
+			var $this=$(this).css({opacity:setting.imgopacity})
+			var imageinfo=$this.data('imgshell')
+			jQuery.imageMagnify.refreshoffsets($(window), $this, imageinfo) //refresh offset positions of original and warped images
+			var $clone=imageinfo.$clone
+			$clone.stop().css({zIndex:++jQuery.imageMagnify.zIndexcounter, left:imageinfo.attrs.x, top:imageinfo.attrs.y, width:imageinfo.attrs.w, height:imageinfo.attrs.h, opacity:0, visibility:'visible', display:'block'})
+			.animate({opacity:1, left:imageinfo.newattrs.x, top:imageinfo.newattrs.y, width:imageinfo.newattrs.w, height:imageinfo.newattrs.h}, setting.duration,
+			function(){ //callback function after warping is complete
+				//none added		
+			}) //end animate
+		}) //end click
+		$clone.click(function(e){ //action when magnified image is clicked on
+			var $this=$(this)
+			var imageinfo=$this.data('$relatedtarget').data('imgshell')
+			jQuery.imageMagnify.refreshoffsets($(window), $this.data('$relatedtarget'), imageinfo) //refresh offset positions of original and warped images
+			$this.stop().animate({opacity:0, left:imageinfo.attrs.x, top:imageinfo.attrs.y, width:imageinfo.attrs.w, height:imageinfo.attrs.h},  setting.duration,
+			function(){
+				$this.hide()
+				$this.data('$relatedtarget').css({opacity:1}) //reveal original image
+			}) //end animate
+		}) //end click
+	}
+};
+
+jQuery.fn.imageMagnify=function(options){
+	var $=jQuery
+	return this.each(function(){ //return jQuery obj
+		var $imgref=$(this)
+		if (this.tagName!="IMG")
+			return true //skip to next matched element
+		if (parseInt($imgref.css('width'))>0 && parseInt($imgref.css('height'))>0 || options.thumbdimensions){ //if image has explicit width/height attrs defined
+			jQuery.imageMagnify.magnify($, $imgref, options)
+		}
+		else if (this.complete){ //account for IE not firing image.onload
+			jQuery.imageMagnify.magnify($, $imgref, options)
+		}
+		else{
+			$(this).bind('load', function(){
+				jQuery.imageMagnify.magnify($, $imgref, options)
+			})
+		}
+	})
+};
+
+jQuery.fn.applyMagnifier=function(options){ //dynamic version of imageMagnify() to apply magnify effect to an image dynamically
+	var $=jQuery
+	return this.each(function(){ //return jQuery obj
+		var $imgref=$(this)
+		if (this.tagName!="IMG")
+			return true //skip to next matched element
+		
+	})	
+
+};
+
+
+//** The following applies the magnify effect to images with class="magnify" and optional "data-magnifyby" and "data-magnifyduration" attrs
+//** It also looks for links with attr rel="magnify[targetimageid]" and makes them togglers for that image
+
+jQuery(document).ready(function($){
+	var $targets=$('.magnify')
+	$targets.each(function(i){
+		var $target=$(this)
+		var options={}
+		if ($target.attr('data-magnifyto'))
+			options.magnifyto=parseFloat($target.attr('data-magnifyto'))
+		if ($target.attr('data-magnifyby'))
+			options.magnifyby=parseFloat($target.attr('data-magnifyby'))
+		if ($target.attr('data-magnifyduration'))
+			options.duration=parseInt($target.attr('data-magnifyduration'))
+		$target.imageMagnify(options)
+	})
+	var $triggers=$('a[rel^="magnify["]')
+	$triggers.each(function(i){
+		var $trigger=$(this)
+		var targetid=$trigger.attr('rel').match(/\[.+\]/)[0].replace(/[\[\]']/g, '') //parse 'id' from rel='magnify[id]'
+		$trigger.data('magnifyimageid', targetid)
+		$trigger.click(function(e){
+			$('#'+$(this).data('magnifyimageid')).trigger('click.magnify')
+			e.preventDefault()
+		})
+	})
+})
+
+</script><!--END CODE FOR EXPANDING IMAGES.--></div>
