@@ -1,4 +1,4 @@
-<div class="cms-content"><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<div class="cms-content"><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script></div>
 <link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
 <link href="https://openlayers.org/en/v3.20.1/css/ol.css" rel="stylesheet" type="text/css" /><script src="https://openlayers.org/en/v3.20.1/build/ol.js" type="text/javascript"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"</script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" /><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -37,34 +37,62 @@ img.magnify:hover {
 </style>
 <meta content="900" http-equiv="REFRESH" />
 <div class="highslide-caption" id="probsnow02">Potential for at least 2 inches of snow</div>
+
 <div class="highslide-caption" id="probsnow04">Potential for at least 4 inches of snow</div>
+
 <div class="highslide-caption" id="probsnow06">Potential for at least 6 inches of snow</div>
+
 <div class="highslide-caption" id="probice010">Potential for at least 0.10 inches of ice</div>
+
 <div class="highslide-caption" id="probice025">Potential for at least 0.25 inches of ice</div>
+
 <div class="highslide-caption" id="probice050">Potential for at least 0.50 inches of ice</div>
+
 <div class="highslide-caption" id="stormtotal">Expected Snow Forecast</div>
+
 <div class="highslide-caption" id="icetotal">Expected Ice Forecast</div>
+
 <div class="highslide-caption" id="wxstorygraphictab1">Graphicast</div>
+
 <div class="highslide-caption" id="wxstorygraphictab3">Weather Story Graphic Tab 3</div>
+
 <div class="highslide-caption" id="wxstorygraphictab4">Weather Story Graphic Tab 4</div>
+
 <div class="highslide-caption" id="wxstorygraphictab5">Weather Story Graphic Tab 5</div>
+
 <div class="highslide-caption" id="regionalradar">Regional Radar Loop</div>
+
 <div class="highslide-caption" id="localradar">Local Radar Loop</div>
+
 <div class="highslide-caption" id="gnow">Graphical Nowcast</div>
+
 <div class="highslide-caption" id="wwamap">Local Watches, Advisories, and Warnings</div>
+
 <div class="highslide-caption" id="spcactivity">National Watches and Warnings</div>
+
 <div class="highslide-caption" id="wxstory">Weather Story</div>
+
 <div class="highslide-caption" id="wssi">Winter Storm Severity Index (Local Area)</div>
+
 <div class="highslide-caption" id="wssiconus">Winter Storm Severity Index (USA)</div>
+
 <div class="highslide-caption" id="wssiinfo">Winter Storm Severity Index General Information</div>
+
 <div class="highslide-caption" id="pointsinfo">Prototype IDSS Point Forecasts Page</div>
+
 <div class="highslide-caption" id="cpct610">6-10 Day Temperature Outlook</div>
+
 <div class="highslide-caption" id="cpcp610">6-10 Day Precipitation Outlook</div>
+
 <div class="highslide-caption" id="d37">3-7 Day Hazards Outlook</div>
+
 <div class="highslide-caption" id="cpct814">8-14 Day Temperature Outlook</div>
+
 <div class="highslide-caption" id="cpcp814">8-14 Day Precipitation Outlook</div>
+
 <div class="highslide-caption" id="d814">8-14 Day Hazards Outlook</div>
-<div class="highslide-caption" id="wind1">Day 1 Non-thunderstorm Wind Risk<br /></div>
+
+<div class="highslide-caption" id="wind1">Day 1 Non-thunderstorm Wind Risk</div>
 <style type="text/css">#wrapper {
 	OVERFLOW: hidden; WIDTH: 970px; MARGIN-LEFT: auto; MARGIN-RIGHT: auto
 }
@@ -198,7 +226,6 @@ nav UL LI:hover UL.fallback {
     padding: 10px;
 }
 </style>
-
 <style type="text/css">#dhtmltooltip {
 	BORDER-TOP: black 2px solid; BORDER-RIGHT: black 2px solid; WIDTH: 150px; BORDER-BOTTOM: black 2px solid; POSITION: absolute;
 
@@ -208,25 +235,24 @@ BORDER-LEFT: black 2px solid; Z-INDEX: 100; PADDING-RIGHT: 2px; VISIBILITY: hidd
 }
 </style>
 <div id="dhtmltooltip">&nbsp;</div>
-
-
 <!-- HWO Images Modal -->
+
 <div aria-hidden="true" aria-labelledby="imgModalLabel" class="modal fade" id="imgModal" role="dialog" tabindex="-1">
 <div class="modal-dialog modal-lg" role="document">
 <div class="modal-content">
 <div class="modal-header">
 <h5 class="modal-title" id="imgModalLabel">&nbsp;</h5>
 <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button></div>
+
 <div class="modal-body">
 <div id="hwoimg">&nbsp;</div>
+
 <hr />
 <div id="legend">&nbsp;</div>
 </div>
 </div>
 </div>
 </div>
-
-
 <script>
 
 // Limit the chiclet hazard display to winter-time hazards
@@ -254,10 +280,7 @@ var timePeriods3 = [
 function chiclets_tab() {
     $.ajax({
 		type: "GET",
-		//url: 'https://www.weather.gov/source/lot/ehwo/HBjson.json',
-
-		url: 'https://next.json-generator.com/api/json/get/EJUQp8V89',
-
+		url: '/source/lot/ehwo/HBjson.json',
 		cache: false,
 		dataType: "json",
 	    success: function(data){
@@ -336,10 +359,7 @@ function chiclets_tab() {
 	    //Change map based on which chicklet you click on
 	    complete: function() {
 			$('.chicklet').on('click', function(){
-    		newSrc = 'https://www.weather.gov' + $('a', this).attr('href');
-
-			//newSrc = $('a', this).attr('href');
-
+    		newSrc = $('a', this).attr('href');
     		newAttr = $(this).attr('alt');
     		newValidStartTime = $(this).attr('data-validTime');
     		$('#hwoimg').html( '<img class="image2" src="'+ newSrc +'" />' );
@@ -360,9 +380,7 @@ function makeLegend(newAttr){
 $.ajax({
 	type: "GET",
 
-	//url: "https://www.weather.gov/source/crh/ehwo/legend.json",
-
-	url: "https://next.json-generator.com/api/json/get/4yFuYPS8c",
+	url: "/source/crh/ehwo/legend.json",
 	cache: false,
 	dataType: "json",
     success: function(data){
@@ -387,11 +405,7 @@ $.ajax({
         }
     });
 }
-</script>
-
-
-
-<script type="text/javascript">
+</script><script type="text/javascript">
 
 /***********************************************
 * Cool DHTML tooltip script-
@@ -464,10 +478,7 @@ tipobj.style.width=''
 
 document.onmousemove=positiontip
 
-</script>
-
-<!-------- SCRIPT TO GET INFO FOR WX STORIES, GRAPHICASTS, ETC.  DO NOT MODIFY  --------->
-<script type="text/javascript">
+</script><!-------- SCRIPT TO GET INFO FOR WX STORIES, GRAPHICASTS, ETC.  DO NOT MODIFY  ---------><script type="text/javascript">
 $( document ).ready(function() {
 $.ajax({
 	type: "GET",
@@ -542,10 +553,7 @@ $('#morewxstorytabsalert3').html('<p><em><a href="/lot/weatherstory" target="bla
 	 }
 });
 });
-</script>
-
-<!------------------ SCRIPT TO GET INFO FOR sitreport.  DO NOT MODIFY  ------------------>
-<script type="text/javascript">
+</script><!------------------ SCRIPT TO GET INFO FOR sitreport.  DO NOT MODIFY  ------------------><script type="text/javascript">
 $( document ).ready(function() {
 $.ajax({
 	type: "GET",
@@ -587,10 +595,7 @@ $(document).ready(function(){
         $("#wwa2").toggle();
     });
 });
-</script>
-
-<!--END CODE FOR STRIPPING OUT TOP AND SIDE BARS.-->
-<script type="text/javascript">
+</script><!--END CODE FOR STRIPPING OUT TOP AND SIDE BARS.--><script type="text/javascript">
 $(document).ready(function(){
      $('.subMenuNav').remove();          // Remove the local menus
      $('.one-sixth-first').remove();     // Remove Widget
@@ -608,19 +613,13 @@ $(document).ready(function(){
 	 chiclets_tab();
 });
 
-</script>
-
-<!--CODE FOR TOGGLING KEY FOR MAPS. DO NOT MODIFY. -->
-<script>
+</script><!--CODE FOR TOGGLING KEY FOR MAPS. DO NOT MODIFY. --><script>
 $(document).ready(function(){
 	$("button").click(function(){
 		$("#mapkey").toggle();
 	});
 });
-</script>
-
-<!--CODE FOR TABS. DO NOT MODIFY.-->
-<script type='text/javascript'>
+</script><!--CODE FOR TABS. DO NOT MODIFY.--><script type='text/javascript'>
    "use strict";
    $(function() {
       $( "#tabs" ).tabs({
@@ -628,23 +627,18 @@ $(document).ready(function(){
          });
        });
 </script>
-
 <style type="text/css">input[type="radio"]:checked ~ .tab {
 	display: block;
 }
 </style>
-
 <script type="text/javascript">
     function init(){
         var linkPage = document.getElementById('top').href;
         window.location.href = linkPage;
     }
     onload=init;
-</script>
-
-<!-------------------- Allow initial display by tab ID, not by number ------------------->
-<div class="cms-content">
-<script type='text/javascript'>
+</script><!-------------------- Allow initial display by tab ID, not by number ------------------->
+<div class="cms-content"><script type='text/javascript'>
 	"use strict";
     $(document).ready(function(){
 		$.fn.tabIndex = function () {
@@ -669,9 +663,12 @@ $(document).ready(function(){
 
 </script><!-- END CODE FOR SETTING ORDER OF TABS BY ID. -->
 <h1>NWS Chicago, IL *Experimental* Winter Weather Watcher Briefing</h1>
+
 <p><span style="font-size:14px;">This page will auto-update every 15 minutes.</span></p>
+
 <p><span style="font-size:14px;">If you notice old data, try reloading the page while ignoring caching by hitting Shift + F5 on a PC, or Command + R on a Mac.&nbsp;</span></p>
-<p><a href="http://www.weather.gov/lot" target="self"><span style="color: blue; font-size: 14px; font-face: trebuchet MS;">Back to NWS Chicago, IL Main Page</span></a><br /></p>
+
+<p><a href="http://www.weather.gov/lot" target="self"><span style="color: blue; font-size: 14px; font-face: trebuchet MS;">Back to NWS Chicago, IL Main Page</span></a></p>
 
 <div id="tabs" style="width: 950px;">
 <ul>
@@ -925,16 +922,16 @@ $(document).ready(function(){
 			<center><span style="font-size: 18px;"><a href="https://www.weather.gov/lot/ehwo" id="ehwo" target="_blank"><font color="blue">Enhanced Hazardous Weather Outlook</font></a></span></center>
 
 			<p><em><span style="font-size: 14px;">Click&nbsp;an individual hazard block below for more information</span></em></p>
-
 			<!-- Chiclet Table Day Of -->
-             <table class="table borderless table-hover table chickletTable1">
-            	<tbody class="ghwo">
-            	</tbody>
-            	<thead>
+
+			<table class="table borderless table-hover table chickletTable1">
+				<tbody class="ghwo">
+				</tbody>
+				<thead>
 					<tr class="ghwo" id="titleRow1">
 					</tr>
-            	</thead>
-            </table>
+				</thead>
+			</table>
 
 			<table align="center" bgcolor="#eeeeee" border="0">
 				<tbody>
@@ -960,19 +957,19 @@ $(document).ready(function(){
 					</tr>
 					<tr>
 						<td>
-                        <div class="chicklet-key" style="background-color: green"></div>
+						<div class="chicklet-key" style="background-color: green">&nbsp;</div>
 						</td>
 						<td>
-						<div class="chicklet-key" style="background-color: yellow"></div>
+						<div class="chicklet-key" style="background-color: yellow">&nbsp;</div>
 						</td>
 						<td>
-						<div class="chicklet-key" style="background-color: orange"></div>
+						<div class="chicklet-key" style="background-color: orange">&nbsp;</div>
 						</td>
 						<td>
-						<div class="chicklet-key" style="background-color: red"></div>
+						<div class="chicklet-key" style="background-color: red">&nbsp;</div>
 						</td>
 						<td>
-						<div class="chicklet-key" style="background-color: purple"></div>
+						<div class="chicklet-key" style="background-color: purple">&nbsp;</div>
 						</td>
 					</tr>
 				</tbody>
@@ -1388,8 +1385,8 @@ $(document).ready(function(){
 
 			<p style="text-align: center;"><br />
 			<em>Click&nbsp;an individual hazard block below for more information.</em></p>
-
 			<!-- Chiclet Table Days 1.5-4 -->
+
 			<table class="table borderless table-hover table chickletTable2">
 				<tbody class="ghwo">
 				</tbody>
@@ -1398,7 +1395,6 @@ $(document).ready(function(){
 					</tr>
 				</thead>
 			</table>
-
 
 			<table align="center" bgcolor="#eeeeee" border="0">
 				<tbody>
@@ -1424,19 +1420,19 @@ $(document).ready(function(){
 					</tr>
 					<tr>
 						<td>
-                        <div class="chicklet-key" style="background-color: green"></div>
+						<div class="chicklet-key" style="background-color: green">&nbsp;</div>
 						</td>
 						<td>
-						<div class="chicklet-key" style="background-color: yellow"></div>
+						<div class="chicklet-key" style="background-color: yellow">&nbsp;</div>
 						</td>
 						<td>
-						<div class="chicklet-key" style="background-color: orange"></div>
+						<div class="chicklet-key" style="background-color: orange">&nbsp;</div>
 						</td>
 						<td>
-						<div class="chicklet-key" style="background-color: red"></div>
+						<div class="chicklet-key" style="background-color: red">&nbsp;</div>
 						</td>
 						<td>
-						<div class="chicklet-key" style="background-color: purple"></div>
+						<div class="chicklet-key" style="background-color: purple">&nbsp;</div>
 						</td>
 					</tr>
 				</tbody>
@@ -1510,9 +1506,13 @@ $(document).ready(function(){
 <p>&nbsp;</p>
 
 <center><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Weather Prediction Center Outlook Products</span></strong></center>
+
 <center>&nbsp;</center>
+
 <center><span style="color: black; font-size: 16px; font-face: trebuchet MS;">Graphics will update at approximately: 4 AM | 8 AM | 2 PM | 4 PM | 8 PM CST </span></center>
+
 <center>&nbsp;</center>
+
 <table align="center" border="0" cellpadding="1" cellspacing="1" width="100%">
 	<colgroup>
 		<col span="1" style="width: 33%;" />
@@ -1534,6 +1534,7 @@ $(document).ready(function(){
 </table>
 
 <center>&nbsp;</center>
+
 <table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
 	<tbody>
 		<tr>
@@ -1550,15 +1551,21 @@ $(document).ready(function(){
 </table>
 
 <p>&nbsp;</p>
+
 <hr style="margin-bottom: 7px;" />
 <p style="text-align: center;"><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Detailed Hourly Forecasts</span></strong></p>
+
 <center>&nbsp;</center>
+
 <center><span style="font-size:16px;"><a href="https://go.usa.gov/x7Y4J" target="_blank"><span style="color: blue;">Interactive Detailed Forecast Webpage</span></a></span></center>
+
 <center>&nbsp;</center>
 
 <p style="text-align: center;"><!-- -------------------- WWA INFORMATION -------------------- --></p>
+
 <hr style="margin-bottom: 7px;" />
 <p style="text-align: center;"><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Detailed Forecasts (Legacy Point and Click Page)</span></strong></p>
+
 <center>
 <table border="0" cellpadding="1" cellspacing="1" width="900">
 	<tbody>
@@ -1779,8 +1786,8 @@ $(document).ready(function(){
 
 			<p style="text-align: center;"><br />
 			<em>Click&nbsp;an individual hazard block below for more information.</em></p>
-
 			<!-- Chiclet Table Days 4+ -->
+
 			<table class="table borderless table-hover table chickletTable3">
 				<tbody class="ghwo">
 				</tbody>
@@ -1814,19 +1821,19 @@ $(document).ready(function(){
 					</tr>
 					<tr>
 						<td>
-                        <div class="chicklet-key" style="background-color: green"></div>
+						<div class="chicklet-key" style="background-color: green">&nbsp;</div>
 						</td>
 						<td>
-						<div class="chicklet-key" style="background-color: yellow"></div>
+						<div class="chicklet-key" style="background-color: yellow">&nbsp;</div>
 						</td>
 						<td>
-						<div class="chicklet-key" style="background-color: orange"></div>
+						<div class="chicklet-key" style="background-color: orange">&nbsp;</div>
 						</td>
 						<td>
-						<div class="chicklet-key" style="background-color: red"></div>
+						<div class="chicklet-key" style="background-color: red">&nbsp;</div>
 						</td>
 						<td>
-						<div class="chicklet-key" style="background-color: purple"></div>
+						<div class="chicklet-key" style="background-color: purple">&nbsp;</div>
 						</td>
 					</tr>
 				</tbody>
@@ -2122,15 +2129,15 @@ $(document).ready(function(){
 <a href="https://nwschat.weather.gov/" target="_blank"><span style="color: blue; font-size: 20px; font-face: trebuchet MS;">Link to NWSChat</span></a></p>
 </div>
 
-
 <div id="Planning">
 <p><span style="color: black; font-size: 18px; font-face: trebuchet MS;">Winter Weather Watcher Training</span></p>
+
 <ul>
-	<li><a href="https://youtu.be/iEHCG13ykis"><span style="color:#0000FF;"><span style="font-size: 18px;">Winter Weather Watcher Video Tutorial (Youtube)</span></span></a></li>
-	<li><a href="https://www.weather.gov/media/lot/wxwatcher/NWS_Chicago_Winter_Weather_Watcher_Website_Guide.pdf"><span style="color:#0000FF;"><span style="font-size: 18px;">Winter Weather Watcher Quickstart Guide</span></span></a></li>
+	<li><a href="https://youtu.be/iEHCG13ykis" target="_blank"><span style="color:#0000FF;"><span style="font-size: 18px;">Winter Weather Watcher Video Tutorial (Youtube)</span></span></a></li>
+	<li><a href="https://www.weather.gov/media/lot/wxwatcher/NWS_Chicago_Winter_Weather_Watcher_Website_Guide.pdf" target="_blank"><span style="color:#0000FF;"><span style="font-size: 18px;">Winter Weather Watcher Quickstart Guide</span></span></a></li>
 	<li><span style="font-size: 18px;">Product Interpretation Tutorial Video (Coming Soon!)</span></li>
 	<li><span style="font-size: 18px;">Product Interpretation Guide (Coming Soon!)</span></li>
-	<li><a href="https://www.weather.gov/images/lot/winter_weatherwatcher/WSSI_Infographic.png"><span style="color:#0000FF;"><span style="font-size: 18px;">Winter Storm Severity Index Infographic</span></span></a><span style="font-size: 18px;">​</span></li>
+	<li><a href="https://www.weather.gov/images/lot/winter_weatherwatcher/WSSI_Infographic.png" target="_blank"><span style="color:#0000FF;"><span style="font-size: 18px;">Winter Storm Severity Index Infographic</span></span></a><span style="font-size: 18px;">​</span></li>
 </ul>
 
 <p><span style="color: black; font-size: 18px; font-face: trebuchet MS;">Winter Weather Watching Tools</span></p>
@@ -2141,7 +2148,6 @@ $(document).ready(function(){
 	<li><a href="https://www.weather.gov/lot/winterprepare"><span style="color: blue; font-size: 18px; font-face: trebuchet MS;">Winter Weather Preparedness</span></a></li>
 </ul>
 </div>
-
 <!--**************START OF REALLY UNNECESSARILY LONG BLOCK OF CODE*********************-->
 <style type="text/css">.highslide-active-anchor IMG {
 	VISIBILITY: hidden
