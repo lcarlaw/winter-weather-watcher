@@ -299,9 +299,6 @@ function chiclets_tab() {
 				var col7 = "#"+col4;
 
 	            var altName = item.name;
-				if (item.name == 'NonThunderstorm Wind Risk'){
-					altName = 'Non-Thunderstorm Wind Risk'
-				}
                 if (jQuery.inArray(item.name, hazardNames) !== -1){
 					$('.chickletTable1').append('<tr id="'+col2+'" class="leftCol"><td>' +
 						                        altName+'</td></tr>' );
