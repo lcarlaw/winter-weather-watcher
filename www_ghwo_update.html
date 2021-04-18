@@ -1,0 +1,521 @@
+<div class="cms-content"><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+<link href="https://openlayers.org/en/v3.20.1/css/ol.css" rel="stylesheet" type="text/css" /><script src="https://openlayers.org/en/v3.20.1/build/ol.js" type="text/javascript"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"</script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" /><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" rel="stylesheet" />
+<link href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css" rel="stylesheet" /><script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" /><script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script><script src="https://momentjs.com/downloads/moment.js"></script><meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">#map2 {
+height: 420px;
+padding-bottom: 5px;
+padding-top:5px;
+}
+
+	#afd, #hwo {
+		white-space: pre-line;
+		}
+
+	.badge {
+		margin-right: 5px;
+		color: white;
+		}
+
+	.badge-green {
+		background-color: green;
+		}
+
+	.badge-yellow {
+		background-color: yellow;
+		color: black;
+		}
+
+	.badge-orange {
+		background-color: orange;
+		}
+
+	.badge-red {
+		background-color: red;
+		}
+
+	.badge-purple {
+		background-color: purple;
+		}
+
+	.chicklet {
+		width: 25px;
+		height: 12px;
+		border-radius:2px;
+	    -moz-border-radius:5px;
+	    margin: 0px auto;
+	    vertical-align: middle;
+	    -moz-box-shadow: 0px 3px 4px #d6d6d6;
+		-webkit-box-shadow: 0px 3px 4px #d6d6d6;
+		box-shadow: 0px 3px 4px #d6d6d6;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#d6d6d6')";
+		filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#d6d6d6');
+		}
+
+    .chicklet-key {
+        width: 50px;
+        height: 24px;
+        border-radius:4px;
+        -moz-border-radius:2px;
+        margin: 0px auto;
+        vertical-align: middle;
+        -moz-box-shadow: 0px 3px 4px #d6d6d6;
+        -webkit-box-shadow: 0px 3px 4px #d6d6d6;
+        box-shadow: 0px 3px 4px #d6d6d6;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#d6d6d6')";
+        filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#d6d6d6');
+    }
+
+	th {
+		text-align: center;
+		font-weight: normal;
+		}
+
+	.image2 {
+		max-width: -webkit-fill-available;
+		}
+
+	#wxstory2, #wxstory3 {
+		width: 50%;
+		}
+
+	@media (max-width: 790px) {
+
+		.header-content > a > img {
+		  width: 100%;
+		}
+
+		a.header-nws {
+		    max-width: 80%;
+		}
+
+		a.header-noaa {
+		    max-width: 7%;
+		}
+
+		a.header-doc {
+		    max-width: 17%;
+		}
+
+		.infowrapper {
+		    font-size: 16px;
+		    font-weight: bold;
+		}
+
+		.header {
+		    height: 33px;
+		}
+
+}
+
+#disclaimer_window {
+	width: 755px;
+	border: solid 0px;
+	background-color: rgb(230, 230, 230);
+	text-align: center;
+}
+#disclaimer_window:hover {
+	box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+}
+#disclaimer_title_bar {
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 50, 50);
+	width: 755px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: lucida sans unicode, lucida grande, sans-serif;
+}
+#disclaimer_button {
+	width: 25px;
+	height: 18px;
+	display: block;
+	font-weight: bold;
+	float: right;
+	cursor: pointer;
+	text-align: center;
+	font-size: 16px;
+	font-family: 'lucida sans unicode', 'lucida grande', sans-serif;
+}
+#disclaimer_button:hover {
+	float: right;
+	display: inline-block;
+	color: rgb(255,255,255);
+}
+#disclaimer_body {
+	padding: 2px;
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'lucida sans unicode', 'lucida grande', sans-serif;
+	font-size: 14px;
+	width: 751px;
+	background-color: rgb(230,230,230);
+}
+</style>
+
+<!-- HWO Images Modal -->
+<div aria-hidden="true" aria-labelledby="imgModalLabel" class="modal fade" id="imgModal" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="imgModalLabel">&nbsp;</h5>
+<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button></div>
+<div class="modal-body">
+<div id="hwoimg">&nbsp;</div>
+<hr />
+<div id="legend">&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="pos-f-t">
+<nav class="navbar navbar-light bg-light">
+
+
+<script>
+
+// Limit the chiclet hazard display to winter-time hazards
+var hazardNames = [
+    "Snow Sleet Risk",
+    "Fog Risk",
+    "Excessive Cold Risk",
+    "Ice Accumulation Risk",
+    "NonThunderstorm Wind Risk",
+    "Coastal Flood Risk"
+]
+
+var timePeriods2 = [
+	"period2",
+	"period3",
+	"period4"
+]
+
+var timePeriods3 = [
+	"period5",
+	"period6",
+	"period7"
+]
+
+$(document).ready(function(){
+	$('#myfcst-widget, .content, .one-sixth-first, .breadcrumb, .subMenuNav').remove();
+	$('.full-width-border').css('border-top', 'white');
+    $('.partial-width-borderbottom').css('border-bottom', 'white');
+    $('.five-sixth-first').css({
+ 		'width' : '100%',
+		'padding-right': '0px',
+		'padding-left': '0px'
+	});
+	chiclets_tab();
+});
+
+function chiclets_tab() {
+    $.ajax({
+		type: "GET",
+		//url: 'https://www.weather.gov/source/lot/ehwo/HBjson.json',
+
+		url: 'https://next.json-generator.com/api/json/get/EJUQp8V89',
+
+		cache: false,
+		dataType: "json",
+	    success: function(data){
+			var k = moment(data.generation_time).format('dddd');
+	        var time = moment(data.generation_time).format('MMMM Do YYYY, h:mm:ss a');
+			var time2 = moment(data.generation_time).format('MMMM Do YYYY, h:mm a');
+			console.log(k, time)
+	        var days = [];
+	        var daysRequired = 6;
+	        $( '.productUpdate' ).append( time );
+			updateTime = k + ' ' + time2
+			$("#titleRow1").append('<th style="text-align:left !important; font-size:11px">Last Update: '+updateTime+'</th>');
+			$("#titleRow2").append('<th style="text-align:left !important; font-size:11px">Last Update: '+updateTime+'</th>');
+			$("#titleRow3").append('<th style="text-align:left !important; font-size:11px">Last Update: '+updateTime+'</th>');
+
+	        for (let i = 1; i <= daysRequired; i++) {
+	          days.push( moment(data.generation_time).add(i, 'days').format('ddd'))
+	        }
+
+			$.each(days, function(i, item){
+				if (i <3 ){
+					$('#titleRow2').append('<th>'+item+'</th>');
+			    }
+				else{
+					$('#titleRow3').append('<th>'+item+'</th>');
+				}
+			})
+
+	        //Loop through json and color chicklets. We're only grabbing
+	        $.each( data.hazards, function(i, item) {
+	            var col = i;
+	            col++;
+	            var col2 = "col"+i;
+				var col3 = "col"+(i*4);
+				var col4 = "col"+(i*10);
+
+				var col5 = "#"+col2;
+				var col6 = "#"+col3;
+				var col7 = "#"+col4;
+
+	            var altName = item.name;
+				if (item.name == 'NonThunderstorm Wind Risk'){
+					altName = 'Non-Thunderstorm Wind Risk'
+				}
+                if (jQuery.inArray(item.name, hazardNames) !== -1){
+					$('.chickletTable1').append('<tr id="'+col2+'" class="leftCol"><td>' +
+						                        altName+'</td></tr>' );
+					$('.chickletTable2').append('<tr id="'+col3+'" class="leftCol"><td>' +
+						                        altName+'</td></tr>' );
+					$('.chickletTable3').append('<tr id="'+col4+'" class="leftCol"><td>' +
+									            altName+'</td></tr>' );
+					$.each(this.periods, function(i,item) {
+                        if (i == 'period1'){
+					        $(col5).append('<td><div class="chicklet" alt="'+ altName +
+					        '" data-toggle="modal" data-target="#imgModal" data-date="'+
+							item.date+'" data-validTime="'+ item.validStartTime +
+							'" style="background-color:'+ item.color +'"><a href="'+
+							item.imagePath +'"></a></div></td>');
+                        }
+						if (jQuery.inArray(i, timePeriods2) !== -1){
+							$(col6).append('<td><div class="chicklet" alt="'+ altName +
+					        '" data-toggle="modal" data-target="#imgModal" data-date="'+
+							item.date+'" data-validTime="'+ item.validStartTime +
+							'" style="background-color:'+ item.color +'"><a href="'+
+							item.imagePath +'"></a></div></td>');
+						}
+						if (jQuery.inArray(i, timePeriods3) !== -1){
+							$(col7).append('<td><div class="chicklet" alt="'+ altName +
+					        '" data-toggle="modal" data-target="#imgModal" data-date="'+
+							item.date+'" data-validTime="'+ item.validStartTime +
+							'" style="background-color:'+ item.color +'"><a href="'+
+							item.imagePath +'"></a></div></td>');
+						}
+                    })
+                }
+			})
+	    },
+
+	    //Change map based on which chicklet you click on
+	    complete: function() {
+			$('.chicklet').on('click', function(){
+    		newSrc = 'https://www.weather.gov' + $('a', this).attr('href');
+
+			//newSrc = $('a', this).attr('href');
+
+    		newAttr = $(this).attr('alt');
+    		newValidStartTime = $(this).attr('data-validTime');
+    		$('#hwoimg').html( '<img class="image2" src="'+ newSrc +'" />' );
+    		$('#imgModalLabel').html(newAttr);
+    		$('#legend').empty();
+    		makeLegend(newAttr);
+		});
+    	var img = $(".chickletTable1 tr td:eq(1)").find("div a").attr("href");
+    	var title = $(".chickletTable1 tr td:eq(1)").find("div").attr("alt");
+		$('#img').html( '<img class="image2" src="'+ img +'" />' );
+    	$('.maptitle').html(title);
+    	makeLegend(title);
+	    }
+    })
+}
+
+function makeLegend(newAttr){
+$.ajax({
+	type: "GET",
+
+	//url: "https://www.weather.gov/source/crh/ehwo/legend.json",
+
+	url: "https://next.json-generator.com/api/json/get/4yFuYPS8c",
+	cache: false,
+	dataType: "json",
+    success: function(data){
+
+    	//Loop through json to populate legend
+        $.each( data.hazards, function(i, item) {
+        	var legendID = item.name;
+        		if (legendID == newAttr){
+        			legendID = legendID.replace(/\s+/g, '');
+        			var leg = "#"+legendID;
+        				$.each(this.category, function(i,item) {
+        					$("#legend").append('<tr class="'+ legendID +
+							'"><td style="padding: 5px; vertical-align:middle;">'+
+							'<div class="chicklet" style="background-color:'+ item.color +
+							'"></div></td><td style="padding: 5px; vertical-align:middle;">'+
+							item.levelName +
+							'</td><td style="padding: 5px; vertical-align:middle;">'+
+							item.definition +'</td></tr>');
+        				})
+        		    }
+            })
+        }
+    });
+}
+</script>
+
+
+<p style="text-align: center;"><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Graphical Messaging Information</span></strong></p>
+<p style="text-align: center;">&nbsp;</p>
+<!--  BEGIN Day 1 EHWO SECTION -->
+
+<table align="center" border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
+	<colgroup>
+		<col span="1" style="width: 25%;" />
+		<col span="1" style="width: 1%;" />
+		<col span="1" style="width: 74%;" />
+	</colgroup>
+	<tbody>
+		<tr>
+			<td nowrap="nowrap">
+			<center><span style="font-size: 18px;"><a href="https://www.weather.gov/lot/ehwo" id="ehwo" target="_blank"><font color="blue">Enhanced Hazardous Weather Outlook</font></a></span></center>
+			<p><em><span style="font-size: 14px;">Click an individual hazard block below for more information</span></em></p>
+
+			<!-- Chiclet Table Day Of -->
+             <table class="table borderless table-hover table chickletTable1">
+            	<tbody class="ghwo">
+            	</tbody>
+            	<thead>
+					<tr class="ghwo" id="titleRow1">
+					</tr>
+            	</thead>
+            </table>
+
+			<!-- Chiclet Table Days 1.5-4 -->
+			<table class="table borderless table-hover table chickletTable2">
+				<tbody class="ghwo">
+				</tbody>
+				<thead>
+					<tr class="ghwo" id="titleRow2">
+					</tr>
+				</thead>
+			</table>
+
+			<!-- Chiclet Table Days 4+ -->
+			<table class="table borderless table-hover table chickletTable3">
+				<tbody class="ghwo">
+				</tbody>
+				<thead>
+					<tr class="ghwo" id="titleRow3">
+					</tr>
+				</thead>
+			</table>
+
+            <table align="center" bgcolor="#eeeeee" border="0">
+				<tbody>
+					<tr>
+						<td rowspan="2" style="text-align: center;" width="5%"><strong>Threat<br />
+						Level<br />
+						Key</strong></td>
+						<td width="20%">
+						<div align="center">None</div>
+						</td>
+						<td width="20%">
+						<div align="center">Limited</div>
+						</td>
+						<td width="20%">
+						<div align="center">Elevated</div>
+						</td>
+						<td width="20%">
+						<div align="center">Significant</div>
+						</td>
+						<td width="20%">
+						<div align="center">Extreme</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+                        <div class="chicklet-key" style="background-color: green"></div>
+						</td>
+						<td>
+						<div class="chicklet-key" style="background-color: yellow"></div>
+						</td>
+						<td>
+						<div class="chicklet-key" style="background-color: orange"></div>
+						</td>
+						<td>
+						<div class="chicklet-key" style="background-color: red"></div>
+						</td>
+						<td>
+						<div class="chicklet-key" style="background-color: purple"></div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<hr /></td>
+			<td>
+			<p>&nbsp;&nbsp;&nbsp;</p>
+			</td>
+			<!--  END Day 1 EHWO SECTION -->
+			<td align="center" rowspan="2" valign="top">
+			<center><span style="font-size: 18px;"><font color="blue">Graphical NOWCast</font></span></center>
+
+			<div><img style="width: 500px; height: 300px; border-style: solid; border-width: 1px; border-radius: 1px; border-color: #c8c8c8;" src="https://www.weather.gov/images/lot/wxstory/Tab3FileL.png?1fe38ae1ff1b178edc65f4f4b1b60148"</div>
+
+			<p>&nbsp;</p>
+
+			<p>&nbsp;</p>
+
+			<table border="0" style="width: 100%;">
+				<tbody>
+					<tr>
+						<td align="left">
+						<div id="graphicastDesc">&nbsp;</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p><br />
+			<br />
+			&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#f4ff8a">
+			<table align="center" bgcolor="#f4ff8a" border="0" cellpadding="10" cellspacing="10" style="width: 100%;">
+				<tbody>
+					<tr>
+						<td colspan="2" style="padding: 10px; text-align: center; vertical-align: middle;"><font style="font-size: 18px;">Situation Report</font></td>
+					</tr>
+					<tr>
+						<td style="padding: 10px; vertical-align: middle;">
+						<div id="sitreport1">&nbsp;</div>
+						</td>
+						<td style="padding: 10px; text-align: left; vertical-align: middle;">
+						<div id="SitRepDesc1">&nbsp;</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><strong><u><span style="font-size:14px;">Additional graphics (if active) will display below:</span></u></strong></p>
+
+<table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
+	<colgroup>
+		<col span="1" style="width: 25%;" />
+		<col span="1" style="width: 25%;" />
+		<col span="1" style="width: 25%;" />
+		<col span="1" style="width: 25%;" />
+	</colgroup>
+	<tbody>
+		<tr>
+			<td><a class="highslide" href="https://www.weather.gov/images/lot/wxstory/Tab2FileL.png" id="wxstory" onclick="return hs.expand(this,{captionId: 'wxstoryTab2Desc'})"><img alt="Weather Story" src="https://www.weather.gov/images/lot/wxstory/Tab2FileL.png" style="border-width: 1px; border-style: solid; width: 220px; height: 125px;" /></a></td>
+			<td>
+			<div id="wxstoryTab3">&nbsp;</div>
+			</td>
+			<td>
+			<div id="wxstoryTab4">&nbsp;</div>
+			</td>
+			<td>
+			<div id="wxstoryTab5">&nbsp;</div>
+			</td>
+		</tr>
+	</tbody>
+</table>

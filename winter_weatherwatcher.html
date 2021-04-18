@@ -1,3 +1,10 @@
+<div class="cms-content"><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+<link href="https://openlayers.org/en/v3.20.1/css/ol.css" rel="stylesheet" type="text/css" /><script src="https://openlayers.org/en/v3.20.1/build/ol.js" type="text/javascript"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"</script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" /><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" rel="stylesheet" />
+<link href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css" rel="stylesheet" /><script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" /><script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script><script src="https://momentjs.com/downloads/moment.js"></script><meta name="viewport" content="width=device-width, initial-scale=1">
 <style type="text/css">/* Defining captions outside of tables */
 
 /*Titles for Photos/Radar Sections */
@@ -30,666 +37,75 @@ img.magnify:hover {
 </style>
 <meta content="900" http-equiv="REFRESH" />
 <div class="highslide-caption" id="probsnow02">Potential for at least 2 inches of snow</div>
-
 <div class="highslide-caption" id="probsnow04">Potential for at least 4 inches of snow</div>
-
 <div class="highslide-caption" id="probsnow06">Potential for at least 6 inches of snow</div>
-
 <div class="highslide-caption" id="probice010">Potential for at least 0.10 inches of ice</div>
-
 <div class="highslide-caption" id="probice025">Potential for at least 0.25 inches of ice</div>
-
 <div class="highslide-caption" id="probice050">Potential for at least 0.50 inches of ice</div>
-
 <div class="highslide-caption" id="stormtotal">Expected Snow Forecast</div>
-
 <div class="highslide-caption" id="icetotal">Expected Ice Forecast</div>
-
 <div class="highslide-caption" id="wxstorygraphictab1">Graphicast</div>
-
 <div class="highslide-caption" id="wxstorygraphictab3">Weather Story Graphic Tab 3</div>
-
 <div class="highslide-caption" id="wxstorygraphictab4">Weather Story Graphic Tab 4</div>
-
 <div class="highslide-caption" id="wxstorygraphictab5">Weather Story Graphic Tab 5</div>
-
 <div class="highslide-caption" id="regionalradar">Regional Radar Loop</div>
-
 <div class="highslide-caption" id="localradar">Local Radar Loop</div>
-
 <div class="highslide-caption" id="gnow">Graphical Nowcast</div>
-
 <div class="highslide-caption" id="wwamap">Local Watches, Advisories, and Warnings</div>
-
 <div class="highslide-caption" id="spcactivity">National Watches and Warnings</div>
-
 <div class="highslide-caption" id="wxstory">Weather Story</div>
-
 <div class="highslide-caption" id="wssi">Winter Storm Severity Index (Local Area)</div>
-
 <div class="highslide-caption" id="wssiconus">Winter Storm Severity Index (USA)</div>
-
 <div class="highslide-caption" id="wssiinfo">Winter Storm Severity Index General Information</div>
-
 <div class="highslide-caption" id="pointsinfo">Prototype IDSS Point Forecasts Page</div>
-
 <div class="highslide-caption" id="cpct610">6-10 Day Temperature Outlook</div>
-
 <div class="highslide-caption" id="cpcp610">6-10 Day Precipitation Outlook</div>
-
 <div class="highslide-caption" id="d37">3-7 Day Hazards Outlook</div>
-
 <div class="highslide-caption" id="cpct814">8-14 Day Temperature Outlook</div>
-
 <div class="highslide-caption" id="cpcp814">8-14 Day Precipitation Outlook</div>
-
 <div class="highslide-caption" id="d814">8-14 Day Hazards Outlook</div>
-
-<div class="highslide-caption" id="wind1">Day 1 Non-thunderstorm Wind Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Sustained winds &lt; 25 mph and Wind gusts &lt; 35 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Sustained winds 26-29 mph or Wind gusts 35-44 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Sustained winds 30-39 mph or Wind gusts 45-57 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Sustained winds 40-49 mph or Wind gusts 58-64 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Sustained winds &gt; 50 mph or Wind gusts &gt; 65 mph.</div>
-
-<div class="highslide-caption" id="wind2">Day 2 Non-thunderstorm Wind Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Sustained winds &lt; 25 mph and Wind gusts &lt; 35 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Sustained winds 26-29 mph or Wind gusts 35-44 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Sustained winds 30-39 mph or Wind gusts 45-57 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Sustained winds 40-49 mph or Wind gusts 58-64 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Sustained winds &gt; 50 mph or Wind gusts &gt; 65 mph.</div>
-
-<div class="highslide-caption" id="wind3">Day 3 Non-thunderstorm Wind Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Sustained winds &lt; 25 mph and Wind gusts &lt; 35 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Sustained winds 26-29 mph or Wind gusts 35-44 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Sustained winds 30-39 mph or Wind gusts 45-57 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Sustained winds 40-49 mph or Wind gusts 58-64 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Sustained winds &gt; 50 mph or Wind gusts &gt; 65 mph.</div>
-
-<div class="highslide-caption" id="wind4">Day 4 Non-thunderstorm Wind Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Sustained winds &lt; 25 mph and Wind gusts &lt; 35 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Sustained winds 26-29 mph or Wind gusts 35-44 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Sustained winds 30-39 mph or Wind gusts 45-57 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Sustained winds 40-49 mph or Wind gusts 58-64 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Sustained winds &gt; 50 mph or Wind gusts &gt; 65 mph.</div>
-
-<div class="highslide-caption" id="wind5">Day 5 Non-thunderstorm Wind Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Sustained winds &lt; 25 mph and Wind gusts &lt; 35 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Sustained winds 26-29 mph or Wind gusts 35-44 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Sustained winds 30-39 mph or Wind gusts 45-57 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Sustained winds 40-49 mph or Wind gusts 58-64 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Sustained winds &gt; 50 mph or Wind gusts &gt; 65 mph.</div>
-
-<div class="highslide-caption" id="wind6">Day 6 Non-thunderstorm Wind Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Sustained winds &lt; 25 mph and Wind gusts &lt; 35 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Sustained winds 26-29 mph or Wind gusts 35-44 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Sustained winds 30-39 mph or Wind gusts 45-57 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Sustained winds 40-49 mph or Wind gusts 58-64 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Sustained winds &gt; 50 mph or Wind gusts &gt; 65 mph.</div>
-
-<div class="highslide-caption" id="wind7">Day 7 Non-thunderstorm Wind Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Sustained winds &lt; 25 mph and Wind gusts &lt; 35 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Sustained winds 26-29 mph or Wind gusts 35-44 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Sustained winds 30-39 mph or Wind gusts 45-57 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Sustained winds 40-49 mph or Wind gusts 58-64 mph.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Sustained winds &gt; 50 mph or Wind gusts &gt; 65 mph.</div>
-
-<div class="highslide-caption" id="flood1">Day 1 Flood Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No Flooding risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Risk of localized flash flooding of small streams, and minor flooding of poor drainage or urban areas.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Risk of flash flooding of several roads and small streams.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Risk of flash flooding of numerous roads and small streams.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Risk of widespread flash flooding of roads and small streams.</div>
-
-<div class="highslide-caption" id="flood2">Day 2 Flood Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No Flooding risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Risk of localized flash flooding of small streams, and minor flooding of poor drainage or urban areas.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Risk of flash flooding of several roads and small streams.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Risk of flash flooding of numerous roads and small streams.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Risk of widespread flash flooding of roads and small streams.</div>
-
-<div class="highslide-caption" id="flood3">Day 3 Flood Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No Flooding risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Risk of localized flash flooding of small streams, and minor flooding of poor drainage or urban areas.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Risk of flash flooding of several roads and small streams.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Risk of flash flooding of numerous roads and small streams.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Risk of widespread flash flooding of roads and small streams.</div>
-
-<div class="highslide-caption" id="flood4">Day 4 Flood Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No Flooding risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Risk of localized flash flooding of small streams, and minor flooding of poor drainage or urban areas.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Risk of flash flooding of several roads and small streams.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Risk of flash flooding of numerous roads and small streams.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Risk of widespread flash flooding of roads and small streams.</div>
-
-<div class="highslide-caption" id="flood5">Day 5 Flood Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No Flooding risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Risk of localized flash flooding of small streams, and minor flooding of poor drainage or urban areas.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Risk of flash flooding of several roads and small streams.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Risk of flash flooding of numerous roads and small streams.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Risk of widespread flash flooding of roads and small streams.</div>
-
-<div class="highslide-caption" id="flood6">Day 6 Flood Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No Flooding risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Risk of localized flash flooding of small streams, and minor flooding of poor drainage or urban areas.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Risk of flash flooding of several roads and small streams.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Risk of flash flooding of numerous roads and small streams.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Risk of widespread flash flooding of roads and small streams.</div>
-
-<div class="highslide-caption" id="flood7">Day 7 Flood Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No Flooding risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Risk of localized flash flooding of small streams, and minor flooding of poor drainage or urban areas.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Risk of flash flooding of several roads and small streams.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Risk of flash flooding of numerous roads and small streams.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Risk of widespread flash flooding of roads and small streams.</div>
-
-<div class="highslide-caption" id="fire1">Day 1 Fire Weather Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Open burning is usually safe with proper containers and precautions under low fire danger conditions.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Open burning is usually safe with the proper precautions. Burning should be done in the early morning and late evening to avoid windier and drier conditions from midday through mid-afternoon.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Any open burning is discouraged due to increased wind and lower humidity - except by experienced fire personnel. Approaching Red Flag conditions.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Open burning should not be attempted. Conditions exceed minimum criteria for a Red Flag Warning in most cases.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Very strong winds, well in excess of Red Flag Criteria combined with moderate to low humidity.</div>
-
-<div class="highslide-caption" id="fire2">Day 2 Fire Weather Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Open burning is usually safe with proper containers and precautions under low fire danger conditions.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Open burning is usually safe with the proper precautions. Burning should be done in the early morning and late evening to avoid windier and drier conditions from midday through mid-afternoon.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Any open burning is discouraged due to increased wind and lower humidity - except by experienced fire personnel. Approaching Red Flag conditions.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Open burning should not be attempted. Conditions exceed minimum criteria for a Red Flag Warning in most cases.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Very strong winds, well in excess of Red Flag Criteria combined with moderate to low humidity.</div>
-
-<div class="highslide-caption" id="fire3">Day 3 Fire Weather Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Open burning is usually safe with proper containers and precautions under low fire danger conditions.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Open burning is usually safe with the proper precautions. Burning should be done in the early morning and late evening to avoid windier and drier conditions from midday through mid-afternoon.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Any open burning is discouraged due to increased wind and lower humidity - except by experienced fire personnel. Approaching Red Flag conditions.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Open burning should not be attempted. Conditions exceed minimum criteria for a Red Flag Warning in most cases.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Very strong winds, well in excess of Red Flag Criteria combined with moderate to low humidity.</div>
-
-<div class="highslide-caption" id="fire4">Day 4 Fire Weather Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Open burning is usually safe with proper containers and precautions under low fire danger conditions.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Open burning is usually safe with the proper precautions. Burning should be done in the early morning and late evening to avoid windier and drier conditions from midday through mid-afternoon.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Any open burning is discouraged due to increased wind and lower humidity - except by experienced fire personnel. Approaching Red Flag conditions.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Open burning should not be attempted. Conditions exceed minimum criteria for a Red Flag Warning in most cases.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Very strong winds, well in excess of Red Flag Criteria combined with moderate to low humidity.</div>
-
-<div class="highslide-caption" id="fire5">Day 5 Fire Weather Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Open burning is usually safe with proper containers and precautions under low fire danger conditions.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Open burning is usually safe with the proper precautions. Burning should be done in the early morning and late evening to avoid windier and drier conditions from midday through mid-afternoon.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Any open burning is discouraged due to increased wind and lower humidity - except by experienced fire personnel. Approaching Red Flag conditions.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Open burning should not be attempted. Conditions exceed minimum criteria for a Red Flag Warning in most cases.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Very strong winds, well in excess of Red Flag Criteria combined with moderate to low humidity.</div>
-
-<div class="highslide-caption" id="fire6">Day 6 Fire Weather Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Open burning is usually safe with proper containers and precautions under low fire danger conditions.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Open burning is usually safe with the proper precautions. Burning should be done in the early morning and late evening to avoid windier and drier conditions from midday through mid-afternoon.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Any open burning is discouraged due to increased wind and lower humidity - except by experienced fire personnel. Approaching Red Flag conditions.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Open burning should not be attempted. Conditions exceed minimum criteria for a Red Flag Warning in most cases.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Very strong winds, well in excess of Red Flag Criteria combined with moderate to low humidity.</div>
-
-<div class="highslide-caption" id="fire7">Day 7 Fire Weather Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Open burning is usually safe with proper containers and precautions under low fire danger conditions.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Open burning is usually safe with the proper precautions. Burning should be done in the early morning and late evening to avoid windier and drier conditions from midday through mid-afternoon.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Any open burning is discouraged due to increased wind and lower humidity - except by experienced fire personnel. Approaching Red Flag conditions.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Open burning should not be attempted. Conditions exceed minimum criteria for a Red Flag Warning in most cases.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Very strong winds, well in excess of Red Flag Criteria combined with moderate to low humidity.</div>
-
-<div class="highslide-caption" id="gfdi1">Day 1 Grassland Fire Danger Index<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Probability of a fast moving fire is low.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> High potential for fire to spread.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Dangerous burning conditions exist. Fires will spread rapidly and show erratic behavior.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Critical burning conditions exist. All fires have the potential to become large and spread quickly and become erratic with extreme fire behavioral characteristics.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Extreme grassland fire weather conditions that are rarely experienced in our area. Any fire that starts will spread rapidly and be almost impossible to control.</div>
-
-<div class="highslide-caption" id="gfdi2">Day 2 Grassland Fire Danger Index<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Probability of a fast moving fire is low.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> High potential for fire to spread.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Dangerous burning conditions exist. Fires will spread rapidly and show erratic behavior.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Critical burning conditions exist. All fires have the potential to become large and spread quickly and become erratic with extreme fire behavioral characteristics.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Extreme grassland fire weather conditions that are rarely experienced in our area. Any fire that starts will spread rapidly and be almost impossible to control.</div>
-
-<div class="highslide-caption" id="gfdi3">Day 3 Grassland Fire Danger Index<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Probability of a fast moving fire is low.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> High potential for fire to spread.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Dangerous burning conditions exist. Fires will spread rapidly and show erratic behavior.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Critical burning conditions exist. All fires have the potential to become large and spread quickly and become erratic with extreme fire behavioral characteristics.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Extreme grassland fire weather conditions that are rarely experienced in our area. Any fire that starts will spread rapidly and be almost impossible to control.</div>
-
-<div class="highslide-caption" id="gfdi4">Day 4 Grassland Fire Danger Index<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Probability of a fast moving fire is low.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> High potential for fire to spread.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Dangerous burning conditions exist. Fires will spread rapidly and show erratic behavior.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Critical burning conditions exist. All fires have the potential to become large and spread quickly and become erratic with extreme fire behavioral characteristics.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Extreme grassland fire weather conditions that are rarely experienced in our area. Any fire that starts will spread rapidly and be almost impossible to control.</div>
-
-<div class="highslide-caption" id="gfdi5">Day 5 Grassland Fire Danger Index<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Probability of a fast moving fire is low.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> High potential for fire to spread.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Dangerous burning conditions exist. Fires will spread rapidly and show erratic behavior.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Critical burning conditions exist. All fires have the potential to become large and spread quickly and become erratic with extreme fire behavioral characteristics.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Extreme grassland fire weather conditions that are rarely experienced in our area. Any fire that starts will spread rapidly and be almost impossible to control.</div>
-
-<div class="highslide-caption" id="gfdi6">Day 6 Grassland Fire Danger Index<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Probability of a fast moving fire is low.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> High potential for fire to spread.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Dangerous burning conditions exist. Fires will spread rapidly and show erratic behavior.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Critical burning conditions exist. All fires have the potential to become large and spread quickly and become erratic with extreme fire behavioral characteristics.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Extreme grassland fire weather conditions that are rarely experienced in our area. Any fire that starts will spread rapidly and be almost impossible to control.</div>
-
-<div class="highslide-caption" id="gfdi7">Day 7 Grassland Fire Danger Index<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Probability of a fast moving fire is low.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> High potential for fire to spread.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Dangerous burning conditions exist. Fires will spread rapidly and show erratic behavior.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Critical burning conditions exist. All fires have the potential to become large and spread quickly and become erratic with extreme fire behavioral characteristics.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Extreme grassland fire weather conditions that are rarely experienced in our area. Any fire that starts will spread rapidly and be almost impossible to control.</div>
-
-<div class="highslide-caption" id="fog1">Day 1 Fog Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No risk of fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Patchy Fog or Freezing Fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Areas of Fog or Freezing Fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Widespread Fog or Freezing Fog<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Fog with near zero visibilities.</div>
-
-<div class="highslide-caption" id="fog2">Day 2 Fog Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No risk of fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Patchy Fog or Freezing Fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Areas of Fog or Freezing Fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Widespread Fog or Freezing Fog<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Fog with near zero visibilities.</div>
-
-<div class="highslide-caption" id="fog3">Day 3 Fog Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No risk of fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Patchy Fog or Freezing Fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Areas of Fog or Freezing Fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Widespread Fog or Freezing Fog<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Fog with near zero visibilities.</div>
-
-<div class="highslide-caption" id="fog4">Day 4 Fog Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No risk of fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Patchy Fog or Freezing Fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Areas of Fog or Freezing Fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Widespread Fog or Freezing Fog<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Fog with near zero visibilities.</div>
-
-<div class="highslide-caption" id="fog5">Day 5 Fog Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No risk of fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Patchy Fog or Freezing Fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Areas of Fog or Freezing Fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Widespread Fog or Freezing Fog<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Fog with near zero visibilities.</div>
-
-<div class="highslide-caption" id="fog6">Day 6 Fog Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No risk of fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Patchy Fog or Freezing Fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Areas of Fog or Freezing Fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Widespread Fog or Freezing Fog<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Fog with near zero visibilities.</div>
-
-<div class="highslide-caption" id="fog7">Day 7 Fog Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No risk of fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Patchy Fog or Freezing Fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Areas of Fog or Freezing Fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Widespread Fog or Freezing Fog<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Fog with near zero visibilities.</div>
-
-<div class="highslide-caption" id="snow1">Day 1 Snow and Sleet Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No snow or sleet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Snow and/or sleet with less than 1 inch of accumulation expected.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Snow and/or sleet with 1 to 5.9 inches of accumulation expected.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Snow and/or sleet with 6 to 11.9 inches of accumulation expected.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Snow and/or sleet with greater than or equal to 12 inches of accumulation expected.</div>
-
-<div class="highslide-caption" id="snow2">Day 2 Snow and Sleet Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No snow or sleet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Snow and/or sleet with less than 1 inch of accumulation expected.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Snow and/or sleet with 1 to 5.9 inches of accumulation expected.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Snow and/or sleet with 6 to 11.9 inches of accumulation expected.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Snow and/or sleet with greater than or equal to 12 inches of accumulation expected.</div>
-
-<div class="highslide-caption" id="snow3">Day 3 Snow and Sleet Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No snow or sleet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Snow and/or sleet with less than 1 inch of accumulation expected.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Snow and/or sleet with 1 to 5.9 inches of accumulation expected.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Snow and/or sleet with 6 to 11.9 inches of accumulation expected.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Snow and/or sleet with greater than or equal to 12 inches of accumulation expected.</div>
-
-<div class="highslide-caption" id="snow4">Day 4 Snow and Sleet Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No snow or sleet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Snow and/or sleet with less than 1 inch of accumulation expected.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Snow and/or sleet with 1 to 5.9 inches of accumulation expected.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Snow and/or sleet with 6 to 11.9 inches of accumulation expected.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Snow and/or sleet with greater than or equal to 12 inches of accumulation expected.</div>
-
-<div class="highslide-caption" id="snow5">Day 5 Snow and Sleet Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No snow or sleet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Snow and/or sleet with less than 1 inch of accumulation expected.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Snow and/or sleet with 1 to 5.9 inches of accumulation expected.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Snow and/or sleet with 6 to 11.9 inches of accumulation expected.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Snow and/or sleet with greater than or equal to 12 inches of accumulation expected.</div>
-
-<div class="highslide-caption" id="snow6">Day 6 Snow and Sleet Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No snow or sleet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Snow and/or sleet with less than 1 inch of accumulation expected.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Snow and/or sleet with 1 to 5.9 inches of accumulation expected.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Snow and/or sleet with 6 to 11.9 inches of accumulation expected.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Snow and/or sleet with greater than or equal to 12 inches of accumulation expected.</div>
-
-<div class="highslide-caption" id="snow7">Day 7 Snow and Sleet Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No snow or sleet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Snow and/or sleet with less than 1 inch of accumulation expected.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Snow and/or sleet with 1 to 5.9 inches of accumulation expected.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Snow and/or sleet with 6 to 11.9 inches of accumulation expected.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Snow and/or sleet with greater than or equal to 12 inches of accumulation expected.</div>
-
-<div class="highslide-caption" id="ice1">Day 1 Ice Accumulation Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No freezing rain or drizzle.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Very light freezing rain or drizzle with up to a thin glaze, OR Freezing Fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Freezing rain or drizzle with accumulation less than 1/4 inch.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Freezing rain with accumulation of 1/4 inch to less than 1 inch.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Freezing rain with accumulation of greater than or equal to 1 inch.</div>
-
-<div class="highslide-caption" id="ice2">Day 2 Ice Accumulation Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No freezing rain or drizzle.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Very light freezing rain or drizzle with up to a thin glaze, OR Freezing Fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Freezing rain or drizzle with accumulation less than 1/4 inch.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Freezing rain with accumulation of 1/4 inch to less than 1 inch.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Freezing rain with accumulation of greater than or equal to 1 inch.</div>
-
-<div class="highslide-caption" id="ice3">Day 3 Ice Accumulation Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No freezing rain or drizzle.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Very light freezing rain or drizzle with up to a thin glaze, OR Freezing Fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Freezing rain or drizzle with accumulation less than 1/4 inch.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Freezing rain with accumulation of 1/4 inch to less than 1 inch.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Freezing rain with accumulation of greater than or equal to 1 inch.</div>
-
-<div class="highslide-caption" id="ice4">Day 4 Ice Accumulation Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No freezing rain or drizzle.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Very light freezing rain or drizzle with up to a thin glaze, OR Freezing Fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Freezing rain or drizzle with accumulation less than 1/4 inch.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Freezing rain with accumulation of 1/4 inch to less than 1 inch.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Freezing rain with accumulation of greater than or equal to 1 inch.</div>
-
-<div class="highslide-caption" id="ice5">Day 5 Ice Accumulation Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No freezing rain or drizzle.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Very light freezing rain or drizzle with up to a thin glaze, OR Freezing Fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Freezing rain or drizzle with accumulation less than 1/4 inch.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Freezing rain with accumulation of 1/4 inch to less than 1 inch.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Freezing rain with accumulation of greater than or equal to 1 inch.</div>
-
-<div class="highslide-caption" id="ice6">Day 6 Ice Accumulation Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No freezing rain or drizzle.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Very light freezing rain or drizzle with up to a thin glaze, OR Freezing Fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Freezing rain or drizzle with accumulation less than 1/4 inch.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Freezing rain with accumulation of 1/4 inch to less than 1 inch.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Freezing rain with accumulation of greater than or equal to 1 inch.</div>
-
-<div class="highslide-caption" id="ice7">Day 7 Ice Accumulation Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No freezing rain or drizzle.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Very light freezing rain or drizzle with up to a thin glaze, OR Freezing Fog.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Freezing rain or drizzle with accumulation less than 1/4 inch.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Freezing rain with accumulation of 1/4 inch to less than 1 inch.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Freezing rain with accumulation of greater than or equal to 1 inch.</div>
-
-<div class="highslide-caption" id="cold1">Day 1 Excessive Cold Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Minimum wind chill greater than or equal to 10 degrees F.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Minimum wind chill 0 to 9 deg F.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Minimum wind chill -10 to -19 deg. F<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Minimum wind chill -20 to -29 deg. F.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Minimum wind chill less than or equal to -30 degrees F</div>
-
-<div class="highslide-caption" id="cold2">Day 2 Excessive Cold Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Minimum wind chill greater than or equal to 10 degrees F.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Minimum wind chill 0 to 9 deg F.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Minimum wind chill -10 to -19 deg. F<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Minimum wind chill -20 to -29 deg. F.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Minimum wind chill less than or equal to -30 degrees F</div>
-
-<div class="highslide-caption" id="cold3">Day 3 Excessive Cold Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Minimum wind chill greater than or equal to 10 degrees F.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Minimum wind chill 0 to 9 deg F.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Minimum wind chill -10 to -19 deg. F<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Minimum wind chill -20 to -29 deg. F.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Minimum wind chill less than or equal to -30 degrees F</div>
-
-<div class="highslide-caption" id="cold4">Day 4 Excessive Cold Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Minimum wind chill greater than or equal to 10 degrees F.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Minimum wind chill 0 to 9 deg F.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Minimum wind chill -10 to -19 deg. F<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Minimum wind chill -20 to -29 deg. F.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Minimum wind chill less than or equal to -30 degrees F</div>
-
-<div class="highslide-caption" id="cold5">Day 5 Excessive Cold Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Minimum wind chill greater than or equal to 10 degrees F.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Minimum wind chill 0 to 9 deg F.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Minimum wind chill -10 to -19 deg. F<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Minimum wind chill -20 to -29 deg. F.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Minimum wind chill less than or equal to -30 degrees F</div>
-
-<div class="highslide-caption" id="cold6">Day 6 Excessive Cold Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Minimum wind chill greater than or equal to 10 degrees F.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Minimum wind chill 0 to 9 deg F.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Minimum wind chill -10 to -19 deg. F<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Minimum wind chill -20 to -29 deg. F.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Minimum wind chill less than or equal to -30 degrees F</div>
-
-<div class="highslide-caption" id="cold7">Day 7 Excessive Cold Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> Minimum wind chill greater than or equal to 10 degrees F.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Minimum wind chill 0 to 9 deg F.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Minimum wind chill -10 to -19 deg. F<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Minimum wind chill -20 to -29 deg. F.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Minimum wind chill less than or equal to -30 degrees F</div>
-
-<div class="highslide-caption" id="marine1">Day 1 Marine Hazard Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No marine hazard risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Winds &gt;= 15 knots and/or Waves &gt;= 2 feet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Winds &gt;= 23 knots and/or Waves &gt;= 4 feet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Winds &gt;= 34 knots and/or Waves &gt;= 9 feet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Winds &gt;= 48 knots and/or Waves &gt;= 14 feet.</div>
-
-<div class="highslide-caption" id="marine2">Day 2 Marine Hazard Risk<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No marine hazard risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Winds &gt;= 15 knots and/or Waves &gt;= 2 feet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Winds &gt;= 23 knots and/or Waves &gt;= 4 feet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Winds &gt;= 34 knots and/or Waves &gt;= 9 feet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Winds &gt;= 48 knots and/or Waves &gt;= 14 feet.</div>
-
-<div class="highslide-caption" id="marine3">Day 3 Marine Hazard Risk<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No marine hazard risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Winds &gt;= 15 knots and/or Waves &gt;= 2 feet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Winds &gt;= 23 knots and/or Waves &gt;= 4 feet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Winds &gt;= 34 knots and/or Waves &gt;= 9 feet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Winds &gt;= 48 knots and/or Waves &gt;= 14 feet.</div>
-
-<div class="highslide-caption" id="marine4">Day 4 Marine Hazard Risk<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No marine hazard risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Winds &gt;= 15 knots and/or Waves &gt;= 2 feet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Winds &gt;= 23 knots and/or Waves &gt;= 4 feet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Winds &gt;= 34 knots and/or Waves &gt;= 9 feet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Winds &gt;= 48 knots and/or Waves &gt;= 14 feet.</div>
-
-<div class="highslide-caption" id="marine5">Day 5 Marine Hazard Risk<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No marine hazard risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Winds &gt;= 15 knots and/or Waves &gt;= 2 feet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Winds &gt;= 23 knots and/or Waves &gt;= 4 feet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Winds &gt;= 34 knots and/or Waves &gt;= 9 feet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Winds &gt;= 48 knots and/or Waves &gt;= 14 feet.</div>
-
-<div class="highslide-caption" id="marine6">Day 6 Marine Hazard Risk<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No marine hazard risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Winds &gt;= 15 knots and/or Waves &gt;= 2 feet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Winds &gt;= 23 knots and/or Waves &gt;= 4 feet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Winds &gt;= 34 knots and/or Waves &gt;= 9 feet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Winds &gt;= 48 knots and/or Waves &gt;= 14 feet.</div>
-
-<div class="highslide-caption" id="marine7">Day 7 Marine Hazard Risk<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No marine hazard risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Winds &gt;= 15 knots and/or Waves &gt;= 2 feet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Winds &gt;= 23 knots and/or Waves &gt;= 4 feet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Winds &gt;= 34 knots and/or Waves &gt;= 9 feet.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Winds &gt;= 48 knots and/or Waves &gt;= 14 feet.</div>
-
-<div class="highslide-caption" id="spray1">Day 1 Freezing Spray Risk<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No freezing spray risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Moderate Freezing Spray Expected<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /><br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Heavy Freezing Spray Expected<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /></div>
-
-<div class="highslide-caption" id="spray2">Day 2 Freezing Spray Risk<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No freezing spray risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Moderate Freezing Spray Expected<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /><br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Heavy Freezing Spray Expected<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /></div>
-
-<div class="highslide-caption" id="spray3">Day 3 Freezing Spray Risk<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No freezing spray risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Moderate Freezing Spray Expected<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /><br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Heavy Freezing Spray Expected<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /></div>
-
-<div class="highslide-caption" id="spray4">Day 4 Freezing Spray Risk<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No freezing spray risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Moderate Freezing Spray Expected<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /><br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Heavy Freezing Spray Expected<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /></div>
-
-<div class="highslide-caption" id="spray5">Day 5 Freezing Spray Risk<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No freezing spray risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Moderate Freezing Spray Expected<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /><br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Heavy Freezing Spray Expected<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /></div>
-
-<div class="highslide-caption" id="spray6">Day 6 Freezing Spray Risk<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No freezing spray risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Moderate Freezing Spray Expected<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /><br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Heavy Freezing Spray Expected<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /></div>
-
-<div class="highslide-caption" id="spray7">Day 7 Freezing Spray Risk<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No freezing spray risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Moderate Freezing Spray Expected<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /><br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Heavy Freezing Spray Expected<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /></div>
-
-<div class="highslide-caption" id="coast1">Day 1 Coastal Flood Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No Coastal Flooding risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Winds &gt;= 30mph and Wave Heights &gt;= 8 feet; Isolated areas of beach erosion and coastal flooding possible.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Winds &gt;=35 mph and Wave Heights &gt;=11 feet. Scattered areas of beach erosion and coastal flooding possible.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Winds &gt;=40 mph and Wave Heights &gt;=14 feet. Significant beach erosion and coastal flooding possible.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Winds &gt;= 45 mph and Wave Heights &gt;= 17 feet. Widespread beach erosion and coastal flooding possible.</div>
-
-<div class="highslide-caption" id="coast2">Day 2 Coastal Flood Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No Coastal Flooding risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Winds &gt;= 30mph and Wave Heights &gt;= 8 feet; Isolated areas of beach erosion and coastal flooding possible.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Winds &gt;=35 mph and Wave Heights &gt;=11 feet. Scattered areas of beach erosion and coastal flooding possible.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Winds &gt;=40 mph and Wave Heights &gt;=14 feet. Significant beach erosion and coastal flooding possible.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Winds &gt;= 45 mph and Wave Heights &gt;= 17 feet. Widespread beach erosion and coastal flooding possible.</div>
-
-<div class="highslide-caption" id="coast3">Day 3 Coastal Flood Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No Coastal Flooding risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Winds &gt;= 30mph and Wave Heights &gt;= 8 feet; Isolated areas of beach erosion and coastal flooding possible.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Winds &gt;=35 mph and Wave Heights &gt;=11 feet. Scattered areas of beach erosion and coastal flooding possible.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Winds &gt;=40 mph and Wave Heights &gt;=14 feet. Significant beach erosion and coastal flooding possible.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Winds &gt;= 45 mph and Wave Heights &gt;= 17 feet. Widespread beach erosion and coastal flooding possible.</div>
-
-<div class="highslide-caption" id="coast4">Day 4 Coastal Flood Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No Coastal Flooding risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Winds &gt;= 30mph and Wave Heights &gt;= 8 feet; Isolated areas of beach erosion and coastal flooding possible.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Winds &gt;=35 mph and Wave Heights &gt;=11 feet. Scattered areas of beach erosion and coastal flooding possible.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Winds &gt;=40 mph and Wave Heights &gt;=14 feet. Significant beach erosion and coastal flooding possible.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Winds &gt;= 45 mph and Wave Heights &gt;= 17 feet. Widespread beach erosion and coastal flooding possible.</div>
-
-<div class="highslide-caption" id="coast5">Day 5 Coastal Flood Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No Coastal Flooding risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Winds &gt;= 30mph and Wave Heights &gt;= 8 feet; Isolated areas of beach erosion and coastal flooding possible.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Winds &gt;=35 mph and Wave Heights &gt;=11 feet. Scattered areas of beach erosion and coastal flooding possible.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Winds &gt;=40 mph and Wave Heights &gt;=14 feet. Significant beach erosion and coastal flooding possible.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Winds &gt;= 45 mph and Wave Heights &gt;= 17 feet. Widespread beach erosion and coastal flooding possible.</div>
-
-<div class="highslide-caption" id="coast6">Day 6 Coastal Flood Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No Coastal Flooding risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Winds &gt;= 30mph and Wave Heights &gt;= 8 feet; Isolated areas of beach erosion and coastal flooding possible.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Winds &gt;=35 mph and Wave Heights &gt;=11 feet. Scattered areas of beach erosion and coastal flooding possible.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Winds &gt;=40 mph and Wave Heights &gt;=14 feet. Significant beach erosion and coastal flooding possible.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Winds &gt;= 45 mph and Wave Heights &gt;= 17 feet. Widespread beach erosion and coastal flooding possible.</div>
-
-<div class="highslide-caption" id="coast7">Day 7 Coastal Flood Risk<br />
-<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard0.png" /> No Coastal Flooding risk.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard1.png" /> Winds &gt;= 30mph and Wave Heights &gt;= 8 feet; Isolated areas of beach erosion and coastal flooding possible.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard2.png" /> Winds &gt;=35 mph and Wave Heights &gt;=11 feet. Scattered areas of beach erosion and coastal flooding possible.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard3.png" /> Winds &gt;=40 mph and Wave Heights &gt;=14 feet. Significant beach erosion and coastal flooding possible.<br />
-<img border="0" src="http://www.weather.gov/images/lot/EHWO/risk/hazard4.png" /> Winds &gt;= 45 mph and Wave Heights &gt;= 17 feet. Widespread beach erosion and coastal flooding possible.</div>
+<div class="highslide-caption" id="wind1">Day 1 Non-thunderstorm Wind Risk<br /></div>
 <style type="text/css">#wrapper {
 	OVERFLOW: hidden; WIDTH: 970px; MARGIN-LEFT: auto; MARGIN-RIGHT: auto
 }
+
+.chicklet {
+	width: 25px;
+	height: 12px;
+	border-radius:2px;
+	-moz-border-radius:5px;
+	margin: 0px auto;
+	vertical-align: middle;
+	-moz-box-shadow: 0px 3px 4px #d6d6d6;
+	-webkit-box-shadow: 0px 3px 4px #d6d6d6;
+	box-shadow: 0px 3px 4px #d6d6d6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#d6d6d6')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#d6d6d6');
+	}
+
+.chicklet-key {
+	width: 50px;
+	height: 24px;
+	border-radius:4px;
+	-moz-border-radius:2px;
+	margin: 0px auto;
+	vertical-align: middle;
+	-moz-box-shadow: 0px 3px 4px #d6d6d6;
+	-webkit-box-shadow: 0px 3px 4px #d6d6d6;
+	box-shadow: 0px 3px 4px #d6d6d6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#d6d6d6')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#d6d6d6');
+}
+
+th {
+	text-align: center;
+	font-weight: normal;
+	}
+
+.image2 {
+	max-width: -webkit-fill-available;
+	}
+
 #lotwarn {
 	WIDTH: 460px; FLOAT: left
 }
@@ -782,6 +198,7 @@ nav UL LI:hover UL.fallback {
     padding: 10px;
 }
 </style>
+
 <style type="text/css">#dhtmltooltip {
 	BORDER-TOP: black 2px solid; BORDER-RIGHT: black 2px solid; WIDTH: 150px; BORDER-BOTTOM: black 2px solid; POSITION: absolute;
 
@@ -791,6 +208,192 @@ BORDER-LEFT: black 2px solid; Z-INDEX: 100; PADDING-RIGHT: 2px; VISIBILITY: hidd
 }
 </style>
 <div id="dhtmltooltip">&nbsp;</div>
+
+
+<!-- HWO Images Modal -->
+<div aria-hidden="true" aria-labelledby="imgModalLabel" class="modal fade" id="imgModal" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="imgModalLabel">&nbsp;</h5>
+<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button></div>
+<div class="modal-body">
+<div id="hwoimg">&nbsp;</div>
+<hr />
+<div id="legend">&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script>
+
+// Limit the chiclet hazard display to winter-time hazards
+var hazardNames = [
+    "Snow Sleet Risk",
+    "Fog Risk",
+    "Excessive Cold Risk",
+    "Ice Accumulation Risk",
+    "NonThunderstorm Wind Risk",
+    "Coastal Flood Risk"
+]
+
+var timePeriods2 = [
+	"period2",
+	"period3",
+	"period4"
+]
+
+var timePeriods3 = [
+	"period5",
+	"period6",
+	"period7"
+]
+
+function chiclets_tab() {
+    $.ajax({
+		type: "GET",
+		//url: 'https://www.weather.gov/source/lot/ehwo/HBjson.json',
+
+		url: 'https://next.json-generator.com/api/json/get/EJUQp8V89',
+
+		cache: false,
+		dataType: "json",
+	    success: function(data){
+			var k = moment(data.generation_time).format('dddd');
+	        var time = moment(data.generation_time).format('MMMM Do YYYY, h:mm:ss a');
+			var time2 = moment(data.generation_time).format('MMMM Do YYYY, h:mm a');
+			console.log(k, time)
+	        var days = [];
+	        var daysRequired = 6;
+	        $( '.productUpdate' ).append( time );
+			updateTime = k + ' ' + time2
+			$("#titleRow1").append('<th style="text-align:left !important; font-size:11px">Last Update: '+updateTime+'</th>');
+			$("#titleRow2").append('<th style="text-align:left !important; font-size:11px">Last Update: '+updateTime+'</th>');
+			$("#titleRow3").append('<th style="text-align:left !important; font-size:11px">Last Update: '+updateTime+'</th>');
+
+	        for (let i = 1; i <= daysRequired; i++) {
+	          days.push( moment(data.generation_time).add(i, 'days').format('ddd'))
+	        }
+
+			$.each(days, function(i, item){
+				if (i <3 ){
+					$('#titleRow2').append('<th>'+item+'</th>');
+			    }
+				else{
+					$('#titleRow3').append('<th>'+item+'</th>');
+				}
+			})
+
+	        //Loop through json and color chicklets. We're only grabbing
+	        $.each( data.hazards, function(i, item) {
+	            var col = i;
+	            col++;
+	            var col2 = "col"+i;
+				var col3 = "col"+(i*4);
+				var col4 = "col"+(i*10);
+
+				var col5 = "#"+col2;
+				var col6 = "#"+col3;
+				var col7 = "#"+col4;
+
+	            var altName = item.name;
+				if (item.name == 'NonThunderstorm Wind Risk'){
+					altName = 'Non-Thunderstorm Wind Risk'
+				}
+                if (jQuery.inArray(item.name, hazardNames) !== -1){
+					$('.chickletTable1').append('<tr id="'+col2+'" class="leftCol"><td>' +
+						                        altName+'</td></tr>' );
+					$('.chickletTable2').append('<tr id="'+col3+'" class="leftCol"><td>' +
+						                        altName+'</td></tr>' );
+					$('.chickletTable3').append('<tr id="'+col4+'" class="leftCol"><td>' +
+									            altName+'</td></tr>' );
+					$.each(this.periods, function(i,item) {
+                        if (i == 'period1'){
+					        $(col5).append('<td><div class="chicklet" alt="'+ altName +
+					        '" data-toggle="modal" data-target="#imgModal" data-date="'+
+							item.date+'" data-validTime="'+ item.validStartTime +
+							'" style="background-color:'+ item.color +'"><a href="'+
+							item.imagePath +'"></a></div></td>');
+                        }
+						if (jQuery.inArray(i, timePeriods2) !== -1){
+							$(col6).append('<td><div class="chicklet" alt="'+ altName +
+					        '" data-toggle="modal" data-target="#imgModal" data-date="'+
+							item.date+'" data-validTime="'+ item.validStartTime +
+							'" style="background-color:'+ item.color +'"><a href="'+
+							item.imagePath +'"></a></div></td>');
+						}
+						if (jQuery.inArray(i, timePeriods3) !== -1){
+							$(col7).append('<td><div class="chicklet" alt="'+ altName +
+					        '" data-toggle="modal" data-target="#imgModal" data-date="'+
+							item.date+'" data-validTime="'+ item.validStartTime +
+							'" style="background-color:'+ item.color +'"><a href="'+
+							item.imagePath +'"></a></div></td>');
+						}
+                    })
+                }
+			})
+	    },
+
+	    //Change map based on which chicklet you click on
+	    complete: function() {
+			$('.chicklet').on('click', function(){
+    		newSrc = 'https://www.weather.gov' + $('a', this).attr('href');
+
+			//newSrc = $('a', this).attr('href');
+
+    		newAttr = $(this).attr('alt');
+    		newValidStartTime = $(this).attr('data-validTime');
+    		$('#hwoimg').html( '<img class="image2" src="'+ newSrc +'" />' );
+    		$('#imgModalLabel').html(newAttr);
+    		$('#legend').empty();
+    		makeLegend(newAttr);
+		});
+    	var img = $(".chickletTable1 tr td:eq(1)").find("div a").attr("href");
+    	var title = $(".chickletTable1 tr td:eq(1)").find("div").attr("alt");
+		$('#img').html( '<img class="image2" src="'+ img +'" />' );
+    	$('.maptitle').html(title);
+    	makeLegend(title);
+	    }
+    })
+}
+
+function makeLegend(newAttr){
+$.ajax({
+	type: "GET",
+
+	//url: "https://www.weather.gov/source/crh/ehwo/legend.json",
+
+	url: "https://next.json-generator.com/api/json/get/4yFuYPS8c",
+	cache: false,
+	dataType: "json",
+    success: function(data){
+
+    	//Loop through json to populate legend
+        $.each( data.hazards, function(i, item) {
+        	var legendID = item.name;
+        		if (legendID == newAttr){
+        			legendID = legendID.replace(/\s+/g, '');
+        			var leg = "#"+legendID;
+        				$.each(this.category, function(i,item) {
+        					$("#legend").append('<tr class="'+ legendID +
+							'"><td style="padding: 5px; vertical-align:middle;">'+
+							'<div class="chicklet" style="background-color:'+ item.color +
+							'"></div></td><td style="padding: 5px; vertical-align:middle;">'+
+							item.levelName +
+							'</td><td style="padding: 5px; vertical-align:middle;">'+
+							item.definition +'</td></tr>');
+        				})
+        		    }
+            })
+        }
+    });
+}
+</script>
+
+
+
 <script type="text/javascript">
 
 /***********************************************
@@ -864,10 +467,11 @@ tipobj.style.width=''
 
 document.onmousemove=positiontip
 
-</script><!-- SCRIPT TO GET INFO FOR WX STORIES, GRAPHICASTS, ETC.  DO NOT MODIFY  --><script type="text/javascript">
+</script>
 
+<!-------- SCRIPT TO GET INFO FOR WX STORIES, GRAPHICASTS, ETC.  DO NOT MODIFY  --------->
+<script type="text/javascript">
 $( document ).ready(function() {
-
 $.ajax({
 	type: "GET",
 	url: "/source/lot/wxstory/wxstory.xml",
@@ -941,10 +545,11 @@ $('#morewxstorytabsalert3').html('<p><em><a href="/lot/weatherstory" target="bla
 	 }
 });
 });
-</script><!-- SCRIPT TO GET INFO FOR sitreport.  DO NOT MODIFY  --><script type="text/javascript">
+</script>
 
+<!------------------ SCRIPT TO GET INFO FOR sitreport.  DO NOT MODIFY  ------------------>
+<script type="text/javascript">
 $( document ).ready(function() {
-
 $.ajax({
 	type: "GET",
 	url: "/source/lot/sitreport/sitreport.xml",
@@ -985,12 +590,14 @@ $(document).ready(function(){
         $("#wwa2").toggle();
     });
 });
-</script><script type="text/javascript">
+</script>
 
+<!--END CODE FOR STRIPPING OUT TOP AND SIDE BARS.-->
+<script type="text/javascript">
 $(document).ready(function(){
      $('.subMenuNav').remove();          // Remove the local menus
-     $('.one-sixth-first').remove();    // Remove Widget
-     $('.five-sixth-last').remove();   // News Headlines
+     $('.one-sixth-first').remove();     // Remove Widget
+     $('.five-sixth-last').remove();     // News Headlines
      $('.breadcrumb').remove();
 
      $('.full-width-border').css('border-top', 'white');
@@ -1000,15 +607,23 @@ $(document).ready(function(){
     	'padding-right': '0px',
     	'padding-left': '0px'
      });
+
+	 chiclets_tab();
 });
 
-</script><!--END CODE FOR STRIPPING OUT TOP AND SIDE BARS.--><!--CODE FOR TOGGLING KEY FOR MAPS. DO NOT MODIFY. --><script>
+</script>
+
+<!--CODE FOR TOGGLING KEY FOR MAPS. DO NOT MODIFY. -->
+<script>
 $(document).ready(function(){
 	$("button").click(function(){
 		$("#mapkey").toggle();
 	});
 });
-</script><!--END CODE FOR TOGGLING MAP KEY--><!--CODE FOR TABS. DO NOT MODIFY.--><script type='text/javascript'>
+</script>
+
+<!--CODE FOR TABS. DO NOT MODIFY.-->
+<script type='text/javascript'>
    "use strict";
    $(function() {
       $( "#tabs" ).tabs({
@@ -1016,10 +631,12 @@ $(document).ready(function(){
          });
        });
 </script>
+
 <style type="text/css">input[type="radio"]:checked ~ .tab {
-  display: block;
+	display: block;
 }
 </style>
+
 <script type="text/javascript">
     function init(){
         var linkPage = document.getElementById('top').href;
@@ -1027,53 +644,37 @@ $(document).ready(function(){
     }
     onload=init;
 </script>
-<div class="cms-content"><script type='text/javascript'>
-   "use strict";  
 
-// script below will allow to select the initial display tab by id, not by number
-//$('input[name="first"]:checked').val();
-
-     $(document).ready(function(){
-	    
-	    $.fn.tabIndex = function () {
-	     //  return $(this).parent().find(this).index() - 1; 
+<!-------------------- Allow initial display by tab ID, not by number ------------------->
+<div class="cms-content">
+<script type='text/javascript'>
+	"use strict";
+    $(document).ready(function(){
+		$.fn.tabIndex = function () {
+	    //  return $(this).parent().find(this).index() - 1;
 	    	return $(this).parent().find(this).index()- 5;
 	    };
 	    $.fn.selectTabByID = function (tabID) {
 	        $(this).tabs("option", "active", $('#' + tabID).tabIndex());
 	    };
-	   // $.fn.selectTabByIndex = function (tabIndex) {
-	   //     $(this).tabs("option", "active", tabIndex);
-	  //  };
 
 	  // script below checks variable - if none forces the top listed tab for opened tab
-	var firsttab = "Webcams"; 
-	if (firsttab == null) {
-		 $("#tabs").tabs();
-	}
-	else {
-		$("#tabs").tabs();
-		 $("#tabs").selectTabByID(firsttab);
-	}
-	
-	
-//   $("#tabs").tabs();
- //  $("#tabs").selectTabByID('During');
- // $("#tabs").selectTabByID(firsttab);
- //  $("#tabs").tabs("select", firsttab);
-   
-});
-          
-         
+		var firsttab = "Webcams";
+		if (firsttab == null) {
+		 	$("#tabs").tabs();
+		}
+		else {
+			$("#tabs").tabs();
+		 	$("#tabs").selectTabByID(firsttab);
+		}
+	});
+
+
 </script><!-- END CODE FOR SETTING ORDER OF TABS BY ID. -->
 <h1>NWS Chicago, IL *Experimental* Winter Weather Watcher Briefing</h1>
-
 <p><span style="font-size:14px;">This page will auto-update every 15 minutes.</span></p>
-
 <p><span style="font-size:14px;">If you notice old data, try reloading the page while ignoring caching by hitting Shift + F5 on a PC, or Command + R on a Mac.&nbsp;</span></p>
-
-<p><a href="http://www.weather.gov/lot" target="self"><span style="color: blue; font-size: 14px; font-face: trebuchet MS;">Back to NWS Chicago, IL Main Page</span></a><br />
-<!-- --------------------------------------------------------------------------------------------------- --> <!-- --------------------------------------------------------------------------------------------------- --> <!-- --------------------------------------------------------------------------------------------------- --> <!-- --------------------------------------------------------------------------------------------------- --> <!-- --------------------------------------------------------------------------------------------------- --></p>
+<p><a href="http://www.weather.gov/lot" target="self"><span style="color: blue; font-size: 14px; font-face: trebuchet MS;">Back to NWS Chicago, IL Main Page</span></a><br /></p>
 
 <div id="tabs" style="width: 950px;">
 <ul>
@@ -1328,59 +929,20 @@ $(document).ready(function(){
 
 			<p><em><span style="font-size: 14px;">Click&nbsp;an individual hazard block below for more information</span></em></p>
 
-			<table bordercolor="#ffffff" width="100%">
-				<tbody>
-					<tr style="border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;">
-						<td style="vertical-align: middle; border-left-color: rgb(221, 221, 221); border-left-style: solid;">
-						<div align="center">Snow and Sleet</div>
-						</td>
-						<td style="vertical-align: middle; border-right-color: rgb(221, 221, 221); border-right-style: solid;">
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day1/SnowSleetDay1.png" id="snow1" onclick="return hs.expand(this, {captionId:'snow1'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/snowsleet1.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-						<td style="vertical-align: middle; border-left-color: rgb(221, 221, 221); border-left-style: solid;">
-						<div align="center">Ice Accumulation</div>
-						</td>
-						<td style="vertical-align: middle; border-right-color: rgb(221, 221, 221); border-right-style: solid;">
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day1/IceAccumulationDay1.png" id="ice1" onclick="return hs.expand(this, {captionId: 'ice1'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/ice1.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
+			<!-- Chiclet Table Day Of -->
+             <table class="table borderless table-hover table chickletTable1">
+            	<tbody class="ghwo">
+            	</tbody>
+            	<thead>
+					<tr class="ghwo" id="titleRow1">
 					</tr>
-					<tr style="border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;">
-						<td style="vertical-align: middle; border-left-color: rgb(221, 221, 221); border-left-style: solid;">
-						<div align="center">Fog</div>
-						</td>
-						<td style="vertical-align: middle; border-right-color: rgb(221, 221, 221); border-right-style: solid;">
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day1/FogDay1.png" id="fog1" onclick="return hs.expand(this, {captionId: 'fog1'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/fog1.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-						<td style="vertical-align: middle; border-left-color: rgb(221, 221, 221); border-left-style: solid;">
-						<div align="center">Non-Thunderstorm Wind</div>
-						</td>
-						<td style="vertical-align: middle; border-right-color: rgb(221, 221, 221); border-right-style: solid;">
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day1/NonThunderstormWindDay1.png" id="wind1" onclick="return hs.expand(this, {captionId: 'wind1'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/nonconwind1.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-					</tr>
-					<tr style="border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;">
-						<td style="vertical-align: middle; border-left-color: rgb(221, 221, 221); border-left-style: solid;">
-						<div align="center"><font color="#000000">Excessive Cold</font></div>
-						</td>
-						<td style="vertical-align: middle; border-right-color: rgb(221, 221, 221); border-right-style: solid;">
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day1/ExcessiveColdDay1.png" id="cold1" onclick="return hs.expand(this, {captionId: 'cold1'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/cold1.png" style="border-width: 0px;" /></a></div>
-						</td>
-						<td style="vertical-align: middle; border-left-color: rgb(221, 221, 221); border-left-style: solid;">
-						<div align="center">Coastal Flooding</div>
-						</td>
-						<td style="vertical-align: middle; border-right-color: rgb(221, 221, 221); border-right-style: solid;">
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day1/CoastalFloodDay1.png" id="coast1" onclick="return hs.expand(this, {captionId: 'coast1'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/cf1.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-
-			<p>&nbsp;</p>
+            	</thead>
+            </table>
 
 			<table align="center" bgcolor="#eeeeee" border="0">
 				<tbody>
 					<tr>
-						<td rowspan="2" style="text-align: center;" width="20%"><strong>Risk<br />
+						<td rowspan="2" style="text-align: center;" width="5%"><strong>Threat<br />
 						Level<br />
 						Key</strong></td>
 						<td width="20%">
@@ -1401,19 +963,19 @@ $(document).ready(function(){
 					</tr>
 					<tr>
 						<td>
-						<div align="center"><img alt="" src="/images/lot/EHWO/risk/hazard0.png" style="width: 50px; height: 24px;" /></div>
+                        <div class="chicklet-key" style="background-color: green"></div>
 						</td>
 						<td>
-						<div align="center"><img alt="Risk - Limited" height="24" src="/images/lot/EHWO/risk/hazard1.png" width="50" /></div>
+						<div class="chicklet-key" style="background-color: yellow"></div>
 						</td>
 						<td>
-						<div align="center"><img alt="Risk - Elevated" height="24" src="/images/lot/EHWO/risk/hazard2.png" width="50" /></div>
+						<div class="chicklet-key" style="background-color: orange"></div>
 						</td>
 						<td>
-						<div align="center"><img alt="Risk - Significant" height="24" src="/images/lot/EHWO/risk/hazard3.png" width="50" /></div>
+						<div class="chicklet-key" style="background-color: red"></div>
 						</td>
 						<td>
-						<div align="center"><img alt="Risk - Excessive" height="24" src="/images/lot/EHWO/risk/hazard4.png" width="50" /></div>
+						<div class="chicklet-key" style="background-color: purple"></div>
 						</td>
 					</tr>
 				</tbody>
@@ -1830,150 +1392,54 @@ $(document).ready(function(){
 			<p style="text-align: center;"><br />
 			<em>Click&nbsp;an individual hazard block below for more information.</em></p>
 
-			<table bordercolor="#ffffff" width="100%">
-				<tbody>
-					<tr style="vertical-align: middle; border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; bgcolor: #dde8ff;">
-						<td valign="middle">
-						<div align="center" valign="middle">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
-						</td>
-						<td style="text-align: center;">
-						<div align="center" class="day-of-week-container"><strong><img class="day-of-week-image" src="https://www.weather.gov/images/lot/EHWO/risk/date_2.png" /></strong></div>
-						</td>
-						<td style="text-align: center;">
-						<div align="center" class="day-of-week-container"><strong><img class="day-of-week-image" src="https://www.weather.gov/images/lot/EHWO/risk/date_3.png" /></strong></div>
-						</td>
-						<td style="text-align: center;">
-						<div align="center" class="day-of-week-container"><strong><img class="day-of-week-image" src="https://www.weather.gov/images/lot/EHWO/risk/date_4.png" /></strong></div>
-						</td>
-					</tr>
-					<tr style="vertical-align: middle; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; bgcolor: #dde8ff; horizontal-align: center;">
-						<td>
-						<div align="center">Snow and Sleet</div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day2/SnowSleetDay2.png" id="snow2" onclick="return hs.expand(this, {captionId:'snow2'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/snowsleet2.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day3/SnowSleetDay3.png" id="snow2" onclick="return hs.expand(this, {captionId:'snow3'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/snowsleet3.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day4/SnowSleetDay4.png" id="snow2" onclick="return hs.expand(this, {captionId:'snow4'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/snowsleet4.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-					</tr>
-					<tr style="vertical-align: middle; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; bgcolor: #dde8ff; horizontal-align: center;">
-						<td nowrap="nowrap">
-						<div align="center">Ice Accumulation</div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day2/IceAccumulationDay2.png" id="ice2" onclick="return hs.expand(this, {captionId: 'ice2'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/ice2.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day3/IceAccumulationDay3.png" id="ice3" onclick="return hs.expand(this, {captionId:'ice3'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/ice3.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day4/IceAccumulationDay4.png" id="ice4" onclick="return hs.expand(this, {captionId: 'ice4'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/ice4.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-					</tr>
-					<tr style="vertical-align: middle; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; bgcolor: #dde8ff; horizontal-align: center;">
-						<td nowrap="nowrap">
-						<div align="center">Fog</div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day2/FogDay2.png" id="fog3" onclick="return hs.expand(this, {captionId: 'fog2'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/fog2.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day3/FogDay3.png" id="fog4" onclick="return hs.expand(this, {captionId: 'fog3'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/fog3.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day4/FogDay4.png" id="fog5" onclick="return hs.expand(this, {captionId: 'fog4'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/fog4.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-					</tr>
-					<tr style="vertical-align: middle; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; bgcolor: #dde8ff; horizontal-align: center;">
-						<td nowrap="nowrap">
-						<div align="center">Non-Thunderstorm Wind</div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day2/NonThunderstormWindDay2.png" id="wind2" onclick="return hs.expand(this, {captionId: 'wind2'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/nonconwind2.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day3/NonThunderstormWindDay3.png" id="wind3" onclick="return hs.expand(this, {captionId: 'wind3'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/nonconwind3.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day4/NonThunderstormWindDay4.png" id="wind4" onclick="return hs.expand(this, {captionId: 'wind4'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/nonconwind4.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-					</tr>
-					<tr style="vertical-align: middle; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; bgcolor: #dde8ff; horizontal-align: center;">
-						<td nowrap="nowrap">
-						<div align="center">Excessive Cold</div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day2/ExcessiveColdDay2.png" id="cold2" onclick="return hs.expand(this, {captionId: 'cold2'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/cold2.png" style="border-width: 0px;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day3/ExcessiveColdDay3.png" id="cold3" onclick="return hs.expand(this, {captionId: 'cold3'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/cold3.png" style="border-width: 0px;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day4/ExcessiveColdDay4.png" id="cold4" onclick="return hs.expand(this, {captionId: 'cold4'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/cold4.png" style="border-width: 0px;" /></a></div>
-						</td>
-					</tr>
-					<tr style="vertical-align: middle; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; bgcolor: #dde8ff; horizontal-align: center;">
-						<td nowrap="nowrap">
-						<div align="center">Coastal Flooding</div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day2/CoastalFloodDay2.png" id="coast2" onclick="return hs.expand(this, {captionId: 'coast2'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/cf2.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day3/CoastalFloodDay3.png" id="coast3" onclick="return hs.expand(this, {captionId: 'coast3'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/cf3.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day4/CoastalFloodDay4.png" id="coast4" onclick="return hs.expand(this, {captionId: 'coast4'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/cf4.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-					</tr>
+			<!-- Chiclet Table Days 1.5-4 -->
+			<table class="table borderless table-hover table chickletTable2">
+				<tbody class="ghwo">
 				</tbody>
+				<thead>
+					<tr class="ghwo" id="titleRow2">
+					</tr>
+				</thead>
 			</table>
 
-			<p style="text-align: center;">&nbsp;</p>
 
-			<p style="text-align: center;">&nbsp;</p>
-
-			<table align="center" bgcolor="#eeeeee" border="0" width="100%">
+			<table align="center" bgcolor="#eeeeee" border="0">
 				<tbody>
 					<tr>
-						<td rowspan="2" style="text-align: center;"><strong>Risk<br />
+						<td rowspan="2" style="text-align: center;" width="5%"><strong>Threat<br />
 						Level<br />
 						Key</strong></td>
-						<td width="18%">
-						<div align="center"><strong>None</strong></div>
+						<td width="20%">
+						<div align="center">None</div>
 						</td>
-						<td width="18%">
-						<div align="center"><strong>Limited</strong></div>
+						<td width="20%">
+						<div align="center">Limited</div>
 						</td>
-						<td width="18%">
-						<div align="center"><strong>Elevated</strong></div>
+						<td width="20%">
+						<div align="center">Elevated</div>
 						</td>
-						<td width="18%">
-						<div align="center"><strong>Significant</strong></div>
+						<td width="20%">
+						<div align="center">Significant</div>
 						</td>
-						<td width="18%">
-						<div align="center"><strong>Extreme</strong></div>
+						<td width="20%">
+						<div align="center">Extreme</div>
 						</td>
 					</tr>
 					<tr>
 						<td>
-						<div align="center"><img alt="" height="24" src="/images/lot/EHWO/risk/hazard0.png" width="50" /></div>
+                        <div class="chicklet-key" style="background-color: green"></div>
 						</td>
 						<td>
-						<div align="center"><img alt="Risk - Limited" height="24" src="/images/lot/EHWO/risk/hazard1.png" width="50" /></div>
+						<div class="chicklet-key" style="background-color: yellow"></div>
 						</td>
 						<td>
-						<div align="center"><img alt="Risk - Elevated" height="24" src="/images/lot/EHWO/risk/hazard2.png" width="50" /></div>
+						<div class="chicklet-key" style="background-color: orange"></div>
 						</td>
 						<td>
-						<div align="center"><img alt="Risk - Significant" height="24" src="/images/lot/EHWO/risk/hazard3.png" width="50" /></div>
+						<div class="chicklet-key" style="background-color: red"></div>
 						</td>
 						<td>
-						<div align="center"><img alt="Risk - Excessive" height="24" src="/images/lot/EHWO/risk/hazard4.png" width="50" /></div>
+						<div class="chicklet-key" style="background-color: purple"></div>
 						</td>
 					</tr>
 				</tbody>
@@ -2047,13 +1513,9 @@ $(document).ready(function(){
 <p>&nbsp;</p>
 
 <center><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Weather Prediction Center Outlook Products</span></strong></center>
-
 <center>&nbsp;</center>
-
 <center><span style="color: black; font-size: 16px; font-face: trebuchet MS;">Graphics will update at approximately: 4 AM | 8 AM | 2 PM | 4 PM | 8 PM CST </span></center>
-
 <center>&nbsp;</center>
-
 <table align="center" border="0" cellpadding="1" cellspacing="1" width="100%">
 	<colgroup>
 		<col span="1" style="width: 33%;" />
@@ -2075,7 +1537,6 @@ $(document).ready(function(){
 </table>
 
 <center>&nbsp;</center>
-
 <table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
 	<tbody>
 		<tr>
@@ -2092,21 +1553,15 @@ $(document).ready(function(){
 </table>
 
 <p>&nbsp;</p>
-
 <hr style="margin-bottom: 7px;" />
 <p style="text-align: center;"><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Detailed Hourly Forecasts</span></strong></p>
-
 <center>&nbsp;</center>
-
 <center><span style="font-size:16px;"><a href="https://go.usa.gov/x7Y4J" target="_blank"><span style="color: blue;">Interactive Detailed Forecast Webpage</span></a></span></center>
-
 <center>&nbsp;</center>
 
 <p style="text-align: center;"><!-- -------------------- WWA INFORMATION -------------------- --></p>
-
 <hr style="margin-bottom: 7px;" />
 <p style="text-align: center;"><strong><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Detailed Forecasts (Legacy Point and Click Page)</span></strong></p>
-
 <center>
 <table border="0" cellpadding="1" cellspacing="1" width="900">
 	<tbody>
@@ -2328,178 +1783,53 @@ $(document).ready(function(){
 			<p style="text-align: center;"><br />
 			<em>Click&nbsp;an individual hazard block below for more information.</em></p>
 
-			<table bordercolor="#ffffff" width="100%">
-				<tbody>
-					<tr style="vertical-align: middle; border-top-color: rgb(221, 221, 221); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; bgcolor: #dde8ff;">
-						<td valign="middle">
-						<div align="center" valign="middle">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
-						</td>
-						<td style="text-align: center;">
-						<div align="center" class="day-of-week-container"><strong><img class="day-of-week-image" src="https://www.weather.gov/images/lot/EHWO/risk/date_5.png" /></strong></div>
-						</td>
-						<td style="text-align: center;">
-						<div align="center" class="day-of-week-container"><strong><img class="day-of-week-image" src="https://www.weather.gov/images/lot/EHWO/risk/date_6.png" /></strong></div>
-						</td>
-						<td style="text-align: center;">
-						<div align="center" class="day-of-week-container"><strong><img class="day-of-week-image" src="https://www.weather.gov/images/lot/EHWO/risk/date_7.png" /></strong></div>
-						</td>
-					</tr>
-					<tr style="vertical-align: middle; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; bgcolor: #dde8ff; horizontal-align: center;">
-						<td nowrap="nowrap">
-						<div align="center">Fog</div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day5/FogDay5.png" id="fog5" onclick="return hs.expand(this, {captionId: 'fog5'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/fog5.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day6/FogDay6.png" id="fog6" onclick="return hs.expand(this, {captionId: 'fog6'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/fog6.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day7/FogDay7.png" id="fog7" onclick="return hs.expand(this, {captionId: 'fog7'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/fog7.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-					</tr>
-					<tr style="vertical-align: middle; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; bgcolor: #dde8ff; horizontal-align: center;">
-						<td nowrap="nowrap">
-						<div align="center">Non-Thunderstorm Wind</div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day5/NonThunderstormWindDay5.png" id="wind5" onclick="return hs.expand(this, {captionId:
-
-'wind5'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/nonconwind5.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day6/NonThunderstormWindDay6.png" id="wind6" onclick="return hs.expand(this, {captionId:
-
-'wind6'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/nonconwind6.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day7/NonThunderstormWindDay7.png" id="wind7" onclick="return hs.expand(this, {captionId:
-
-'wind7'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/nonconwind7.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-					</tr>
-					<tr style="vertical-align: middle; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; bgcolor: #dde8ff; horizontal-align: center;">
-						<td nowrap="nowrap">
-						<div align="center">Excessive Heat</div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day5/ExcessiveHeatDay5.png" id="heat5" onclick="return hs.expand(this, {captionId:
-
-'heat5'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/heat5.png" style="border-width: 0px;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day6/ExcessiveHeatDay6.png" id="heat6" onclick="return hs.expand(this, {captionId:
-
-'heat6'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/heat6.png" style="border-width: 0px;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day7/ExcessiveHeatDay7.png" id="heat7" onclick="return hs.expand(this, {captionId:
-
-'heat7'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/heat7.png" style="border-width: 0px;" /></a></div>
-						</td>
-					</tr>
-					<tr style="vertical-align: middle; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; bgcolor: #dde8ff; horizontal-align: center;">
-						<td>
-						<div align="center">Snow and Sleet</div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day5/SnowSleetDay5.png" id="snow5" onclick="return hs.expand(this, {captionId:
-
-'snow5'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/snowsleet5.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day6/SnowSleetDay6.png" id="snow6" onclick="return hs.expand(this, {captionId:
-
-'snow6'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/snowsleet6.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day7/SnowSleetDay7.png" id="snow7" onclick="return hs.expand(this, {captionId:
-
-'snow7'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/snowsleet7.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-					</tr>
-					<tr style="vertical-align: middle; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; bgcolor: #dde8ff; horizontal-align: center;">
-						<td nowrap="nowrap">
-						<div align="center">Ice Accumulation</div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day5/IceAccumulationDay5.png" id="ice5" onclick="return hs.expand(this, {captionId:
-
-'ice5'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/ice5.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day6/IceAccumulationDay6.png" id="ice6" onclick="return hs.expand(this, {captionId:
-
-'ice6'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/ice6.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day7/IceAccumulationDay7.png" id="ice7" onclick="return hs.expand(this, {captionId:
-
-'ice7'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/ice7.png" style="border-width: 0px; border-style: solid;" /></a></div>
-						</td>
-					</tr>
-					<tr style="vertical-align: middle; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; bgcolor: #dde8ff; horizontal-align: center;">
-						<td nowrap="nowrap">
-						<div align="center">Excessive Cold</div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day5/ExcessiveColdDay5.png" id="cold5" onclick="return hs.expand(this, {captionId:
-
-'cold5'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/cold5.png" style="border-width: 0px;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day6/ExcessiveColdDay6.png" id="cold6" onclick="return hs.expand(this, {captionId:
-
-'cold6'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/cold6.png" style="border-width: 0px;" /></a></div>
-						</td>
-						<td>
-						<div align="center"><a class="highslide" href="https://www.weather.gov/images/lot/EHWO/Day7/ExcessiveColdDay7.png" id="cold7" onclick="return hs.expand(this, {captionId:
-
-'cold7'})"><img class="chiclets-small" src="https://www.weather.gov/images/lot/EHWO/risk/cold7.png" style="border-width: 0px;" /></a></div>
-						</td>
-					</tr>
+			<!-- Chiclet Table Days 4+ -->
+			<table class="table borderless table-hover table chickletTable3">
+				<tbody class="ghwo">
 				</tbody>
+				<thead>
+					<tr class="ghwo" id="titleRow3">
+					</tr>
+				</thead>
 			</table>
 
-			<p style="text-align: center;">&nbsp;</p>
-
-			<table align="center" bgcolor="#eeeeee" border="0" width="100%">
+			<table align="center" bgcolor="#eeeeee" border="0">
 				<tbody>
 					<tr>
-						<td rowspan="2" style="text-align: center;"><strong>Risk<br />
+						<td rowspan="2" style="text-align: center;" width="5%"><strong>Threat<br />
 						Level<br />
 						Key</strong></td>
-						<td width="18%">
-						<div align="center"><strong>None</strong></div>
+						<td width="20%">
+						<div align="center">None</div>
 						</td>
-						<td width="18%">
-						<div align="center"><strong>Limited</strong></div>
+						<td width="20%">
+						<div align="center">Limited</div>
 						</td>
-						<td width="18%">
-						<div align="center"><strong>Elevated</strong></div>
+						<td width="20%">
+						<div align="center">Elevated</div>
 						</td>
-						<td width="18%">
-						<div align="center"><strong>Significant</strong></div>
+						<td width="20%">
+						<div align="center">Significant</div>
 						</td>
-						<td width="18%">
-						<div align="center"><strong>Extreme</strong></div>
+						<td width="20%">
+						<div align="center">Extreme</div>
 						</td>
 					</tr>
 					<tr>
 						<td>
-						<div align="center"><img alt="" height="24" src="/images/lot/EHWO/risk/hazard0.png" width="50" /></div>
+                        <div class="chicklet-key" style="background-color: green"></div>
 						</td>
 						<td>
-						<div align="center"><img alt="Risk - Limited" height="24" src="/images/lot/EHWO/risk/hazard1.png" width="50" /></div>
+						<div class="chicklet-key" style="background-color: yellow"></div>
 						</td>
 						<td>
-						<div align="center"><img alt="Risk - Elevated" height="24" src="/images/lot/EHWO/risk/hazard2.png" width="50" /></div>
+						<div class="chicklet-key" style="background-color: orange"></div>
 						</td>
 						<td>
-						<div align="center"><img alt="Risk - Significant" height="24" src="/images/lot/EHWO/risk/hazard3.png" width="50" /></div>
+						<div class="chicklet-key" style="background-color: red"></div>
 						</td>
 						<td>
-						<div align="center"><img alt="Risk - Excessive" height="24" src="/images/lot/EHWO/risk/hazard4.png" width="50" /></div>
+						<div class="chicklet-key" style="background-color: purple"></div>
 						</td>
 					</tr>
 				</tbody>
@@ -2794,11 +2124,10 @@ $(document).ready(function(){
 <p style="text-align: center;"><br />
 <a href="https://nwschat.weather.gov/" target="_blank"><span style="color: blue; font-size: 20px; font-face: trebuchet MS;">Link to NWSChat</span></a></p>
 </div>
-<!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- -->
+
 
 <div id="Planning">
 <p><span style="color: black; font-size: 18px; font-face: trebuchet MS;">Winter Weather Watcher Training</span></p>
-
 <ul>
 	<li><a href="https://youtu.be/iEHCG13ykis"><span style="color:#0000FF;"><span style="font-size: 18px;">Winter Weather Watcher Video Tutorial (Youtube)</span></span></a></li>
 	<li><a href="https://www.weather.gov/media/lot/wxwatcher/NWS_Chicago_Winter_Weather_Watcher_Website_Guide.pdf"><span style="color:#0000FF;"><span style="font-size: 18px;">Winter Weather Watcher Quickstart Guide</span></span></a></li>
@@ -2815,7 +2144,8 @@ $(document).ready(function(){
 	<li><a href="https://www.weather.gov/lot/winterprepare"><span style="color: blue; font-size: 18px; font-face: trebuchet MS;">Winter Weather Preparedness</span></a></li>
 </ul>
 </div>
-<!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!--***********************************START OF REALLY UNNECESSARILY LONG BLOCK OF CODE********************************************-->
+
+<!--**************START OF REALLY UNNECESSARILY LONG BLOCK OF CODE*********************-->
 <style type="text/css">.highslide-active-anchor IMG {
 	VISIBILITY: hidden
 }
@@ -4887,12 +4217,12 @@ BORDER-LEFT: black 2px solid; Z-INDEX: 100; PADDING-RIGHT: 2px; VISIBILITY: hidd
 }
 </style>
 <p><!-- ************** PASTE Interactive Damage Map JAVASCRIPT *****************************
-*******************          in place of the          ***********************************					
+*******************          in place of the          ***********************************
 *******************       ENTIRE string of lines      *********************************** --></p>
 <!--CODE FOR EXPANDING IMAGES. DO NOT MODIFY.--><script type="text/javascript">
 
 /* jQuery Image Magnify script v1.1
-* This notice must stay intact for usage 
+* This notice must stay intact for usage
 * Author: Dynamic Drive at https://www.dynamicdrive.com/
 * Visit https://www.dynamicdrive.com/ for full source code
 */
@@ -4913,7 +4243,7 @@ jQuery.imageMagnify={
 		warpshell.newattrs.x=winattrs.x+winattrs.w/2-warpshell.newattrs.w/2
 		warpshell.newattrs.y=winattrs.y+winattrs.h/2-warpshell.newattrs.h/2
 		if (warpshell.newattrs.x<winattrs.x+5){ //no space to the left?
-			warpshell.newattrs.x=winattrs.x+5	
+			warpshell.newattrs.x=winattrs.x+5
 		}
 		else if (warpshell.newattrs.x+warpshell.newattrs.w > winattrs.x+winattrs.w){//no space to the right?
 			warpshell.newattrs.x=winattrs.x+5
@@ -4933,7 +4263,7 @@ jQuery.imageMagnify={
 		if ($target.data('imgshell')){
 			$target.data('imgshell').$clone.remove()
 			$target.css({opacity:1}).unbind('click.magnify')
-		}	
+		}
 		var $clone=$target.clone().css({position:'absolute', left:0, top:0, visibility:'hidden', border:'1px solid gray', cursor:'pointer'}).appendTo(document.body)
 		$clone.data('$relatedtarget', $target) //save $target image this enlarged image is associated with
 		$target.data('imgshell', {$clone:$clone, attrs:attrs, newattrs:newattrs})
@@ -4945,7 +4275,7 @@ jQuery.imageMagnify={
 			$clone.stop().css({zIndex:++jQuery.imageMagnify.zIndexcounter, left:imageinfo.attrs.x, top:imageinfo.attrs.y, width:imageinfo.attrs.w, height:imageinfo.attrs.h, opacity:0, visibility:'visible', display:'block'})
 			.animate({opacity:1, left:imageinfo.newattrs.x, top:imageinfo.newattrs.y, width:imageinfo.newattrs.w, height:imageinfo.newattrs.h}, setting.duration,
 			function(){ //callback function after warping is complete
-				//none added		
+				//none added
 			}) //end animate
 		}) //end click
 		$clone.click(function(e){ //action when magnified image is clicked on
@@ -4987,8 +4317,8 @@ jQuery.fn.applyMagnifier=function(options){ //dynamic version of imageMagnify() 
 		var $imgref=$(this)
 		if (this.tagName!="IMG")
 			return true //skip to next matched element
-		
-	})	
+
+	})
 
 };
 
