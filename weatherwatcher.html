@@ -1,0 +1,3389 @@
+<div class="cms-content"><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script></div>
+<link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+<link href="https://openlayers.org/en/v3.20.1/css/ol.css" rel="stylesheet" type="text/css" /><script src="https://openlayers.org/en/v3.20.1/build/ol.js" type="text/javascript"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"</script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" /><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" rel="stylesheet" />
+<link href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css" rel="stylesheet" /><script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" /><script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script><script src="https://momentjs.com/downloads/moment.js"></script><meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+</style>
+<meta content="600" http-equiv="REFRESH" />
+<div class="highslide-caption" id="wxstorygraphictab1">Graphicast</div>
+
+<div class="highslide-caption" id="wxstorygraphictab3">Weather Story Graphic Tab 3</div>
+
+<div class="highslide-caption" id="wxstorygraphictab4">Weather Story Graphic Tab 4</div>
+
+<div class="highslide-caption" id="wxstorygraphictab5">Weather Story Graphic Tab 5</div>
+
+<div class="highslide-caption" id="regionalradar">National Radar Loop</div>
+
+<div class="highslide-caption" id="localradar">Local Radar Loop</div>
+
+<div class="highslide-caption" id="gnow">Graphical Nowcast</div>
+
+<div class="highslide-caption" id="wwamap">Local Watches, Advisories, and Warnings</div>
+
+<div class="highslide-caption" id="spcactivity">National Watches and Warnings</div>
+
+<div class="highslide-caption" id="wxstory">Weather Story</div>
+
+<div class="highslide-caption" id="d1co">SPC Day 1 Convective Outlook</div>
+
+<div class="highslide-caption" id="d1to">SPC Day 1 Tornado Outlook</div>
+
+<div class="highslide-caption" id="d1ho">SPC Day 1 Hail Outlook</div>
+
+<div class="highslide-caption" id="d1wo">SPC Day 1 Wind Outlook</div>
+
+<div class="highslide-caption" id="d2co">SPC Day 2 Categorical Outlook</div>
+
+<div class="highslide-caption" id="d2to">SPC Day 2 Tornado Outlook</div>
+
+<div class="highslide-caption" id="d2ho">SPC Day 2 Hail Outlook</div>
+
+<div class="highslide-caption" id="d2wo">SPC Day 2 Wind Outlook</div>
+
+<div class="highslide-caption" id="d3co">SPC Day 3 Categorical Outlook</div>
+
+<div class="highslide-caption" id="d1wpc">Day 1 Excessive Rainfall Outlook</div>
+
+<div class="highslide-caption" id="d2wpc">Day 2 Excessive Rainfall Outlook</div>
+
+<div class="highslide-caption" id="d3wpc">Day 3 Excessive Rainfall Outlook</div>
+
+<div class="highslide-caption" id="d3po">SPC Day 3 Probabilistic Outlook</div>
+
+<div class="highslide-caption" id="spotter1">Day 1 Severe Thunderstorm Timing<br />
+&nbsp;</div>
+<style type="text/css">#wrapper {
+	OVERFLOW: hidden; WIDTH: 970px; MARGIN-LEFT: auto; MARGIN-RIGHT: auto
+}
+
+.chicklet {
+	width: 25px;
+	height: 12px;
+	border-radius:2px;
+	-moz-border-radius:5px;
+	margin: 0px auto;
+	vertical-align: middle;
+	-moz-box-shadow: 0px 3px 4px #d6d6d6;
+	-webkit-box-shadow: 0px 3px 4px #d6d6d6;
+	box-shadow: 0px 3px 4px #d6d6d6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#d6d6d6')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#d6d6d6');
+	}
+
+.chicklet-key {
+	width: 50px;
+	height: 24px;
+	border-radius:4px;
+	-moz-border-radius:2px;
+	margin: 0px auto;
+	vertical-align: middle;
+	-moz-box-shadow: 0px 3px 4px #d6d6d6;
+	-webkit-box-shadow: 0px 3px 4px #d6d6d6;
+	box-shadow: 0px 3px 4px #d6d6d6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#d6d6d6')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=180, Color='#d6d6d6');
+}
+
+th {
+	text-align: center;
+	font-weight: normal;
+	}
+
+.image2 {
+	max-width: -webkit-fill-available;
+	}
+
+#lotwarn {
+	WIDTH: 460px; FLOAT: left
+}
+
+#imgpad {
+	PADDING-TOP: 3px
+}
+a {
+	color: #0000ff;
+	text-decoration: none;
+}
+#toplinks A:hover {
+	COLOR: #193eac
+}
+td.ehwo {
+
+border-bottom:1px solid #ddd;
+
+}
+.day-of-week-container {
+  width: 36px;
+  height: 26px;
+  overflow: hidden;
+  position: relative;
+}
+
+.day-of-week-image {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  align: center;
+}
+
+.chiclets-small {
+  width: 36px;
+  align: center;
+  border-style: solid;
+  border-width: 0px; 
+  border-color: black;
+}
+
+
+nav {
+	MARGIN-BOTTOM: 2px; FLOAT: right
+}
+nav UL {
+	TEXT-ALIGN: center
+}
+nav UL LI {
+	BACKGROUND: #ffff99; FLOAT: left; DISPLAY: inline
+}
+nav UL LI:hover {
+	BACKGROUND: #f0e0b2
+}
+nav UL LI A {
+	FONT-SIZE: 16px; TEXT-DECORATION: none; FONT-FAMILY: "tahoma"; FONT-WEIGHT: bold; COLOR: blue; PADDING-BOTTOM: 5px; PADDING-TOP: 
+
+5px; PADDING-LEFT: 20px; DISPLAY: block; PADDING-RIGHT: 20px
+}
+nav UL LI A:hover {
+	TEXT-DECORATION: none; COLOR: blue
+}
+nav UL LI UL {
+	WIDTH: 160px; BACKGROUND: #fff; POSITION: absolute; MARGIN-TOP: 0px
+}
+nav UL LI UL LI {
+	WIDTH: 160px; BACKGROUND: #fff
+}
+nav UL LI UL LI A {
+	FONT-SIZE: 14px; FONT-FAMILY: "tahoma"; FONT-WEIGHT: normal; COLOR: blue; PADDING-BOTTOM: 9px; PADDING-TOP: 9px; PADDING-LEFT: 
+
+9px; DISPLAY: block; PADDING-RIGHT: 9px
+}
+nav UL LI UL LI:hover A {
+	BACKGROUND: #f7f7f7
+}
+nav UL LI UL.fallback {
+	DISPLAY: none
+}
+nav UL LI:hover UL.fallback {
+	DISPLAY: block
+}
+
+#rcorners1 {
+    border-color: #bbbbbb;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    background: #f5f5f5;
+    padding: 10px; 
+}
+</style>
+<style type="text/css">#dhtmltooltip {
+	BORDER-TOP: black 2px solid; BORDER-RIGHT: black 2px solid; WIDTH: 150px; BORDER-BOTTOM: black 2px solid; POSITION: absolute; 
+
+PADDING-BOTTOM: 2px; PADDING-TOP: 2px; PADDING-LEFT: 2px; FILTER: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135); 
+
+BORDER-LEFT: black 2px solid; Z-INDEX: 100; PADDING-RIGHT: 2px; VISIBILITY: hidden; BACKGROUND-COLOR: lightyellow
+}
+</style>
+<div id="dhtmltooltip">&nbsp;</div>
+<!-- HWO Images Modal -->
+
+<div aria-hidden="true" aria-labelledby="imgModalLabel" class="modal fade" id="imgModal" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="imgModalLabel">&nbsp;</h5>
+<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button></div>
+
+<div class="modal-body">
+<div id="hwoimg">&nbsp;</div>
+
+<hr />
+<div id="legend">&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+// Limit the chiclet hazard display to winter-time hazards
+var hazardNames = [
+    "Fog Risk",
+    "NonThunderstorm Wind Risk",
+    "Coastal Flood Risk",
+    "Excessive Cold Risk",
+    "Excessive Heat Risk", 
+    "Fire Weather Risk", 
+    "Hail Risk", 
+    "Lightning Risk", 
+    "Severe Thunderstorms Risk", 
+    "Thunderstorm Wind Risk", 
+    "Tornado Risk",     
+]
+
+var timePeriods2 = [
+	"period2",
+	"period3",
+	"period4",
+    "period5",
+	"period6",
+	"period7"
+]
+
+function chiclets_tab() {
+    $.ajax({
+		type: "GET",
+		url: '/source/lot/ehwo/HBjson.json',
+		cache: false,
+		dataType: "json",
+	    success: function(data){
+			var k = moment(data.generation_time).format('dddd');
+	        var time = moment(data.generation_time).format('MMMM Do YYYY, h:mm:ss a');
+			var time2 = moment(data.generation_time).format('MMMM Do YYYY, h:mm a');
+			console.log(k, time)
+	        var days = [];
+	        var daysRequired = 6;
+	        $( '.productUpdate' ).append( time );
+			updateTime = k + ' ' + time2
+			$("#titleRow1").append('<th style="text-align:left !important; font-size:11px">Last Update: '+updateTime+'</th>');
+			$("#titleRow2").append('<th style="text-align:left !important; font-size:11px">Last Update: '+updateTime+'</th>');
+
+	        for (let i = 1; i <= daysRequired; i++) {
+	          days.push( moment(data.generation_time).add(i, 'days').format('ddd'))
+	        }
+
+			$.each(days, function(i, item){
+					$('#titleRow2').append('<th>'+item+'</th>');
+
+			})
+
+	        //Loop through json and color chicklets. We're only grabbing
+	        $.each( data.hazards, function(i, item) {
+	            var col = i;
+	            col++;
+	            var col2 = "col"+i;
+              var col3 = "col"+(i*4);
+
+              var col4 = "#"+col2;
+              var col5 = "#"+col3;
+
+
+	            var altName = item.name;
+                if (jQuery.inArray(item.name, hazardNames) !== -1){
+					$('.chickletTable1').append('<tr id="'+col2+'" class="leftCol"><td>' +
+						                        altName+'</td></tr>' );
+					$('.chickletTable2').append('<tr id="'+col3+'" class="leftCol"><td>' +
+						                        altName+'</td></tr>' );
+					$.each(this.periods, function(i,item) {
+                        if (i == 'period1'){
+					        $(col4).append('<td><div class="chicklet" alt="'+ altName +
+					        '" data-toggle="modal" data-target="#imgModal" data-date="'+
+							item.date+'" data-validTime="'+ item.validStartTime +
+							'" style="background-color:'+ item.color +'"><a href="'+
+							item.imagePath +'"></a></div></td>');
+                        }
+						if (jQuery.inArray(i, timePeriods2) !== -1){
+							$(col5).append('<td><div class="chicklet" alt="'+ altName +
+					        '" data-toggle="modal" data-target="#imgModal" data-date="'+
+							item.date+'" data-validTime="'+ item.validStartTime +
+							'" style="background-color:'+ item.color +'"><a href="'+
+							item.imagePath +'"></a></div></td>');
+						}
+						                    })
+                }
+			})
+	    },
+
+	    //Change map based on which chicklet you click on
+	    complete: function() {
+			$('.chicklet').on('click', function(){
+    		newSrc = $('a', this).attr('href');
+    		newAttr = $(this).attr('alt');
+    		newValidStartTime = $(this).attr('data-validTime');
+    		$('#hwoimg').html( '<img class="image2" src="'+ newSrc +'" />' );
+    		$('#imgModalLabel').html(newAttr);
+    		$('#legend').empty();
+    		makeLegend(newAttr);
+		});
+    	var img = $(".chickletTable1 tr td:eq(1)").find("div a").attr("href");
+    	var title = $(".chickletTable1 tr td:eq(1)").find("div").attr("alt");
+		$('#img').html( '<img class="image2" src="'+ img +'" />' );
+    	$('.maptitle').html(title);
+    	makeLegend(title);
+	    }
+    })
+}
+
+function makeLegend(newAttr){
+$.ajax({
+	type: "GET",
+
+	url: "/source/crh/ehwo/legend.json",
+	cache: false,
+	dataType: "json",
+    success: function(data){
+
+    	//Loop through json to populate legend
+        $.each( data.hazards, function(i, item) {
+        	var legendID = item.name;
+        		if (legendID == newAttr){
+        			legendID = legendID.replace(/\s+/g, '');
+        			var leg = "#"+legendID;
+        				$.each(this.category, function(i,item) {
+        					$("#legend").append('<tr class="'+ legendID +
+							'"><td style="padding: 5px; vertical-align:middle;">'+
+							'<div class="chicklet" style="background-color:'+ item.color +
+							'"></div></td><td style="padding: 5px; vertical-align:middle;">'+
+							item.levelName +
+							'</td><td style="padding: 5px; vertical-align:middle;">'+
+							item.definition +'</td></tr>');
+        				})
+        		    }
+            })
+        }
+    });
+}
+</script><script type="text/javascript">
+
+/***********************************************
+* Cool DHTML tooltip script- 
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var offsetxpoint=-60 //Customize x offset of tooltip
+var offsetypoint=20 //Customize y offset of tooltip
+var ie=document.all
+var ns6=document.getElementById && !document.all
+var enabletip=false
+if (ie||ns6)
+var tipobj=document.all? document.all["dhtmltooltip"] : document.getElementById? document.getElementById("dhtmltooltip") : ""
+
+function ietruebody(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function ddrivetip(thetext, thecolor, thewidth){
+if (ns6||ie){
+if (typeof thewidth!="undefined") tipobj.style.width=thewidth+"px"
+if (typeof thecolor!="undefined" && thecolor!="") tipobj.style.backgroundColor=thecolor
+tipobj.innerHTML=thetext
+enabletip=true
+return false
+}
+}
+
+function positiontip(e){
+if (enabletip){
+var curX=(ns6)?e.pageX : event.clientX+ietruebody().scrollLeft;
+var curY=(ns6)?e.pageY : event.clientY+ietruebody().scrollTop;
+//Find out how close the mouse is to the corner of the window
+var rightedge=ie&&!window.opera? ietruebody().clientWidth-event.clientX-offsetxpoint : window.innerWidth-e.clientX-offsetxpoint-20
+var bottomedge=ie&&!window.opera? ietruebody().clientHeight-event.clientY-offsetypoint : window.innerHeight-e.clientY-offsetypoint-20
+
+var leftedge=(offsetxpoint<0)? offsetxpoint*(-1) : -1000
+
+//if the horizontal distance isn't enough to accomodate the width of the context menu
+if (rightedge<tipobj.offsetWidth)
+//move the horizontal position of the menu to the left by it's width
+tipobj.style.left=ie? ietruebody().scrollLeft+event.clientX-tipobj.offsetWidth+"px" : window.pageXOffset+e.clientX-tipobj.offsetWidth+"px"
+else if (curX<leftedge)
+tipobj.style.left="5px"
+else
+//position the horizontal position of the menu where the mouse is positioned
+tipobj.style.left=curX+offsetxpoint+"px"
+
+//same concept with the vertical position
+if (bottomedge<tipobj.offsetHeight)
+tipobj.style.top=ie? ietruebody().scrollTop+event.clientY-tipobj.offsetHeight-offsetypoint+"px" : window.pageYOffset+e.clientY-
+
+tipobj.offsetHeight-offsetypoint+"px"
+else
+tipobj.style.top=curY+offsetypoint+"px"
+tipobj.style.visibility="visible"
+}
+}
+
+function hideddrivetip(){
+if (ns6||ie){
+enabletip=false
+tipobj.style.visibility="hidden"
+tipobj.style.left="-1000px"
+tipobj.style.backgroundColor=''
+tipobj.style.width=''
+}
+}
+
+document.onmousemove=positiontip
+
+</script><!-- SCRIPT TO GET INFO FOR WX STORIES, GRAPHICASTS, ETC.  DO NOT MODIFY  --><script type="text/javascript">
+
+$( document ).ready(function() {
+
+$.ajax({
+	type: "GET",
+	url: "/source/lot/wxstory/wxstory.xml",
+	cache: false,
+	dataType: "xml",
+	success: function(data){
+		$(data).find('graphicasts graphicast').each(function(){
+                        var otherTabs = 0;
+                        milliseconds = (new Date).getTime();
+			var tabNumber = $(this).find("order").text();
+                                if (tabNumber == 1) {
+                                    var tabExp1 = $(this).find("EndTime").text();
+                                    if ((milliseconds/1000) < tabExp1) {
+                                         var otherTabs = 0;
+                                         var tabDesc1 = $(this).find("description").text();
+                                         $('#graphicast').html('<center><a class="highslide" href="http://www.weather.gov/images/lot/wxstory/Tab1FileL.png" id="wxstorygraphictab1" onclick="return hs.expand(this, {captionId:\'wxstorygraphictab1\'})"><img style="width: 50%; border-style: solid; border-width: 1px; border-radius: 1px; border-color: #c8c8c8;" src="/images/lot/wxstory/Tab1FileL.png"/></a></center>');
+                                         $('#graphicastDesc').html(tabDesc1);
+                                    }  else {
+                                         $('#graphicastDesc').html('<center>No short term graphicast is currently in  effect.</center>');
+                                    }
+      				}
+                                if (tabNumber == 2) {
+                                    var tabExp2 = $(this).find("EndTime").text();
+			            if ((milliseconds/1000) < tabExp2) {
+                                         var otherTabs = 0;
+                                         var tabDesc2 = $(this).find("description").text();
+                                         $('#wxstoryTab2Desc').html(tabDesc2);
+                                         $('#wxstoryTab2Desc2').html(tabDesc2);
+                                    }     
+ 				}
+				if (tabNumber == 3) {
+				    var tabExp3 = $(this).find("EndTime").text();
+			            if ((milliseconds/1000) < tabExp3){
+                                         var otherTabs =1;
+                                         var tabDesc3 = $(this).find("description").text();
+                                         $('#wxstoryTab3').html('<center><a class="highslide" href="http://www.weather.gov/images/lot/wxstory/Tab3FileL.png" id="wxstorygraphictab3" onclick="return hs.expand(this, {captionId:\'wxstorygraphictab3\'})"><img style="width:100px; border-style: solid; border-width: 1px; border-radius: 1px; border-color: #c8c8c8;" src="http://www.weather.gov/images/lot/wxstory/Tab3FileL.png"/></a></center>');
+                                         $('#wxstoryTab3-2').html('<center><a class="highslide" href="http://www.weather.gov/images/lot/wxstory/Tab3FileL.png" id="wxstorygraphictab3" onclick="return hs.expand(this, {captionId: \'wxstorygraphictab3\'})"><img style="width:100px; border-style: solid; border-width: 1px; border-radius: 1px; border-color: #c8c8c8;" src="http://www.weather.gov/images/lot/wxstory/Tab3FileL.png"/></a></center>');
+                                         $('#wxstoryTab3Desc').html(tabDesc3);
+                                    }     
+		                }
+                                if (tabNumber == 4) {
+                                    var tabExp4 = $(this).find("EndTime").text();
+			            if ((milliseconds/1000) < tabExp4) {
+                                         var otherTabs = 1;
+                                         var tabDesc4 = $(this).find("description").text();
+                                         $('#wxstoryTab4').html('<center><a class="highslide"  href="http://www.weather.gov/images/lot/wxstory/Tab4FileL.png" id="wxstorygraphictab4" onclick="return hs.expand(this, {captionId: \'wxstorygraphictab4\'})"><img style="width:100px; border-style: solid; border-width: 1px; border-radius: 1px; border-color: #c8c8c8;" src="/images/lot/wxstory/Tab4FileL.png"/></a></center>');
+                                         $('#wxstoryTab4-2').html('<center><a class="highslide" href="http://www.weather.gov/images/lot/wxstory/Tab4FileL.png" id="wxstorygraphictab4" onclick="return hs.expand(this, {captionId: \'wxstorygraphictab4\'})"><img style="width:100px; border-style: solid; border-width: 1px; border-radius: 1px; border-color: #c8c8c8;" src="/images/lot/wxstory/Tab4FileL.png"/></a></center>');
+                                         $('#wxstoryTab4Desc').html(tabDesc4);
+                                    }     
+      				}
+                                if (tabNumber == 5) {
+                                    var tabExp5 = $(this).find("EndTime").text();
+    	   	                    if ((milliseconds/1000) < tabExp5) {
+                                         var otherTabs = 1;
+                                         $('#wxstoryTab5').html('<center><a class="highslide"  href="http://www.weather.gov/images/lot/wxstory/Tab5FileL.png" id="wxstorygraphictab5" onclick="return hs.expand(this, {captionId: \'wxstorygraphictab5\'})"><img style="width:100px; border-style: solid; border-width: 1px; border-radius: 1px; border-color: #c8c8c8;" src="/images/lot/wxstory/Tab5FileL.png"/></a></center>');
+                                         $('#wxstoryTab5-2').html('<center><a class="highslide" href="http://www.weather.gov/images/lot/wxstory/Tab5FileL.png" id="wxstorygraphictab5" onclick="return hs.expand(this, {captionId: \'wxstorygraphictab5\'})"><img style="width:100px; border-style: solid; border-width: 1px; border-radius: 1px; border-color: #c8c8c8;" src="/images/lot/wxstory/Tab5FileL.png"/></a></center>');
+
+                                         var tabDesc5 = $(this).find("description").text();
+                                         $('#wxstoryTab5Desc').html(tabDesc5);
+                                    }     
+      				}
+                         if (otherTabs == 1) {
+                                $('#morewxstorytabsalert').html('<p><em><a href="/lot/weatherstory" target="blank" style="color: blue;">Additional graphics</a> are in effect that may be relevant to your time period:</em></p>');
+                                $('#morewxstorytabsalert2').html('<p><em><a href="/lot/weatherstory" target="blank"  style="color: blue;">Additional graphics</a> are in effect that may be relevant to your time period:</em></p>');
+                         }
+		 });
+	 }
+}); 
+}); 
+</script><!-- SCRIPT TO GET INFO FOR sitreport.  DO NOT MODIFY  --><script type="text/javascript">
+
+$( document ).ready(function() {
+
+$.ajax({
+	type: "GET",
+	url: "/source/lot/sitreport/sitreport.xml",
+	cache: false,
+	dataType: "xml",
+	success: function(data2){
+		$(data2).find('graphicasts graphicast').each(function(){
+                        milliseconds2 = (new Date).getTime();
+   			var sittabNumber = $(this).find("order").text();
+                        if (sittabNumber == 1) {
+                              var sitExp1 = $(this).find("EndTime").text();
+                              if ((milliseconds2/1000) < sitExp1) {
+                                   $('#sitreport1').html('<center><a href="http://www.weather.gov/media/lot/sitreport/SitReport1.pdf" target="blank"><img style="width: 50px; height: 75px; border-style: solid; border-width: 1px; border-radius: 1px; border-color: #c8c8c8;" src="/images/lot/sitreport/SitReport1Thumb.png"/></a></center>');
+                                   $('#sitreport2').html('<center><a href="http://www.weather.gov/media/lot/sitreport/SitReport1.pdf" target="blank"><img style="width: 50px; height: 75px; border-style: solid; border-width: 1px; border-radius: 1px; border-color: #c8c8c8;" src="/images/lot/sitreport/SitReport1Thumb.png"/></a></center>');
+                                   var sitTabDesc1 = $(this).find("description").text();
+                                   $('#SitRepDesc1').html(sitTabDesc1);
+                                   var sitTabDesc2 = $(this).find("description").text();
+                                   $('#SitRepDesc2').html(sitTabDesc1);
+                              }  else {
+                                   $('#SitRepDesc1').html('<center>No Situation Report is currently in effect.</center>');
+                                   $('#SitRepDesc2').html('<center>No Situation Report is currently in effect.</center>');
+                              }
+      	               }
+                }); 
+	 },
+         error: function(){
+                  $('#SitRepDesc1').html('<center>No Situation Report is currently in effect.</center>');
+                  $('#SitRepDesc2').html('<center>No Situation Report is currently in effect.</center>');
+         }
+}); 
+}); 
+
+</script><script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#wwa").toggle();
+    });
+});
+</script><script type="text/javascript">
+
+$(document).ready(function(){
+     $('.subMenuNav').remove();          // Remove the local menus
+     $('.one-sixth-first').remove();    // Remove Widget
+     $('.five-sixth-last').remove();   // News Headlines
+     $('.breadcrumb').remove();
+
+     $('.full-width-border').css('border-top', 'white');
+     $('.partial-width-borderbottom').css('border-bottom', 'white');
+     $('.five-sixth-first').css({
+     	'width' : '100%',
+    	'padding-right': '0px',
+    	'padding-left': '0px'
+     });
+     
+     chiclets_tab();
+});
+
+</script><!--END CODE FOR STRIPPING OUT TOP AND SIDE BARS.--><!--CODE FOR TOGGLING KEY FOR MAPS. DO NOT MODIFY. --><script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$("#mapkey").toggle();
+	});
+});
+</script><!--END CODE FOR TOGGLING MAP KEY--><!--CODE FOR TABS. DO NOT MODIFY.--><script type='text/javascript'>  
+   "use strict"; 
+   $(function() {    
+      $( "#tabs" ).tabs({      
+         collapsible: true    
+         }); 
+       });
+</script>
+<style type="text/css">input[type="radio"]:checked ~ .tab {
+  display: block; 
+}
+</style>
+<script type="text/javascript">
+    function init(){
+        var linkPage = document.getElementById('top').href;
+        window.location.href = linkPage;
+    }
+    onload=init;
+</script>
+<h1><a href="http://www.weather.gov/lot" target="top">NWS Chicago, IL Weather Watcher Briefing</a></h1>
+
+<p><a href="http://www.weather.gov/lot" target="self"><span style="color: blue; font-size: 14px; font-face: trebuchet MS;">Back to NWS Chicago, IL Main Page</span></a><br />
+<!-- --------------------------------------------------------------------------------------------------- --> <!-- --------------------------------------------------------------------------------------------------- --> <!-- --------------------------------------------------------------------------------------------------- --> <!-- --------------------------------------------------------------------------------------------------- --> <!-- --------------------------------------------------------------------------------------------------- --></p>
+
+<div id="tabs" style="width: 950px;">
+<ul>
+	<li><strong><span style="color: black; font-size: 14px;"><a href="#During_Event">During Event</a></span></strong></li>
+	<li><strong><span style="color: black; font-size: 14px;"><a href="#Day_of_Event">Day of Event</a></span></strong></li>
+	<li><strong><span style="color: black; font-size: 14px;"><a href="#Days_before_Event">Days Leading Up to Event</a></span></strong></li>
+	<li><strong><span style="color: black; font-size: 14px;"><a href="#Planning">Planning &amp; Resources</a></span></strong></li>
+</ul>
+<!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- -->
+
+<div id="During_Event">
+<table align="center" border="0" cellpadding="1" cellspacing="1" width="920">
+	<tbody>
+		<tr><!--  -------------------------Replace regional radar loop with appropriate regional radar  
+
+----------------------------------------------------- -->
+			<td align="center" rowspan="2" width="250">
+			<p><a href="https://radar.weather.gov/" target="_blank"><span style="color: blue; font-size: 20px; font-face: trebuchet MS;">National&nbsp;Interactive Map</span></a><br />
+			<a class="highslide" href="https://radar.weather.gov/ridge/lite/CONUS_loop.gif" id="regionalradar" onclick="return hs.expand(this, {captionId: 'regionalradar'})"><img align="middle" alt="National Radar Image" src="https://radar.weather.gov/ridge/lite/CONUS_loop.gif" style="border-width: 1px; border-style: solid; margin: 4px; width: 400px; height: 261px;" title="Regional Radar Image" /></a></p>
+
+			<p style="text-align: center;"><span style="font-size:18px;"><a href="https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJsb2NhbCIsImNlbnRlciI6Wy05MC41MzgsNDEuODJdLCJ6b29tIjo3LCJmaWx0ZXIiOiJXU1ItODhEIiwibGF5ZXIiOiJicmVmX3JhdyIsInN0YXRpb24iOiJLTE9UIiwidHJhbnNwYXJlbnQiOnRydWUsImFsZXJ0c092ZXJsYXkiOnRydWUsInN0YXRpb25JY29uc092ZXJsYXkiOnRydWV9LCJiYXNlIjoic3RhbmRhcmQiLCJjb3VudHkiOmZhbHNlLCJjd2EiOmZhbHNlLCJzdGF0ZSI6ZmFsc2UsIm1lbnUiOnRydWUsInNob3J0RnVzZWRPbmx5Ijp0cnVlfQ%3D%3D#/" target="_blank"><span style="color: blue;">Regional Interactive Map</span></a></span></p>
+			</td>
+			<!-- ------------------------------  END regional radar loop section     ------------------------------------------------ -->
+			<td align="center" rowspan="2" width="250">
+			<p><span style="font-size: 20px;"><a href="https://radar.weather.gov/?settings=v1_eyJhZ2VuZGEiOnsiaWQiOiJsb2NhbCIsImNlbnRlciI6Wy04OC4wODQsNDEuNjA0XSwiem9vbSI6OC4xMjY4NzU3MjE4MDM4MiwiZmlsdGVyIjoiV1NSLTg4RCIsImxheWVyIjoiYnJlZl9yYXciLCJzdGF0aW9uIjoiS0xPVCIsInRyYW5zcGFyZW50Ijp0cnVlLCJhbGVydHNPdmVybGF5Ijp0cnVlLCJzdGF0aW9uSWNvbnNPdmVybGF5Ijp0cnVlfSwiYmFzZSI6InN0YW5kYXJkIiwiY291bnR5IjpmYWxzZSwiY3dhIjpmYWxzZSwic3RhdGUiOmZhbHNlLCJtZW51Ijp0cnVlLCJzaG9ydEZ1c2VkT25seSI6dHJ1ZX0%3D#/" target="_blank"><span style="color:#0000FF;">Local Interactive Map</span></a></span><br />
+			<a class="highslide" href="https://radar.weather.gov/ridge/lite/KLOT_loop.gif" id="localradar" onclick="return hs.expand(this, {captionId: 'localradar'})"><img align="middle" alt="Local Radar Image" src="https://radar.weather.gov/ridge/lite/KLOT_loop.gif" style="margin: 4px; width: 416px; height: 381px;" title="Local Radar Image" /></a></p>
+
+			<p><span style="font-size:18px;"><a href="https://radar.weather.gov/ridge/lite/KDVN_loop.gif" target="_blank"><span style="color:#0000FF;">West</span></a><span style="color:#0000FF;">&nbsp; |&nbsp; &nbsp;</span><a href="https://radar.weather.gov/ridge/lite/KMKX_loop.gif" target="_blank"><span style="color:#0000FF;">North</span></a><span style="color:#0000FF;">&nbsp; |&nbsp; &nbsp;</span><a href="https://radar.weather.gov/ridge/lite/KILX_loop.gif" target="_blank"><span style="color:#0000FF;">South</span></a></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<hr style="margin-bottom: 7px;" />
+<center><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Graphical Nowcast</span>
+
+<div id="graphicast">&nbsp;</div>
+</center>
+
+<div id="graphicastDesc">&nbsp;</div>
+&nbsp;
+
+<hr style="margin-bottom: 7px;" />
+<center>
+<table border="0">
+	<tbody>
+		<tr>
+			<td align="center" nowrap="nowrap">
+			<center><span style="color: black; font-size: 20px; font-face: trebuchet MS; margin-left: 40px; margin-right: 40px;">Local Watches, Warnings, and Advisories</span></center>
+			<br />
+			<img alt="" border="1" bordercolor="black" height="274" src="https://forecast.weather.gov/wwamap/png/lot.png" vspace="4" />
+			<p align="center" style="margin-top: 10px; margin-bottom: 10px;"><button>Show/Hide Map Key</button></p>
+
+			<div id="wwa" style="display: none;">
+			<table align="center" border="0" cellpadding="1" cellspacing="3" width="400">
+				<tbody>
+					<tr valign="middle">
+						<td align="center" colspan="2"><span style="font-size: 11px;"><strong>Severe Weather &amp; Flooding</strong></span></td>
+						<td align="center" colspan="2"><span style="font-size: 11px;"><strong>Winter Weather</strong></span></td>
+						<td align="center" colspan="2"><span style="font-size: 11px;"><strong>Visibility Restrictions</strong></span></td>
+					</tr>
+					<tr valign="middle">
+						<td bgcolor="#ff0000" width="15">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Tornado Warning</span></td>
+						<td bgcolor="#ff4500" width="15">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Blizzard Warning</span></td>
+						<td bgcolor="#708090" width="15">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Dense Fog Advisory </span></td>
+					</tr>
+					<tr valign="middle">
+						<td bgcolor="#ffa500">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Severe Thunderstorm Warning </span></td>
+						<td bgcolor="#ff69b4">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Winter Storm Warning </span></td>
+						<td bgcolor="#f0e68c">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Dense Smoke Advisory </span></td>
+					</tr>
+					<tr valign="middle">
+						<td bgcolor="#8b0000">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Flash Flood Warning </span></td>
+						<td bgcolor="#8b008b">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Ice Storm Warning </span></td>
+						<td bgcolor="#ffe4c4">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Dust Storm Warning</span></td>
+					</tr>
+					<tr valign="middle">
+						<td bgcolor="#00ffff">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Severe Weather Statement </span></td>
+						<td bgcolor="#b0c4de">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Wind Chill Warning</span></td>
+						<td bgcolor="#bdb76b">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Blowing Dust Advisory </span></td>
+					</tr>
+					<tr valign="middle">
+						<td bgcolor="#8b0000">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Flash Flood Statement</span></td>
+						<td bgcolor="#4682b4">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Winter Storm Watch</span></td>
+						<td nowrap="nowrap">&nbsp;</td>
+						<td nowrap="nowrap">&nbsp;</td>
+					</tr>
+					<tr valign="middle">
+						<td bgcolor="#ffff00">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Tornado Watch</span></td>
+						<td bgcolor="#5f9ea0">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Wind Chill Watch</span></td>
+						<td align="center" colspan="2"><span style="font-size: 11px;"><strong>Fire Weather</strong></span></td>
+					</tr>
+					<tr valign="middle">
+						<td bgcolor="#db7093">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Severe Thunderstorm Watch </span></td>
+						<td bgcolor="#7b68ee">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Winter Weather Advisory </span></td>
+						<td bgcolor="#ff1493">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Red Flag Warning</span></td>
+					</tr>
+					<tr valign="middle">
+						<td bgcolor="#2e8b57">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Flood Watch</span></td>
+						<td bgcolor="#afeeee">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Wind Chill Advisory</span></td>
+						<td bgcolor="#ffdead">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Fire Weather Watch </span></td>
+					</tr>
+					<tr valign="middle">
+						<td bgcolor="#00ff00">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Flood Warning </span></td>
+						<td bgcolor="#008080">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Freezing Fog Advisory</span></td>
+						<td nowrap="nowrap">&nbsp;</td>
+						<td nowrap="nowrap">&nbsp;</td>
+					</tr>
+					<tr valign="middle">
+						<td bgcolor="#00ff00">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Flood Statement</span></td>
+						<td bgcolor="#483d8b">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Freeze Warning</span></td>
+						<td align="center" colspan="2"><span style="font-size: 11px;"><strong>Miscellaneous</strong></span></td>
+					</tr>
+					<tr valign="middle">
+						<td bgcolor="#90ee90">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Hydrologic Outlook</span></td>
+						<td bgcolor="#00ffff">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Freeze Watch</span></td>
+						<td bgcolor="#eee8aa">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Hazardous Weather Outlook </span></td>
+					</tr>
+					<tr valign="middle">
+						<td nowrap="nowrap">&nbsp;</td>
+						<td nowrap="nowrap">&nbsp;</td>
+						<td bgcolor="#6495ed">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Frost Advisory</span></td>
+						<td bgcolor="#ffe4b5">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Special Weather Statement</span></td>
+					</tr>
+					<tr valign="middle">
+						<td align="center" colspan="2"><span style="font-size: 11px;"><strong>&nbsp;Wind</strong></span></td>
+						<td nowrap="nowrap">&nbsp;</td>
+						<td nowrap="nowrap">&nbsp;</td>
+						<td bgcolor="#808080">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Air Quality Alert</span></td>
+					</tr>
+					<tr valign="middle">
+						<td bgcolor="#daa520">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">High Wind Warning</span></td>
+						<td align="center" colspan="2"><span style="font-size: 11px;"><strong>Heat</strong></span></td>
+						<td bgcolor="#ffb6c1">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Civil Danger Warning</span></td>
+					</tr>
+					<tr valign="middle">
+						<td bgcolor="#b8860b">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">High Wind Watch</span></td>
+						<td bgcolor="#c71585" width="20">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Excessive Heat Warning </span></td>
+						<td bgcolor="#ffb6c1">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Civil Emergency Message</span></td>
+					</tr>
+					<tr valign="middle">
+						<td bgcolor="#d2b48c">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Wind Advisory</span></td>
+						<td bgcolor="#800000">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Excessive Heat Watch </span></td>
+						<td bgcolor="#c0c0c0">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">911 Telephone Outage </span></td>
+					</tr>
+					<tr valign="middle">
+						<td nowrap="nowrap">&nbsp;</td>
+						<td nowrap="nowrap">&nbsp;</td>
+						<td bgcolor="#ff7f50">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Heat Advisory</span></td>
+						<td bgcolor="#ffd700">&nbsp;</td>
+						<td nowrap="nowrap"><span style="font-size: 11px;">Child Abduction Emergency</span></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</td>
+			<td>
+			<hr style="margin-bottom: 7px;" /></td>
+			<td>
+			<center><span style="color: black; font-size: 20px; font-face: trebuchet MS;">United States Watches and Warnings</span></center>
+			<br />
+			<a class="highslide" href="http://www.spc.noaa.gov/products/activity_loop.gif" id="spcactivity" onclick="return hs.expand(this, {captionId: 'spcactivity'})"><img alt="" border="1" bordercolor="black" height="274" src="http://www.spc.noaa.gov/products/activity_loop.gif" vspace="4" /></a></td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<hr style="margin-bottom: 7px;" />
+<center><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Detailed Forecasts</span></center>
+
+<p>&nbsp;</p>
+
+<div align="center" id="forecastLink1">
+<table border="0" cellpadding="1" cellspacing="1" width="900">
+	<tbody>
+		<tr>
+			<td align="center" valign="top"><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Current Conditions and<br />
+			Seven Day Forecast</span>
+
+			<p>&nbsp;</p>
+
+			<form action="https://forecast.weather.gov/zipcity.php" id="fcst1" method="post" target="_new"><input name="inputstring" onfocus="this.value='';" size="20" type="text" value="City, St, or Zip Code" /> <input id="Go2" name="Go2" type="submit" value="Go" /> <input name="siteid" type="hidden" value="lot" /></form>
+			&nbsp;
+
+			<p>&nbsp;</p>
+			</td>
+			<td align="center" style="width: 100px;" valign="top"><strong><i>-- OR -- </i></strong></td>
+			<td align="center" valign="top"><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Hourly Weather Graph<br />
+			(click on your location on the map)</span><br />
+			<script language="javascript">
+                $(document).ready(function(){
+                   $("#wwamapImage1").click(function(e){
+                        var offset_l = $(this).offset().left - $(window).scrollLeft();
+			var offset_t = $(this).offset().top - $(window).scrollTop();
+			var left =  Math.round( (e.clientX - offset_l) );
+			var top = Math.round( (e.clientY - offset_t) );
+			//console.log("click position result --> X: " + left + ", Y: " + top);
+			$('#mapx1').val(left);
+			$('#mapy1').val(top);
+                   });
+                });
+		</script>
+			<div id="wfomap_container1">
+			<form action="https://forecast.weather.gov/MapClick.php" method="get" name="HWGform1" target="new"><input align="middle" alt="Map of Forecast Area" id="wwamapImage1" src="/wwamap/png/lot.png" title="Map of Forecast Area" type="image" /> <input name="site" type="hidden" value="lot" /> <input name="zmx" type="hidden" value="" /> <input name="zmy" type="hidden" value="" /> <input id="mapx1" name="map_x" type="hidden" value="" /> <input id="mapy1" name="map_y" type="hidden" value="" /> <input id="FcstType" name="FcstType" type="hidden" value="graphical" /> <input id="w0" name="w0" type="hidden" value="t" /> <input id="w1" name="w1" type="hidden" value="td" /> <input id="w2" name="w2" type="hidden" value="hi" /> <input id="w3" name="w3" type="hidden" value="wc" /> <input id="w4" name="w4" type="hidden" value="sfcwind" /> <input id="w4u" name="w4u" type="hidden" value="1" /> <input id="w5" name="w5" type="hidden" value="pop" /> <input id="w6" name="w6" type="hidden" value="sky" /> <input id="w7" name="w7" type="hidden" value="rain" /> <input id="w8" name="w8" type="hidden" value="thunder" /> <input id="w9" name="w9" type="hidden" value="rh" /></form>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<hr style="margin-bottom: 7px;" />
+<p style="text-align: center;"><br />
+<a href="https://nwschat.weather.gov/" target="_blank"><span style="color: blue; font-size: 20px; font-face: trebuchet MS;">Link to NWSChat</span></a><br />
+<a href="https://www.weather.gov/lot/evacuationdecisiontool" target="_blank"><span style="color: blue; font-size: 20px; font-face: trebuchet MS;">Link to Evacuation/Sheltering Decision Tool</span></a></p>
+</div>
+<!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- -->
+
+<div id="Day_of_Event">
+<p>&nbsp;</p>
+
+<table align="center" border="0" cellpadding="1" cellspacing="1" class="images" style="width: 920px;">
+	<tbody>
+		<tr>
+			<td colspan="4" style="text-align: center;"><iframe frameborder="0" height="600" scrolling="yes" src="https://forecast.weather.gov/product.php?site=NWS&amp;issuedby=lot&amp;product=HWO&amp;format=txt&amp;version=1&amp;glossary=0" width="600"></iframe></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<!--  BEGIN Day 1 EHWO SECTION -->
+
+<table align="center" border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
+	<tbody>
+		<tr>
+			<td nowrap="nowrap">
+			<center><span style="font-size: 18px;"><a href="https://www.weather.gov/crh/ghwo?sid=lot" id="ehwo" target="_blank"><font color="blue">Enhanced Hazardous Weather Outlook</font></a></span></center>
+			<em><span style="font-size: 14px;">Click&nbsp;an individual hazard block below for more information.</span></em>
+
+			<p>&nbsp;</p>
+
+			<table class="table borderless table-hover table chickletTable1">
+				<tbody class="ghwo">
+				</tbody>
+				<thead>
+					<tr class="ghwo" id="titleRow1">
+					</tr>
+				</thead>
+			</table>
+
+			<table align="center" bgcolor="#eeeeee" border="0">
+				<tbody>
+					<tr>
+						<td rowspan="2" style="text-align: center;" width="5%"><strong>Threat<br />
+						Level<br />
+						Key</strong></td>
+						<td width="20%">
+						<div align="center">None</div>
+						</td>
+						<td width="20%">
+						<div align="center">Limited</div>
+						</td>
+						<td width="20%">
+						<div align="center">Elevated</div>
+						</td>
+						<td width="20%">
+						<div align="center">Significant</div>
+						</td>
+						<td width="20%">
+						<div align="center">Extreme</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<div class="chicklet-key" style="background-color: green">&nbsp;</div>
+						</td>
+						<td>
+						<div class="chicklet-key" style="background-color: yellow">&nbsp;</div>
+						</td>
+						<td>
+						<div class="chicklet-key" style="background-color: orange">&nbsp;</div>
+						</td>
+						<td>
+						<div class="chicklet-key" style="background-color: red">&nbsp;</div>
+						</td>
+						<td>
+						<div class="chicklet-key" style="background-color: purple">&nbsp;</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<hr /></td>
+			<td>&nbsp;&nbsp;&nbsp;</td>
+			<!--  END Day 1 EHWO SECTION -->
+			<td align="center" rowspan="2" valign="top">
+			<center><span style="font-size: 18px;"><a href="https://www.weather.gov/lot/weatherstory" id="wxstory" target="_blank"><font color="blue">Weather Story</font></a></span></center>
+			<br />
+			<a class="highslide" href="https://www.weather.gov/images/lot/wxstory/Tab2FileL.png" id="wxstory" onclick="return hs.expand(this, 
+
+{captionId: 'wxstory'})"><img alt="Weather Story" src="https://www.weather.gov/images/lot/wxstory/Tab2FileL.png" style="border-width: 1px; border-style: solid; width: 440px; height: 247px;" /></a><br />
+			&nbsp;
+			<table border="0" width="440">
+				<tbody>
+					<tr>
+						<td align="left">
+						<div id="wxstoryTab2Desc">&nbsp;</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			&nbsp;
+
+			<table align="center" border="0" width="440">
+				<tbody>
+					<tr>
+						<td align="left" valign="middle" width="25%">
+						<div id="morewxstorytabsalert">&nbsp;</div>
+						</td>
+						<td width="25%">
+						<div id="wxstoryTab3">&nbsp;</div>
+						</td>
+						<td width="25%">
+						<div id="wxstoryTab4">&nbsp;</div>
+						</td>
+						<td width="25%">
+						<div id="wxstoryTab5">&nbsp;</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#f4ff8a">
+			<table align="center" bgcolor="#f4ff8a" border="0" cellpadding="10" cellspacing="10" style="width: 100%;">
+				<tbody>
+					<tr>
+						<td colspan="2" style="padding: 10px; text-align: center; vertical-align: middle;"><font style="font-size: 18px;">Situation Report</font></td>
+					</tr>
+					<tr>
+						<td style="padding: 10px; vertical-align: middle;">
+						<div id="sitreport1">&nbsp;</div>
+						</td>
+						<td style="padding: 10px; text-align: left; vertical-align: middle;">
+						<div id="SitRepDesc1">&nbsp;</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<hr style="margin-bottom: 7px;" />
+<p>&nbsp;</p>
+
+<center>
+<p align="center"><span style="font-size: 18px;"><a href="http://www.spc.noaa.gov/products/outlook/day1otlk.html" target="_blank"><font color="blue">Today&#39;s Thunderstorm Outlooks</font></a></span></p>
+</center>
+
+<table align="center" border="0" cellpadding="1" cellspacing="1" width="920">
+	<tbody>
+		<tr>
+			<td align="center"><strong>Categorical Outlook</strong><br />
+			<a class="highslide" href="http://www.spc.noaa.gov/public/cwa/images/LOT_swody1.png" id="d1co" onclick="return hs.expand(this, {captionId: 'd1co'})" target="_blank"><img align="middle" alt="Day 1 Categorical  Outlook" src="http://www.spc.noaa.gov/public/cwa/images/LOT_swody1.png" style="height: 150px; margin-top: 4px; margin-bottom: 4px;" title="Day 1 Categorical Outlook" /></a></td>
+			<td align="center"><strong>Tornado Probabilistic Outlook</strong><br />
+			<a class="highslide" href="http://www.spc.noaa.gov/products/outlook/day1probotlk_torn.gif" id="d1to" onclick="return hs.expand(this, {captionId: 'd1to'})" target="_blank"><img align="middle" alt="Day 1 Tornado Outlook" src="http://www.spc.noaa.gov/products/outlook/day1probotlk_torn.gif" style="height: 150px; margin-top: 4px; margin-bottom: 4px;" title="Day 1 Tornado Outlook" /></a></td>
+			<td align="center"><strong>Hail Probabilistic Outlook</strong><br />
+			<a class="highslide" href="http://www.spc.noaa.gov/products/outlook/day1probotlk_hail.gif" id="d1ho" onclick="return hs.expand(this, {captionId: 'd1ho'})" target="_blank"><img align="middle" alt="Day 1 Hail Outlook" src="http://www.spc.noaa.gov/products/outlook/day1probotlk_hail.gif" style="height: 150px; margin-top: 4px; margin-bottom: 4px;" title="Day 1 Hail Outlook" /></a></td>
+			<td align="center"><strong>Severe Wind Probabilistic Outlook</strong><br />
+			<a class="highslide" href="http://www.spc.noaa.gov/products/outlook/day1probotlk_wind.gif" id="d1wo" onclick="return hs.expand(this, {captionId: 'd1wo'})" target="_blank"><img align="middle" alt="Day 1 Severe  Wind Outlook" src="http://www.spc.noaa.gov/products/outlook/day1probotlk_wind.gif" style="height: 150px; margin-top: 4px; margin-bottom: 4px;" title="Day 1 Severe Thunderstorm Wind Outlook" /></a></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<center><span style="font-size: 18px;"><a href="https://www.wpc.ncep.noaa.gov/qpf/ero.php?opt=curr&amp;day=1" target="_blank"><font color="blue">Today&#39;s Excessive Rainfall Outlooks</font></a></span></center>
+
+<center>&nbsp;</center>
+
+<center>
+<table border="0" cellpadding="1" cellspacing="1" style="width: 500px;" width="930">
+	<tbody>
+		<tr>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td align="center"><strong>Local</strong><br />
+			<a class="highslide" href="https://www.wpc.ncep.noaa.gov/exper/eromap/cwamaps/LOT_Day1.png" id="d1wpc" onclick="return hs.expand(this, {captionId: 'd3co'})" target="_blank"><img align="middle" alt="Today's Excessive Rainfall Outlook" src="https://www.wpc.ncep.noaa.gov/exper/eromap/cwamaps/LOT_Day1.png" style="height: 150px; margin-top: 4px; margin-bottom: 4px; width: 200px;" title="Day 2 Categorical Outlook" /></a></td>
+			<td align="center"><strong>National</strong><br />
+			<a class="highslide" href="https://www.wpc.ncep.noaa.gov/qpf/94ewbg.gif" id="d1wpc" onclick="return hs.expand(this, {captionId: 'd3po'})" target="_blank"><img align="middle" alt="Today's Excessive Rainfall Outlook" src="https://www.wpc.ncep.noaa.gov/qpf/94ewbg.gif" style="height: 150px; margin-top: 4px; margin-bottom: 4px; width: 200px;" title="Day 3 Probabilistic Outlook" /></a></td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<p>&nbsp;</p>
+
+<hr style="margin-bottom: 7px;" />
+<p>&nbsp;</p>
+
+<center>&nbsp;</center>
+
+<center><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Detailed Forecasts</span></center>
+
+<p>&nbsp;</p>
+
+<div align="center" id="forecastLink2">
+<table border="0" cellpadding="1" cellspacing="1" width="900">
+	<tbody>
+		<tr>
+			<td align="center" valign="top"><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Current Conditions and<br />
+			Seven Day Forecast</span>
+
+			<p>&nbsp;</p>
+
+			<form action="https://forecast.weather.gov/zipcity.php" id="fcst2" method="post" target="_new"><input name="inputstring" onfocus="this.value='';" size="20" type="text" value="City, St, or Zip Code" /> <input id="Go2" name="Go2" type="submit" value="Go" /> <input name="siteid" type="hidden" value="lot" /></form>
+			&nbsp;
+
+			<p>&nbsp;</p>
+			</td>
+			<td align="center" style="width: 100px;" valign="top"><strong><i>-- OR -- </i></strong></td>
+			<td align="center" valign="top"><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Hourly Weather Graph<br />
+			(click on your location on the map)</span><br />
+			<script language="javascript">
+                $(document).ready(function(){
+                   $("#wwamapImage2").click(function(e){
+                        var offset_l = $(this).offset().left - $(window).scrollLeft();
+			var offset_t = $(this).offset().top - $(window).scrollTop();
+			var left =  Math.round( (e.clientX - offset_l) );
+			var top = Math.round( (e.clientY - offset_t) );
+			//console.log("click position result --> X: " + left + ", Y: " + top);
+			$('#mapx2').val(left);
+			$('#mapy2').val(top);
+                   });
+                });
+		</script>
+			<div id="wfomap_container2">
+			<form action="https://forecast.weather.gov/MapClick.php" method="get" name="HWGform2" target="new"><input align="middle" alt="Map of Forecast Area" id="wwamapImage2" src="/wwamap/png/lot.png" title="Map of Forecast Area" type="image" /> <input name="site" type="hidden" value="lot" /> <input name="zmx" type="hidden" value="" /> <input name="zmy" type="hidden" value="" /> <input id="mapx2" name="map_x" type="hidden" value="" /> <input id="mapy2" name="map_y" type="hidden" value="" /> <input id="FcstType" name="FcstType" type="hidden" value="graphical" /> <input id="w0" name="w0" type="hidden" value="t" /> <input id="w1" name="w1" type="hidden" value="td" /> <input id="w2" name="w2" type="hidden" value="hi" /> <input id="w3" name="w3" type="hidden" value="wc" /> <input id="w4" name="w4" type="hidden" value="sfcwind" /> <input id="w4u" name="w4u" type="hidden" value="1" /> <input id="w5" name="w5" type="hidden" value="pop" /> <input id="w6" name="w6" type="hidden" value="sky" /> <input id="w7" name="w7" type="hidden" value="rain" /> <input id="w8" name="w8" type="hidden" value="thunder" /> <input id="w9" name="w9" type="hidden" value="rh" /></form>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<hr style="margin-bottom: 7px;" />
+<table align="center" border="0" cellpadding="1" cellspacing="1" class="images" style="width: 920px;">
+	<tbody>
+		<tr>
+			<td colspan="4" style="text-align: center;">
+			<p><iframe frameborder="0" height="700" scrolling="yes" src="https://forecast.weather.gov/product.php?
+site=NWS&amp;issuedby=lot&amp;product=AFD&amp;format=txt&amp;version=1&amp;glossary=0" width="600"></iframe></p>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<center>
+<hr style="margin-bottom: 7px;" /></center>
+
+<p style="text-align: center;"><br />
+<a href="https://nwschat.weather.gov/" target="_blank"><span style="color: blue; font-size: 20px; font-face: trebuchet MS;">Link to NWSChat</span></a><br />
+<a href="https://www.weather.gov/lot/evacuationdecisiontool" target="_blank"><span style="color: blue; font-size: 20px; font-face: trebuchet MS;">Link to Evacuation/Sheltering Decision Tool</span></a></p>
+</div>
+<!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- -->
+
+<div id="Days_before_Event">
+<p>&nbsp;</p>
+
+<table align="center" border="0" cellpadding="1" cellspacing="1" class="images" style="width: 920px;">
+	<tbody>
+		<tr>
+			<td colspan="4" style="text-align: center;"><iframe frameborder="0" height="600" scrolling="yes" src="https://forecast.weather.gov/product.php?site=NWS&amp;issuedby=lot&amp;product=HWO&amp;format=txt&amp;version=1&amp;glossary=0" width="600"></iframe></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<table align="center" border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
+	<tbody>
+		<tr><!--  BEGIN Day 2 EHWO SECTION -->
+			<td>
+			<center><span style="font-size: 18px;"><a href="https://www.weather.gov/crh/ghwo?sid=lot" id="ehwo" target="_blank"><font color="blue">Enhanced Hazardous Weather Outlook</font></a></span></center>
+
+			<p style="text-align: center;"><br />
+			<em>Click&nbsp;an individual hazard block below for more information.</em></p>
+
+			<table class="table borderless table-hover table chickletTable2">
+				<tbody class="ghwo">
+				</tbody>
+				<thead>
+					<tr class="ghwo" id="titleRow2">
+					</tr>
+				</thead>
+			</table>
+
+			<table align="center" bgcolor="#eeeeee" border="0">
+				<tbody>
+					<tr>
+						<td rowspan="2" style="text-align: center;" width="5%"><strong>Threat<br />
+						Level<br />
+						Key</strong></td>
+						<td width="20%">
+						<div align="center">None</div>
+						</td>
+						<td width="20%">
+						<div align="center">Limited</div>
+						</td>
+						<td width="20%">
+						<div align="center">Elevated</div>
+						</td>
+						<td width="20%">
+						<div align="center">Significant</div>
+						</td>
+						<td width="20%">
+						<div align="center">Extreme</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<div class="chicklet-key" style="background-color: green">&nbsp;</div>
+						</td>
+						<td>
+						<div class="chicklet-key" style="background-color: yellow">&nbsp;</div>
+						</td>
+						<td>
+						<div class="chicklet-key" style="background-color: orange">&nbsp;</div>
+						</td>
+						<td>
+						<div class="chicklet-key" style="background-color: red">&nbsp;</div>
+						</td>
+						<td>
+						<div class="chicklet-key" style="background-color: purple">&nbsp;</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<hr /></td>
+			<td>&nbsp;&nbsp;&nbsp;</td>
+			<!--  END Day 2 EHWO SECTION -->
+			<td align="center" rowspan="2" valign="top">
+			<center><span style="font-size: 18px;"><a href="https://www.weather.gov/lot/weatherstory" id="wxstory" target="_blank"><font color="blue">Weather Story</font></a></span></center>
+			<br />
+			<a class="highslide" href="https://www.weather.gov/images/lot/wxstory/Tab2FileL.png" id="wxstory" onclick="return hs.expand(this, 
+
+{captionId: 'wxstory'})"><img alt="Weather Story" src="https://www.weather.gov/images/lot/wxstory/Tab2FileL.png" style="border-width: 1px; border-style: solid; width: 430px; height: 242px;" /></a><br />
+			&nbsp;
+			<table border="0" width="430">
+				<tbody>
+					<tr>
+						<td align="left">
+						<div id="wxstoryTab2Desc2">&nbsp;</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			&nbsp;
+
+			<table align="center" border="0" width="440">
+				<tbody>
+					<tr>
+						<td align="left" valign="middle" width="25%">
+						<div id="morewxstorytabsalert2">&nbsp;</div>
+						</td>
+						<td width="25%">
+						<div id="wxstoryTab3-2">&nbsp;</div>
+						</td>
+						<td width="25%">
+						<div id="wxstoryTab4-2">&nbsp;</div>
+						</td>
+						<td width="25%">
+						<div id="wxstoryTab5-2">&nbsp;</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#f4ff8a">
+			<table align="center" bgcolor="#f4ff8a" border="0" cellpadding="10" cellspacing="10" style="width: 100%;">
+				<tbody>
+					<tr>
+						<td colspan="2" style="padding: 10px; text-align: center; vertical-align: middle;">
+						<p style="font-size: 18px;">Situation Report</p>
+						</td>
+					</tr>
+					<tr>
+						<td style="padding: 10px; vertical-align: middle;">
+						<div id="sitreport2">&nbsp;</div>
+						</td>
+						<td style="padding: 10px; text-align: left; vertical-align: middle;">
+						<div id="SitRepDesc2">&nbsp;</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr style="margin-bottom: 7px;" />
+<center><br />
+<span style="font-size: 18px;"><a href="http://www.spc.noaa.gov/products/outlook/day2otlk.html" target="_blank"><font color="blue">Tomorrow&#39;s&nbsp;Thunderstorm Outlooks</font></a></span><br />
+&nbsp;</center>
+
+<center>
+<table align="center" border="0" cellpadding="1" cellspacing="1" width="920">
+	<tbody>
+		<tr>
+			<td align="center"><strong>Categorical Outlook</strong><br />
+			<a class="highslide" href="http://www.spc.noaa.gov/public/cwa/images/LOT_swody2.png" id="d2co" onclick="return hs.expand(this, {captionId: 'd2co'})" target="_blank"><img align="middle" alt="Day 2 Categorical  Outlook" src="http://www.spc.noaa.gov/public/cwa/images/LOT_swody2.png" style="height: 150px; margin-top: 4px; margin-bottom: 4px; width: 200px;" title="Day 2 Categorical Outlook" /></a></td>
+			<td align="center"><strong>Tornado Probabilistic Outlook</strong><br />
+			<a class="highslide" href="http://www.spc.noaa.gov/products/outlook/day2probotlk_torn.gif" id="d2to" onclick="return hs.expand(this, {captionId: 'd2to'})" target="_blank"><img align="middle" alt="Day 2 Tornado Outlook" src="https://www.spc.noaa.gov/products/outlook/day2probotlk_torn.gif" style="height: 150px; margin-top: 4px; margin-bottom: 4px; width: 220px;" title="Day 2 Tornado Outlook" /></a></td>
+			<td align="center"><strong>Hail Probabilistic Outlook</strong><br />
+			<a class="highslide" href="http://www.spc.noaa.gov/products/outlook/day2probotlk_hail.gif" id="d2ho" onclick="return hs.expand(this, {captionId: 'd2ho'})" target="_blank"><img align="middle" alt="Day 2 Hail Outlook" src="http://www.spc.noaa.gov/products/outlook/day2probotlk_hail.gif" style="height: 150px; margin-top: 4px; margin-bottom: 4px; width: 220px;" title="Day 2 Hail Outlook" /></a></td>
+			<td align="center"><strong>Severe Wind Probabilistic Outlook</strong><br />
+			<a class="highslide" href="http://www.spc.noaa.gov/products/outlook/day2probotlk_wind.gif" id="d2wo" onclick="return hs.expand(this, {captionId: 'd2wo'})" target="_blank"><img align="middle" alt="Day 2 Severe  Wind Outlook" src="http://www.spc.noaa.gov/products/outlook/day2probotlk_wind.gif" style="height: 150px; margin-top: 4px; margin-bottom: 4px; width: 220px;" title="Day 2 Severe Thunderstorm Wind Outlook" /></a></td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<center>&nbsp;</center>
+
+<center>
+<center><span style="font-size: 18px;"><a href="https://www.wpc.ncep.noaa.gov/qpf/ero.php?opt=curr&amp;day=2" target="_blank"><font color="blue">Tomorrow&#39;s Excessive Rainfall Outlooks</font></a></span></center>
+
+<center>&nbsp;</center>
+
+<center>
+<table border="0" cellpadding="1" cellspacing="1" style="width: 500px;" width="930">
+	<tbody>
+		<tr>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td align="center"><strong>Local</strong><br />
+			<a class="highslide" href="https://www.wpc.ncep.noaa.gov/exper/eromap/cwamaps/LOT_Day2.png" id="d2wpc" onclick="return hs.expand(this, {captionId: 'd3co'})" target="_blank"><img align="middle" alt="Tomorrow's Flood Outlook" src="https://www.wpc.ncep.noaa.gov/exper/eromap/cwamaps/LOT_Day2.png" style="height: 150px; margin-top: 4px; margin-bottom: 4px; width: 200px;" title="Day 2 Categorical Outlook" /></a></td>
+			<td align="center"><strong>National</strong><br />
+			<a class="highslide" href="https://www.wpc.ncep.noaa.gov/qpf/98ewbg.gif" id="d2wpc" onclick="return hs.expand(this, {captionId: 'd3po'})" target="_blank"><img align="middle" alt="Tomorrow's Excessive Rainfall Outlook" src="https://www.wpc.ncep.noaa.gov/qpf/98ewbg.gif" style="height: 150px; margin-top: 4px; margin-bottom: 4px; width: 200px;" title="Day 3 Probabilistic Outlook" /></a></td>
+		</tr>
+	</tbody>
+</table>
+</center>
+
+<center>&nbsp;</center>
+
+<center>
+<center>&nbsp;
+<table border="0" cellpadding="1" cellspacing="1" style="width: 500px;">
+	<tbody>
+		<tr>
+			<td>
+			<table border="0" cellpadding="1" cellspacing="1" style="width: 925px;">
+				<tbody>
+					<tr>
+						<td style="text-align: center;"><span style="font-size: 18px;"><a href="http://www.spc.noaa.gov/products/outlook/day3otlk.html" target="_blank"><font color="blue">Day 3 Thunderstorm Outlooks</font></a></span></td>
+						<td>
+						<center style="text-align: center;"><span style="font-size: 18px;"><a href="https://www.wpc.ncep.noaa.gov/qpf/ero.php?opt=curr&amp;day=3" target="_blank"><font color="blue">Day 3 Excessive Rainfall Outlooks</font></a></span></center>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<center>
+			<table align="center" border="0" cellpadding="1" cellspacing="1" width="920">
+				<tbody>
+					<tr>
+						<td align="center"><strong>Local</strong><br />
+						<a class="highslide" href="http://www.spc.noaa.gov/public/cwa/images/LOT_swody3.png" id="d3co" onclick="return hs.expand(this, {captionId: 'd2co'})" target="_blank"><img align="middle" alt="Day 3 Categorical  Outlook" src="http://www.spc.noaa.gov/public/cwa/images/LOT_swody3.png" style="height: 150px; margin-top: 4px; margin-bottom: 4px; width: 200px;" title="Day 2 Categorical Outlook" /></a></td>
+						<td align="center"><strong>National</strong><br />
+						<a class="highslide" href="http://www.spc.noaa.gov/products/outlook/day3prob.gif" id="d3co" onclick="return hs.expand(this, {captionId: 'd2to'})" target="_blank"><img align="middle" alt="Day 3 Thunderstorm Outlook" src="http://www.spc.noaa.gov/products/outlook/day3prob.gif" style="height: 150px; margin-top: 4px; margin-bottom: 4px; width: 200px;" title="Day 2 Tornado Outlook" /></a></td>
+						<td align="center"><strong>Local</strong><br />
+						<a class="highslide" href="https://www.wpc.ncep.noaa.gov/exper/eromap/cwamaps/LOT_Day3.png" id="d3wpc" onclick="return hs.expand(this, {captionId: 'd2ho'})" target="_blank"><img align="middle" alt="Day 3 Excessive Rainfall Outlook" src="https://www.wpc.ncep.noaa.gov/exper/eromap/cwamaps/LOT_Day3.png" style="height: 150px; margin-top: 4px; margin-bottom: 4px; width: 200px;" title="Day 2 Hail Outlook" /></a></td>
+						<td align="center"><strong>National</strong><br />
+						<a class="highslide" href="https://www.wpc.ncep.noaa.gov/qpf/99ewbg.gif" id="d3wpc" onclick="return hs.expand(this, {captionId: 'd2wo'})" target="_blank"><img align="middle" alt="Day 3 Excessive Rainfall Outlook" src="https://www.wpc.ncep.noaa.gov/qpf/99ewbg.gif" style="height: 150px; margin-top: 4px; margin-bottom: 4px; width: 200px;" title="Day 2 Severe Thunderstorm Wind Outlook" /></a></td>
+					</tr>
+				</tbody>
+			</table>
+			</center>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+</center>
+</center>
+
+<center>&nbsp;</center>
+
+<center>
+<p>&nbsp;</p>
+
+<hr style="margin-bottom: 7px;" />
+<center>&nbsp;</center>
+
+<center><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Detailed Forecasts</span></center>
+
+<p>&nbsp;</p>
+
+<div align="center" id="forecastLink3">
+<table border="0" cellpadding="1" cellspacing="1" width="900">
+	<tbody>
+		<tr>
+			<td align="center" valign="top"><span style="color: black; font-size: 20px; font-face: trebuchet MS;">Current Conditions and<br />
+			Seven Day Forecast</span>
+
+			<p>&nbsp;</p>
+
+			<form action="https://forecast.weather.gov/zipcity.php" id="fcst3" method="post" target="_new"><input name="inputstring" onfocus="this.value='';" size="20" type="text" value="City, St, or Zip Code" /> <input id="Go2" name="Go2" type="submit" value="Go" /> <input name="siteid" type="hidden" value="lot" /></form>
+			&nbsp;
+
+			<p>&nbsp;</p>
+			</td>
+			<td align="center" style="width: 100px;" valign="top"><strong><i>-- OR -- </i></strong></td>
+			<td align="center" valign="top"><span style="font-size: 20px; font-face: trebuchet MS; font-color: black;">Hourly Weather Graph<br />
+			(click on your location on the map)</span><br />
+			<script language="javascript">
+                $(document).ready(function(){
+                   $("#wwamapImage3").click(function(e){
+                        var offset_l = $(this).offset().left - $(window).scrollLeft();
+			var offset_t = $(this).offset().top - $(window).scrollTop();
+			var left =  Math.round( (e.clientX - offset_l) );
+			var top = Math.round( (e.clientY - offset_t) );
+			//console.log("click position result --> X: " + left + ", Y: " + top);
+			$('#mapx3').val(left);
+			$('#mapy3').val(top);
+                   });
+                });
+		</script>
+			<div id="wfomap_container3">
+			<form action="https://forecast.weather.gov/MapClick.php" method="get" name="HWGform3" target="new"><input align="middle" alt="Map of Forecast Area" id="wwamapImage3" src="/wwamap/png/lot.png" title="Map of Forecast Area" type="image" /> <input name="site" type="hidden" value="lot" /> <input name="zmx" type="hidden" value="" /> <input name="zmy" type="hidden" value="" /> <input id="mapx3" name="map_x" type="hidden" value="" /> <input id="mapy3" name="map_y" type="hidden" value="" /> <input id="FcstType" name="FcstType" type="hidden" value="graphical" /> <input id="w0" name="w0" type="hidden" value="t" /> <input id="w1" name="w1" type="hidden" value="td" /> <input id="w2" name="w2" type="hidden" value="hi" /> <input id="w3" name="w3" type="hidden" value="wc" /> <input id="w4" name="w4" type="hidden" value="sfcwind" /> <input id="w4u" name="w4u" type="hidden" value="1" /> <input id="w5" name="w5" type="hidden" value="pop" /> <input id="w6" name="w6" type="hidden" value="sky" /> <input id="w7" name="w7" type="hidden" value="rain" /> <input id="w8" name="w8" type="hidden" value="thunder" /> <input id="w9" name="w9" type="hidden" value="rh" /></form>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr style="margin-bottom: 7px;" />
+<p style="text-align: center;"><br />
+<a href="https://nwschat.weather.gov/" target="_blank"><span style="color: blue; font-size: 20px; font-face: trebuchet MS;">Link to NWSChat</span></a></p>
+</div>
+</center>
+</div>
+<!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- -->
+
+<div id="Planning">
+<p><span style="color: black; font-size: 18px; font-face: trebuchet MS;">Weather Watcher Training</span></p>
+
+<ul>
+	<li><a href="https://youtu.be/ZmH6vnup92o" target="_blank"><span style="color: blue; font-size: 18px; font-face: trebuchet MS;">Weather Watcher Video Tutorial (Youtube)</span></a></li>
+	<li><a href="http://atlas.niu.edu/klot/lot2/Media/wxwatcher/LOT%20Weather%20Watchers%20Guide.pdf" target="_blank"><span style="color: blue; font-size: 18px; font-face: trebuchet MS;">Weather Watcher&nbsp;Guide</span></a></li>
+	<li><a href="http://atlas.niu.edu/klot/lot2/Media/wxwatcher/LOT%20Wx%20Watcher%20Quick%20Start%20Guide.pdf" target="_blank"><span style="color: blue; font-size: 18px; font-face: trebuchet MS;">Weather Watcher Quick Start Guide</span></a></li>
+	<li><a href="https://www.youtube.com/watch?v=Rtjao_2qI_8&amp;feature=youtu.be" target="_blank"><span style="color: blue; font-size: 18px; font-face: trebuchet MS;">Evacuation/Sheltering Decision Guide Video (Youtube)</span></a></li>
+	<li><a href="https://www.youtube.com/watch?v=T4XYeiX8KPE" target="_blank"><span style="color: blue; font-size: 18px; font-face: trebuchet MS;">Evacuation/Sheltering Decision Tool Video Tutorial (Youtube)</span></a></li>
+</ul>
+
+<p><a href="https://www.youtube.com/watch?v=T4XYeiX8KPE" target="_blank"><span style="color: black; font-size: 18px; font-face: trebuchet MS;">Weather Watching Tools</span></a></p>
+
+<ul>
+	<li><a href="http://atlas.niu.edu/klot/lot2/Media/wxwatcher/Printable%20Outdoor%20Event%20Weather%20Watcher%20Checklist%20-%202018.pdf" target="_blank"><span style="color: blue; font-size: 18px; font-face: trebuchet MS;">Weather Watcher Checklist</span></a></li>
+	<li><a href="/images/lot/wxwatcher/Evac%20Decision%20Guide%202019.png" target="_blank"><span style="color: blue; font-size: 18px; font-face: trebuchet MS;">Evacuation/Sheltering Decision Guide</span></a></li>
+	<li><a href="https://www.weather.gov/lot/evacuationdecisiontool" target="_blank"><span style="color: blue; font-size: 18px; font-face: trebuchet MS;">Evacuation/Sheltering Decision Tool</span></a></li>
+	<li><a href="https://nwschat.weather.gov/" target="_blank"><span style="color: blue; font-size: 18px; font-face: trebuchet MS;">Link to NWSChat</span></a></li>
+	<li><a href="https://www.dupageco.org/OHSEM/ProtectDupage/58683/" target="_blank"><span style="color: blue; font-size: 18px; font-face: trebuchet MS;">Event Ready All Hazards Toolkit from DuPage Co. OHSEM</span></a></li>
+	<li><a href="https://youtu.be/ftk4d6dl0fg " target="_blank"><span style="color: blue; font-size: 18px; font-face: trebuchet MS;">Setting up NWSChat on Smartphones and Tablets (Youtube)</span></a></li>
+</ul>
+
+<p><span style="color: black; font-size: 18px; font-face: trebuchet MS;">Additional Training</span></p>
+
+<ul>
+	<li><a href="https://www.youtube.com/watch?v=a9jMEzWp37I&amp;list=PL1rCrGCORI_fmXTF3kSKnt_0Y0VsYIQPe" target="_blank"><span style="color: blue; font-size: 18px; font-face: trebuchet MS;">Storm Spotter Training Videos (Youtube)</span></a></li>
+	<li><a href="https://www.meted.ucar.edu/training_course.php?id=23" target="_blank"><span style="color: blue; font-size: 18px; font-face: trebuchet MS;">Online Storm Spotter Training Course</span></a></li>
+</ul>
+</div>
+</div>
+<!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!-- --------------------------------------------------------------------------------------------------- --><!--***********************************START OF REALLY UNNECESSARILY LONG BLOCK OF CODE********************************************-->
+<style type="text/css">.highslide-active-anchor IMG {
+	VISIBILITY: hidden
+}
+.highslide IMG {
+	BORDER-TOP: gray 2px solid; BORDER-RIGHT: gray 2px solid; BORDER-BOTTOM: gray 2px solid; BORDER-LEFT: gray 2px solid
+}
+.highslide:hover IMG {
+	BORDER-TOP: white 2px solid; BORDER-RIGHT: white 2px solid; BORDER-BOTTOM: white 2px solid; BORDER-LEFT: white 2px solid
+}
+.highslide-wrapper {
+	BACKGROUND: white
+}
+.highslide-image {
+	BORDER-TOP: white 2px solid; BORDER-RIGHT: white 2px solid; BORDER-BOTTOM: white 2px solid; BORDER-LEFT: white 2px solid
+}
+.highslide-image-blur {
+	
+}
+.highslide-caption {
+	FONT-SIZE: 10pt; BORDER-TOP: white 2px; FONT-FAMILY: Verdana, Helvetica; BORDER-RIGHT: white 2px solid; BORDER-BOTTOM: white 2px 
+
+solid; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 5px; BORDER-LEFT: white 2px solid; DISPLAY: none; PADDING-RIGHT: 5px; 
+
+BACKGROUND-COLOR: white
+}
+.highslide-loading {
+	FONT-SIZE: 8pt; TEXT-DECORATION: none; BORDER-TOP: black 1px solid; FONT-FAMILY: sans-serif; BORDER-RIGHT: black 1px solid; 
+
+BACKGROUND-IMAGE: url(/images/dmx/highslide/loader.white.gif); BACKGROUND-REPEAT: no-repeat; BORDER-BOTTOM: black 1px solid; BACKGROUND-
+
+POSITION: 3px 1px; FONT-WEIGHT: bold; COLOR: black; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; PADDING-LEFT: 22px; BORDER-LEFT: black 1px 
+
+solid; DISPLAY: block; PADDING-RIGHT: 2px; BACKGROUND-COLOR: white
+}
+A.highslide-credits {
+	FONT-SIZE: 10px; TEXT-DECORATION: none; COLOR: silver; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 
+
+2px
+}
+A.highslide-credits I {
+	FONT-SIZE: 10px; TEXT-DECORATION: none; COLOR: silver; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 
+
+2px
+}
+A.highslide-credits:hover {
+	COLOR: white; BACKGROUND-COLOR: gray
+}
+A.highslide-credits:hover I {
+	COLOR: white; BACKGROUND-COLOR: gray
+}
+A.highslide-full-expand {
+	HEIGHT: 34px; WIDTH: 34px; BACKGROUND: url(/images/dmx/highslide/fullexpand.gif) no-repeat; MARGIN: 0px 10px 10px 0px; DISPLAY: 
+
+block
+}
+.highslide-display-block {
+	DISPLAY: block
+}
+.highslide-display-none {
+	DISPLAY: none
+}
+A {
+	TEXT-DECORATION: none
+}
+</style>
+<script type="text/javascript">
+
+/** 
+ * Name:    Highslide JS
+ * Version: 4.1.12 (2011-03-28)
+ */
+if (!hs) { var hs = {
+// Language strings
+lang : {
+	cssDirection: 'ltr',
+	loadingText : 'Loading...',
+	loadingTitle : 'Click to cancel',
+	focusTitle : 'Click to bring to front',
+	fullExpandTitle : 'Expand to actual size (f)',
+	creditsText : 'Powered by <i>Highslide JS</i>',
+	creditsTitle : 'Go to the Highslide JS homepage',
+	restoreTitle : 'Click to close image, click and drag to move. Use arrow keys for next and previous.'
+},
+// See http://highslide.com/ref for examples of settings  
+graphicsDir : '/images/dmx/highslide/',
+expandCursor : 'null', // null disables
+restoreCursor : 'null', // null disables
+expandDuration : 250, // milliseconds
+restoreDuration : 250,
+marginLeft : 15,
+marginRight : 15,
+marginTop : 15,
+marginBottom : 15,
+zIndexCounter : 1001, // adjust to other absolutely positioned elements
+loadingOpacity : 0.75,
+allowMultipleInstances: true,
+numberOfImagesToPreload : 5,
+outlineWhileAnimating : 2, // 0 = never, 1 = always, 2 = HTML only 
+outlineStartOffset : 3, // ends at 10
+padToMinWidth : false, // pad the popup width to make room for wide caption
+fullExpandPosition : 'bottom right',
+fullExpandOpacity : 1,
+creditsHref : 'http://highslide.com/',
+creditsTarget : '_self',
+enableKeyListener : true,
+openerTagNames : ['a'], // Add more to allow slideshow indexing
+
+dragByHeading: true,
+minWidth: 200,
+minHeight: 200,
+allowSizeReduction: true, // allow the image to reduce to fit client size. If false, this overrides minWidth and minHeight
+outlineType : 'drop-shadow', // set null to disable outlines
+// END OF YOUR SETTINGS
+
+
+// declare internal properties
+preloadTheseImages : [],
+continuePreloading: true,
+expanders : [],
+overrides : [
+	'allowSizeReduction',
+	'useBox',
+	'outlineType',
+	'outlineWhileAnimating',
+	'captionId',
+	'captionText',
+	'captionEval',
+	'captionOverlay',
+	'headingId',
+	'headingText',
+	'headingEval',
+	'headingOverlay',
+	'creditsPosition',
+	'dragByHeading',
+	
+	'width',
+	'height',
+	
+	'wrapperClassName',
+	'minWidth',
+	'minHeight',
+	'maxWidth',
+	'maxHeight',
+	'pageOrigin',
+	'slideshowGroup',
+	'easing',
+	'easingClose',
+	'fadeInOut',
+	'src'
+],
+overlays : [],
+idCounter : 0,
+oPos : {
+	x: ['leftpanel', 'left', 'center', 'right', 'rightpanel'],
+	y: ['above', 'top', 'middle', 'bottom', 'below']
+},
+mouse: {},
+headingOverlay: {},
+captionOverlay: {},
+timers : [],
+
+pendingOutlines : {},
+clones : {},
+onReady: [],
+uaVersion: /Trident\/4\.0/.test(navigator.userAgent) ? 8 :
+	parseFloat((navigator.userAgent.toLowerCase().match( /.+(?:rv|it|ra|ie)[\/: ]([\d.]+)/ ) || [0,'0'])[1]),
+ie : (document.all && !window.opera),
+//ie : navigator && /MSIE [678]/.test(navigator.userAgent), // ie9 compliant?
+safari : /Safari/.test(navigator.userAgent),
+geckoMac : /Macintosh.+rv:1\.[0-8].+Gecko/.test(navigator.userAgent),
+
+$ : function (id) {
+	if (id) return document.getElementById(id);
+},
+
+push : function (arr, val) {
+	arr[arr.length] = val;
+},
+
+createElement : function (tag, attribs, styles, parent, nopad) {
+	var el = document.createElement(tag);
+	if (attribs) hs.extend(el, attribs);
+	if (nopad) hs.setStyles(el, {padding: 0, border: 'none', margin: 0});
+	if (styles) hs.setStyles(el, styles);
+	if (parent) parent.appendChild(el);	
+	return el;
+},
+
+extend : function (el, attribs) {
+	for (var x in attribs) el[x] = attribs[x];
+	return el;
+},
+
+setStyles : function (el, styles) {
+	for (var x in styles) {
+		if (hs.ieLt9 && x == 'opacity') {
+			if (styles[x] > 0.99) el.style.removeAttribute('filter');
+			else el.style.filter = 'alpha(opacity='+ (styles[x] * 100) +')';
+		}
+		else el.style[x] = styles[x];		
+	}
+},
+animate: function(el, prop, opt) {
+	var start,
+		end,
+		unit;
+	if (typeof opt != 'object' || opt === null) {
+		var args = arguments;
+		opt = {
+			duration: args[2],
+			easing: args[3],
+			complete: args[4]
+		};
+	}
+	if (typeof opt.duration != 'number') opt.duration = 250;
+	opt.easing = Math[opt.easing] || Math.easeInQuad;
+	opt.curAnim = hs.extend({}, prop);
+	for (var name in prop) {
+		var e = new hs.fx(el, opt , name );
+		
+		start = parseFloat(hs.css(el, name)) || 0;
+		end = parseFloat(prop[name]);
+		unit = name != 'opacity' ? 'px' : '';
+		
+		e.custom( start, end, unit );
+	}	
+},
+css: function(el, prop) {
+	if (el.style[prop]) {
+		return el.style[prop];
+	} else if (document.defaultView) {
+		return document.defaultView.getComputedStyle(el, null).getPropertyValue(prop);
+
+	} else {
+		if (prop == 'opacity') prop = 'filter';
+		var val = el.currentStyle[prop.replace(/\-(\w)/g, function (a, b){ return b.toUpperCase(); })];
+		if (prop == 'filter') 
+			val = val.replace(/alpha\(opacity=([0-9]+)\)/, 
+				function (a, b) { return b / 100 });
+		return val === '' ? 1 : val;
+	} 
+},
+
+getPageSize : function () {
+	var d = document, w = window, iebody = d.compatMode && d.compatMode != 'BackCompat' 
+		? d.documentElement : d.body;
+	
+	var width = hs.ieLt9 ? iebody.clientWidth : 
+			(d.documentElement.clientWidth || self.innerWidth),
+		height = hs.ieLt9 ? iebody.clientHeight : self.innerHeight;
+	
+	hs.page = {
+		width: width,
+		height: height,		
+		scrollLeft: hs.ieLt9 ? iebody.scrollLeft : pageXOffset,
+		scrollTop: hs.ieLt9 ? iebody.scrollTop : pageYOffset
+	};
+	return hs.page;
+},
+
+getPosition : function(el)	{
+	var p = { x: el.offsetLeft, y: el.offsetTop };
+	while (el.offsetParent)	{
+		el = el.offsetParent;
+		p.x += el.offsetLeft;
+		p.y += el.offsetTop;
+		if (el != document.body && el != document.documentElement) {
+			p.x -= el.scrollLeft;
+			p.y -= el.scrollTop;
+		}
+	}
+	return p;
+},
+
+expand : function(a, params, custom, type) {
+	if (!a) a = hs.createElement('a', null, { display: 'none' }, hs.container);
+	if (typeof a.getParams == 'function') return params;	
+	try {	
+		new hs.Expander(a, params, custom);
+		return false;
+	} catch (e) { return true; }
+},
+
+
+focusTopmost : function() {
+	var topZ = 0, 
+		topmostKey = -1,
+		expanders = hs.expanders,
+		exp,
+		zIndex;
+	for (var i = 0; i < expanders.length; i++) {
+		exp = expanders[i];
+		if (exp) {
+			zIndex = exp.wrapper.style.zIndex;
+			if (zIndex && zIndex > topZ) {
+				topZ = zIndex;				
+				topmostKey = i;
+			}
+		}
+	}
+	if (topmostKey == -1) hs.focusKey = -1;
+	else expanders[topmostKey].focus();
+},
+
+getParam : function (a, param) {
+	a.getParams = a.onclick;
+	var p = a.getParams ? a.getParams() : null;
+	a.getParams = null;
+	
+	return (p && typeof p[param] != 'undefined') ? p[param] : 
+		(typeof hs[param] != 'undefined' ? hs[param] : null);
+},
+
+getSrc : function (a) {
+	var src = hs.getParam(a, 'src');
+	if (src) return src;
+	return a.href;
+},
+
+getNode : function (id) {
+	var node = hs.$(id), clone = hs.clones[id], a = {};
+	if (!node && !clone) return null;
+	if (!clone) {
+		clone = node.cloneNode(true);
+		clone.id = '';
+		hs.clones[id] = clone;
+		return node;
+	} else {
+		return clone.cloneNode(true);
+	}
+},
+
+discardElement : function(d) {
+	if (d) hs.garbageBin.appendChild(d);
+	hs.garbageBin.innerHTML = '';
+},
+transit : function (adj, exp) {
+	var last = exp || hs.getExpander();
+	exp = last;
+	if (hs.upcoming) return false;
+	else hs.last = last;
+	hs.removeEventListener(document, window.opera ? 'keypress' : 'keydown', hs.keyHandler);
+	try {
+		hs.upcoming = adj;
+		adj.onclick(); 		
+	} catch (e){
+		hs.last = hs.upcoming = null;
+	}
+	try {
+		exp.close();
+	} catch (e) {}
+	return false;
+},
+
+previousOrNext : function (el, op) {
+	var exp = hs.getExpander(el);
+	if (exp) return hs.transit(exp.getAdjacentAnchor(op), exp);
+	else return false;
+},
+
+previous : function (el) {
+	return hs.previousOrNext(el, -1);
+},
+
+next : function (el) {
+	return hs.previousOrNext(el, 1);	
+},
+
+keyHandler : function(e) {
+	if (!e) e = window.event;
+	if (!e.target) e.target = e.srcElement; // ie
+	if (typeof e.target.form != 'undefined') return true; // form element has focus
+	var exp = hs.getExpander();
+	
+	var op = null;
+	switch (e.keyCode) {
+		case 70: // f
+			if (exp) exp.doFullExpand();
+			return true;
+		case 32: // Space
+		case 34: // Page Down
+		case 39: // Arrow right
+		case 40: // Arrow down
+			op = 1;
+			break;
+		case 8:  // Backspace
+		case 33: // Page Up
+		case 37: // Arrow left
+		case 38: // Arrow up
+			op = -1;
+			break;
+		case 27: // Escape
+		case 13: // Enter
+			op = 0;
+	}
+	if (op !== null) {
+		hs.removeEventListener(document, window.opera ? 'keypress' : 'keydown', hs.keyHandler);
+		if (!hs.enableKeyListener) return true;
+		
+		if (e.preventDefault) e.preventDefault();
+    	else e.returnValue = false;
+    	if (exp) {
+			if (op == 0) {
+				exp.close();
+			} else {
+				hs.previousOrNext(exp.key, op);
+			}
+			return false;
+		}
+	}
+	return true;
+},
+
+
+registerOverlay : function (overlay) {
+	hs.push(hs.overlays, hs.extend(overlay, { hsId: 'hsId'+ hs.idCounter++ } ));
+},
+
+
+getWrapperKey : function (element, expOnly) {
+	var el, re = /^highslide-wrapper-([0-9]+)$/;
+	// 1. look in open expanders
+	el = element;
+	while (el.parentNode)	{
+		if (el.id && re.test(el.id)) return el.id.replace(re, "$1");
+		el = el.parentNode;
+	}
+	// 2. look in thumbnail
+	if (!expOnly) {
+		el = element;
+		while (el.parentNode)	{
+			if (el.tagName && hs.isHsAnchor(el)) {
+				for (var key = 0; key < hs.expanders.length; key++) {
+					var exp = hs.expanders[key];
+					if (exp && exp.a == el) return key;
+				}
+			}
+			el = el.parentNode;
+		}
+	}
+	return null; 
+},
+
+getExpander : function (el, expOnly) {
+	if (typeof el == 'undefined') return hs.expanders[hs.focusKey] || null;
+	if (typeof el == 'number') return hs.expanders[el] || null;
+	if (typeof el == 'string') el = hs.$(el);
+	return hs.expanders[hs.getWrapperKey(el, expOnly)] || null;
+},
+
+isHsAnchor : function (a) {
+	return (a.onclick && a.onclick.toString().replace(/\s/g, ' ').match(/hs.(htmlE|e)xpand/));
+},
+
+reOrder : function () {
+	for (var i = 0; i < hs.expanders.length; i++)
+		if (hs.expanders[i] && hs.expanders[i].isExpanded) hs.focusTopmost();
+},
+
+mouseClickHandler : function(e) 
+{	
+	if (!e) e = window.event;
+	if (e.button > 1) return true;
+	if (!e.target) e.target = e.srcElement;
+	
+	var el = e.target;
+	while (el.parentNode
+		&& !(/highslide-(image|move|html|resize)/.test(el.className)))
+	{
+		el = el.parentNode;
+	}
+	var exp = hs.getExpander(el);
+	if (exp && (exp.isClosing || !exp.isExpanded)) return true;
+		
+	if (exp && e.type == 'mousedown') {
+		if (e.target.form) return true;
+		var match = el.className.match(/highslide-(image|move|resize)/);
+		if (match) {
+			hs.dragArgs = { 
+				exp: exp , 
+				type: match[1], 
+				left: exp.x.pos, 
+				width: exp.x.size, 
+				top: exp.y.pos, 
+				height: exp.y.size, 
+				clickX: e.clientX, 
+				clickY: e.clientY
+			};
+			
+			
+			hs.addEventListener(document, 'mousemove', hs.dragHandler);
+			if (e.preventDefault) e.preventDefault(); // FF
+			
+			if (/highslide-(image|html)-blur/.test(exp.content.className)) {
+				exp.focus();
+				hs.hasFocused = true;
+			}
+			return false;
+		}
+	} else if (e.type == 'mouseup') {
+		
+		hs.removeEventListener(document, 'mousemove', hs.dragHandler);
+		
+		if (hs.dragArgs) {
+			if (hs.styleRestoreCursor && hs.dragArgs.type == 'image') 
+				hs.dragArgs.exp.content.style.cursor = hs.styleRestoreCursor;
+			var hasDragged = hs.dragArgs.hasDragged;
+			
+			if (!hasDragged &&!hs.hasFocused && !/(move|resize)/.test(hs.dragArgs.type)) {
+				exp.close();
+			} 
+			else if (hasDragged || (!hasDragged && hs.hasHtmlExpanders)) {
+				hs.dragArgs.exp.doShowHide('hidden');
+			}
+			hs.hasFocused = false;
+			hs.dragArgs = null;
+		
+		} else if (/highslide-image-blur/.test(el.className)) {
+			el.style.cursor = hs.styleRestoreCursor;		
+		}
+	}
+	return false;
+},
+
+dragHandler : function(e)
+{
+	if (!hs.dragArgs) return true;
+	if (!e) e = window.event;
+	var a = hs.dragArgs, exp = a.exp;
+	
+	a.dX = e.clientX - a.clickX;
+	a.dY = e.clientY - a.clickY;	
+	
+	var distance = Math.sqrt(Math.pow(a.dX, 2) + Math.pow(a.dY, 2));
+	if (!a.hasDragged) a.hasDragged = (a.type != 'image' && distance > 0)
+		|| (distance > (hs.dragSensitivity || 5));
+	
+	if (a.hasDragged && e.clientX > 5 && e.clientY > 5) {
+		
+		if (a.type == 'resize') exp.resize(a);
+		else {
+			exp.moveTo(a.left + a.dX, a.top + a.dY);
+			if (a.type == 'image') exp.content.style.cursor = 'move';
+		}
+	}
+	return false;
+},
+
+wrapperMouseHandler : function (e) {
+	try {
+		if (!e) e = window.event;
+		var over = /mouseover/i.test(e.type); 
+		if (!e.target) e.target = e.srcElement; // ie
+		if (!e.relatedTarget) e.relatedTarget = 
+			over ? e.fromElement : e.toElement; // ie
+		var exp = hs.getExpander(e.target);
+		if (!exp.isExpanded) return;
+		if (!exp || !e.relatedTarget || hs.getExpander(e.relatedTarget, true) == exp 
+			|| hs.dragArgs) return;
+		for (var i = 0; i < exp.overlays.length; i++) (function() {
+			var o = hs.$('hsId'+ exp.overlays[i]);
+			if (o && o.hideOnMouseOut) {
+				if (over) hs.setStyles(o, { visibility: 'visible', display: '' });
+				hs.animate(o, { opacity: over ? o.opacity : 0 }, o.dur);
+			}
+		})();	
+	} catch (e) {}
+},
+addEventListener : function (el, event, func) {
+	if (el == document && event == 'ready') {
+		hs.push(hs.onReady, func);
+	}
+	try {
+		el.addEventListener(event, func, false);
+	} catch (e) {
+		try {
+			el.detachEvent('on'+ event, func);
+			el.attachEvent('on'+ event, func);
+		} catch (e) {
+			el['on'+ event] = func;
+		}
+	} 
+},
+
+removeEventListener : function (el, event, func) {
+	try {
+		el.removeEventListener(event, func, false);
+	} catch (e) {
+		try {
+			el.detachEvent('on'+ event, func);
+		} catch (e) {
+			el['on'+ event] = null;
+		}
+	}
+},
+
+preloadFullImage : function (i) {
+	if (hs.continuePreloading && hs.preloadTheseImages[i] && hs.preloadTheseImages[i] != 'undefined') {
+		var img = document.createElement('img');
+		img.onload = function() { 
+			img = null;
+			hs.preloadFullImage(i + 1);
+		};
+		img.src = hs.preloadTheseImages[i];
+	}
+},
+preloadImages : function (number) {
+	if (number && typeof number != 'object') hs.numberOfImagesToPreload = number;
+	
+	var arr = hs.getAnchors();
+	for (var i = 0; i < arr.images.length && i < hs.numberOfImagesToPreload; i++) {
+		hs.push(hs.preloadTheseImages, hs.getSrc(arr.images[i]));
+	}
+	
+	// preload outlines
+	if (hs.outlineType)	new hs.Outline(hs.outlineType, function () { hs.preloadFullImage(0)} );
+	else
+	
+	hs.preloadFullImage(0);
+	
+	// preload cursor
+	if (hs.restoreCursor) var cur = hs.createElement('img', { src: hs.graphicsDir + hs.restoreCursor });
+},
+
+
+init : function () {
+	if (!hs.container) {
+	
+		hs.ieLt7 = hs.ie && hs.uaVersion < 7;
+		hs.ieLt9 = hs.ie && hs.uaVersion < 9;
+		
+		hs.getPageSize();
+		for (var x in hs.langDefaults) {
+			if (typeof hs[x] != 'undefined') hs.lang[x] = hs[x];
+			else if (typeof hs.lang[x] == 'undefined' && typeof hs.langDefaults[x] != 'undefined') 
+				hs.lang[x] = hs.langDefaults[x];
+		}
+		
+		hs.container = hs.createElement('div', {
+				className: 'highslide-container'
+			}, {
+				position: 'absolute',
+				left: 0, 
+				top: 0, 
+				width: '100%', 
+				zIndex: hs.zIndexCounter,
+				direction: 'ltr'
+			}, 
+			document.body,
+			true
+		);
+		hs.loading = hs.createElement('a', {
+				className: 'highslide-loading',
+				title: hs.lang.loadingTitle,
+				innerHTML: hs.lang.loadingText,
+				href: 'javascript:;'
+			}, {
+				position: 'absolute',
+				top: '-9999px',
+				opacity: hs.loadingOpacity,
+				zIndex: 1
+			}, hs.container
+		);
+		hs.garbageBin = hs.createElement('div', null, { display: 'none' }, hs.container);
+		
+		// http://www.robertpenner.com/easing/ 
+		Math.linearTween = function (t, b, c, d) {
+			return c*t/d + b;
+		};
+		Math.easeInQuad = function (t, b, c, d) {
+			return c*(t/=d)*t + b;
+		};
+		
+		hs.hideSelects = hs.ieLt7;
+		hs.hideIframes = ((window.opera && hs.uaVersion < 9) || navigator.vendor == 'KDE' 
+			|| (hs.ieLt7 && hs.uaVersion < 5.5));
+	}
+},
+ready : function() {
+	if (hs.isReady) return;
+	hs.isReady = true;
+	for (var i = 0; i < hs.onReady.length; i++) hs.onReady[i]();
+},
+
+updateAnchors : function() {
+	var el, els, all = [], images = [],groups = {}, re;
+		
+	for (var i = 0; i < hs.openerTagNames.length; i++) {
+		els = document.getElementsByTagName(hs.openerTagNames[i]);
+		for (var j = 0; j < els.length; j++) {
+			el = els[j];
+			re = hs.isHsAnchor(el);
+			if (re) {
+				hs.push(all, el);
+				if (re[0] == 'hs.expand') hs.push(images, el);
+				var g = hs.getParam(el, 'slideshowGroup') || 'none';
+				if (!groups[g]) groups[g] = [];
+				hs.push(groups[g], el);
+			}
+		}
+	}
+	hs.anchors = { all: all, groups: groups, images: images };
+	return hs.anchors;
+	
+},
+
+getAnchors : function() {
+	return hs.anchors || hs.updateAnchors();
+},
+
+
+close : function(el) {
+	var exp = hs.getExpander(el);
+	if (exp) exp.close();
+	return false;
+}
+}; // end hs object
+hs.fx = function( elem, options, prop ){
+	this.options = options;
+	this.elem = elem;
+	this.prop = prop;
+
+	if (!options.orig) options.orig = {};
+};
+hs.fx.prototype = {
+	update: function(){
+		(hs.fx.step[this.prop] || hs.fx.step._default)(this);
+		
+		if (this.options.step)
+			this.options.step.call(this.elem, this.now, this);
+
+	},
+	custom: function(from, to, unit){
+		this.startTime = (new Date()).getTime();
+		this.start = from;
+		this.end = to;
+		this.unit = unit;// || this.unit || "px";
+		this.now = this.start;
+		this.pos = this.state = 0;
+
+		var self = this;
+		function t(gotoEnd){
+			return self.step(gotoEnd);
+		}
+
+		t.elem = this.elem;
+
+		if ( t() && hs.timers.push(t) == 1 ) {
+			hs.timerId = setInterval(function(){
+				var timers = hs.timers;
+
+				for ( var i = 0; i < timers.length; i++ )
+					if ( !timers[i]() )
+						timers.splice(i--, 1);
+
+				if ( !timers.length ) {
+					clearInterval(hs.timerId);
+				}
+			}, 13);
+		}
+	},
+	step: function(gotoEnd){
+		var t = (new Date()).getTime();
+		if ( gotoEnd || t >= this.options.duration + this.startTime ) {
+			this.now = this.end;
+			this.pos = this.state = 1;
+			this.update();
+
+			this.options.curAnim[ this.prop ] = true;
+
+			var done = true;
+			for ( var i in this.options.curAnim )
+				if ( this.options.curAnim[i] !== true )
+					done = false;
+
+			if ( done ) {
+				if (this.options.complete) this.options.complete.call(this.elem);
+			}
+			return false;
+		} else {
+			var n = t - this.startTime;
+			this.state = n / this.options.duration;
+			this.pos = this.options.easing(n, 0, 1, this.options.duration);
+			this.now = this.start + ((this.end - this.start) * this.pos);
+			this.update();
+		}
+		return true;
+	}
+
+};
+
+hs.extend( hs.fx, {
+	step: {
+
+		opacity: function(fx){
+			hs.setStyles(fx.elem, { opacity: fx.now });
+		},
+
+		_default: function(fx){
+			try {
+				if ( fx.elem.style && fx.elem.style[ fx.prop ] != null )
+					fx.elem.style[ fx.prop ] = fx.now + fx.unit;
+				else
+					fx.elem[ fx.prop ] = fx.now;
+			} catch (e) {}
+		}
+	}
+});
+
+hs.Outline =  function (outlineType, onLoad) {
+	this.onLoad = onLoad;
+	this.outlineType = outlineType;
+	var v = hs.uaVersion, tr;
+	
+	this.hasAlphaImageLoader = hs.ie && hs.uaVersion < 7;
+	if (!outlineType) {
+		if (onLoad) onLoad();
+		return;
+	}
+	
+	hs.init();
+	this.table = hs.createElement(
+		'table', { 
+			cellSpacing: 0 
+		}, {
+			visibility: 'hidden',
+			position: 'absolute',
+			borderCollapse: 'collapse',
+			width: 0
+		},
+		hs.container,
+		true
+	);
+	var tbody = hs.createElement('tbody', null, null, this.table, 1);
+	
+	this.td = [];
+	for (var i = 0; i <= 8; i++) {
+		if (i % 3 == 0) tr = hs.createElement('tr', null, { height: 'auto' }, tbody, true);
+		this.td[i] = hs.createElement('td', null, null, tr, true);
+		var style = i != 4 ? { lineHeight: 0, fontSize: 0} : { position : 'relative' };
+		hs.setStyles(this.td[i], style);
+	}
+	this.td[4].className = outlineType +' highslide-outline';
+	
+	this.preloadGraphic(); 
+};
+
+hs.Outline.prototype = {
+preloadGraphic : function () {
+	var src = hs.graphicsDir + (hs.outlinesDir || "outlines/")+ this.outlineType +".png";
+				
+	var appendTo = hs.safari && hs.uaVersion < 525 ? hs.container : null;
+	this.graphic = hs.createElement('img', null, { position: 'absolute', 
+		top: '-9999px' }, appendTo, true); // for onload trigger
+	
+	var pThis = this;
+	this.graphic.onload = function() { pThis.onGraphicLoad(); };
+	
+	this.graphic.src = src;
+},
+
+onGraphicLoad : function () {
+	var o = this.offset = this.graphic.width / 4,
+		pos = [[0,0],[0,-4],[-2,0],[0,-8],0,[-2,-8],[0,-2],[0,-6],[-2,-2]],
+		dim = { height: (2*o) +'px', width: (2*o) +'px' };
+	for (var i = 0; i <= 8; i++) {
+		if (pos[i]) {
+			if (this.hasAlphaImageLoader) {
+				var w = (i == 1 || i == 7) ? '100%' : this.graphic.width +'px';
+				var div = hs.createElement('div', null, { width: '100%', height: '100%', position: 'relative', overflow: 
+
+'hidden'}, this.td[i], true);
+				hs.createElement ('div', null, { 
+						filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale, src='"+ 
+
+this.graphic.src + "')", 
+						position: 'absolute',
+						width: w, 
+						height: this.graphic.height +'px',
+						left: (pos[i][0]*o)+'px',
+						top: (pos[i][1]*o)+'px'
+					}, 
+				div,
+				true);
+			} else {
+				hs.setStyles(this.td[i], { background: 'url('+ this.graphic.src +') '+ (pos[i][0]*o)+'px '+(pos[i][1]
+
+*o)+'px'});
+			}
+			
+			if (window.opera && (i == 3 || i ==5)) 
+				hs.createElement('div', null, dim, this.td[i], true);
+			
+			hs.setStyles (this.td[i], dim);
+		}
+	}
+	this.graphic = null;
+	if (hs.pendingOutlines[this.outlineType]) hs.pendingOutlines[this.outlineType].destroy();
+	hs.pendingOutlines[this.outlineType] = this;
+	if (this.onLoad) this.onLoad();
+},
+	
+setPosition : function (pos, offset, vis, dur, easing) {
+	var exp = this.exp,
+		stl = exp.wrapper.style,
+		offset = offset || 0,
+		pos = pos || {
+			x: exp.x.pos + offset,
+			y: exp.y.pos + offset,
+			w: exp.x.get('wsize') - 2 * offset,
+			h: exp.y.get('wsize') - 2 * offset
+		};
+	if (vis) this.table.style.visibility = (pos.h >= 4 * this.offset) 
+		? 'visible' : 'hidden';
+	hs.setStyles(this.table, {
+		left: (pos.x - this.offset) +'px',
+		top: (pos.y - this.offset) +'px',
+		width: (pos.w + 2 * this.offset) +'px'
+	});
+	
+	pos.w -= 2 * this.offset;
+	pos.h -= 2 * this.offset;
+	hs.setStyles (this.td[4], {
+		width: pos.w >= 0 ? pos.w +'px' : 0,
+		height: pos.h >= 0 ? pos.h +'px' : 0
+	});
+	if (this.hasAlphaImageLoader) this.td[3].style.height 
+		= this.td[5].style.height = this.td[4].style.height;	
+	
+},
+	
+destroy : function(hide) {
+	if (hide) this.table.style.visibility = 'hidden';
+	else hs.discardElement(this.table);
+}
+};
+
+hs.Dimension = function(exp, dim) {
+	this.exp = exp;
+	this.dim = dim;
+	this.ucwh = dim == 'x' ? 'Width' : 'Height';
+	this.wh = this.ucwh.toLowerCase();
+	this.uclt = dim == 'x' ? 'Left' : 'Top';
+	this.lt = this.uclt.toLowerCase();
+	this.ucrb = dim == 'x' ? 'Right' : 'Bottom';
+
+	this.rb = this.ucrb.toLowerCase();
+	this.p1 = this.p2 = 0;
+};
+hs.Dimension.prototype = {
+get : function(key) {
+	switch (key) {
+		case 'loadingPos':
+			return this.tpos + this.tb + (this.t - hs.loading['offset'+ this.ucwh]) / 2;
+		case 'wsize':
+			return this.size + 2 * this.cb + this.p1 + this.p2;
+		case 'fitsize':
+			return this.clientSize - this.marginMin - this.marginMax;
+		case 'maxsize':
+			return this.get('fitsize') - 2 * this.cb - this.p1 - this.p2 ;
+		case 'opos':
+			return this.pos - (this.exp.outline ? this.exp.outline.offset : 0);
+		case 'osize':
+			return this.get('wsize') + (this.exp.outline ? 2*this.exp.outline.offset : 0);
+		case 'imgPad':
+			return this.imgSize ? Math.round((this.size - this.imgSize) / 2) : 0;
+		
+	}
+},
+calcBorders: function() {
+	// correct for borders
+	this.cb = (this.exp.content['offset'+ this.ucwh] - this.t) / 2;
+	
+	this.marginMax = hs['margin'+ this.ucrb];
+},
+calcThumb: function() {
+	this.t = this.exp.el[this.wh] ? parseInt(this.exp.el[this.wh]) : 
+		this.exp.el['offset'+ this.ucwh];
+	this.tpos = this.exp.tpos[this.dim];
+	this.tb = (this.exp.el['offset'+ this.ucwh] - this.t) / 2;
+	if (this.tpos == 0 || this.tpos == -1) {
+		this.tpos = (hs.page[this.wh] / 2) + hs.page['scroll'+ this.uclt];		
+	};
+},
+calcExpanded: function() {
+	var exp = this.exp;
+	this.justify = 'auto';
+	
+	
+	// size and position
+	this.pos = this.tpos - this.cb + this.tb;
+	
+	if (this.maxHeight && this.dim == 'x')
+		exp.maxWidth = Math.min(exp.maxWidth || this.full, exp.maxHeight * this.full / exp.y.full); 
+		
+	this.size = Math.min(this.full, exp['max'+ this.ucwh] || this.full);
+	this.minSize = exp.allowSizeReduction ? 
+		Math.min(exp['min'+ this.ucwh], this.full) :this.full;
+	if (exp.isImage && exp.useBox)	{
+		this.size = exp[this.wh];
+		this.imgSize = this.full;
+	}
+	if (this.dim == 'x' && hs.padToMinWidth) this.minSize = exp.minWidth;
+	this.marginMin = hs['margin'+ this.uclt];
+	this.scroll = hs.page['scroll'+ this.uclt];
+	this.clientSize = hs.page[this.wh];
+},
+setSize: function(i) {
+	var exp = this.exp;
+	if (exp.isImage && (exp.useBox || hs.padToMinWidth)) {
+		this.imgSize = i;
+		this.size = Math.max(this.size, this.imgSize);
+		exp.content.style[this.lt] = this.get('imgPad')+'px';
+	} else
+	this.size = i;
+	
+	exp.content.style[this.wh] = i +'px';
+	exp.wrapper.style[this.wh] = this.get('wsize') +'px';
+	if (exp.outline) exp.outline.setPosition();
+	if (this.dim == 'x' && exp.overlayBox) exp.sizeOverlayBox(true);
+},
+setPos: function(i) {
+	this.pos = i;
+	this.exp.wrapper.style[this.lt] = i +'px';	
+	
+	if (this.exp.outline) this.exp.outline.setPosition();
+	
+}
+};
+
+hs.Expander = function(a, params, custom, contentType) {
+	if (document.readyState && hs.ie && !hs.isReady) {
+		hs.addEventListener(document, 'ready', function() {
+			new hs.Expander(a, params, custom, contentType);
+		});
+		return;
+	} 
+	this.a = a;
+	this.custom = custom;
+	this.contentType = contentType || 'image';
+	this.isImage = !this.isHtml;
+	
+	hs.continuePreloading = false;
+	this.overlays = [];
+	hs.init();
+	var key = this.key = hs.expanders.length;
+	// override inline parameters
+	for (var i = 0; i < hs.overrides.length; i++) {
+		var name = hs.overrides[i];
+		this[name] = params && typeof params[name] != 'undefined' ?
+			params[name] : hs[name];
+	}
+	if (!this.src) this.src = a.href;
+	
+	// get thumb
+	var el = (params && params.thumbnailId) ? hs.$(params.thumbnailId) : a;
+	el = this.thumb = el.getElementsByTagName('img')[0] || el;
+	this.thumbsUserSetId = el.id || a.id;
+	
+	// check if already open
+	for (var i = 0; i < hs.expanders.length; i++) {
+		if (hs.expanders[i] && hs.expanders[i].a == a) {
+			hs.expanders[i].focus();
+			return false;
+		}
+	}	
+
+	// cancel other
+	if (!hs.allowSimultaneousLoading) for (var i = 0; i < hs.expanders.length; i++) {
+		if (hs.expanders[i] && hs.expanders[i].thumb != el && !hs.expanders[i].onLoadStarted) {
+			hs.expanders[i].cancelLoading();
+		}
+	}
+	hs.expanders[key] = this;
+	if (!hs.allowMultipleInstances && !hs.upcoming) {
+		if (hs.expanders[key-1]) hs.expanders[key-1].close();
+		if (typeof hs.focusKey != 'undefined' && hs.expanders[hs.focusKey])
+			hs.expanders[hs.focusKey].close();
+	}
+	
+	// initiate metrics
+	this.el = el;
+	this.tpos = this.pageOrigin || hs.getPosition(el);
+	hs.getPageSize();
+	var x = this.x = new hs.Dimension(this, 'x');
+	x.calcThumb();
+	var y = this.y = new hs.Dimension(this, 'y');
+	y.calcThumb();
+	this.wrapper = hs.createElement(
+		'div', {
+			id: 'highslide-wrapper-'+ this.key,
+			className: 'highslide-wrapper '+ this.wrapperClassName
+		}, {
+			visibility: 'hidden',
+			position: 'absolute',
+			zIndex: hs.zIndexCounter += 2
+		}, null, true );
+	
+	this.wrapper.onmouseover = this.wrapper.onmouseout = hs.wrapperMouseHandler;
+	if (this.contentType == 'image' && this.outlineWhileAnimating == 2)
+		this.outlineWhileAnimating = 0;
+	
+	// get the outline
+	if (!this.outlineType) {
+		this[this.contentType +'Create']();
+	
+	} else if (hs.pendingOutlines[this.outlineType]) {
+		this.connectOutline();
+		this[this.contentType +'Create']();
+	
+	} else {
+		this.showLoading();
+		var exp = this;
+		new hs.Outline(this.outlineType, 
+			function () {
+				exp.connectOutline();
+				exp[exp.contentType +'Create']();
+			} 
+		);
+	}
+	return true;
+};
+
+hs.Expander.prototype = {
+error : function(e) {
+	if (hs.debug) alert ('Line '+ e.lineNumber +': '+ e.message);
+	else window.location.href = this.src;
+},
+
+connectOutline : function() {
+	var outline = this.outline = hs.pendingOutlines[this.outlineType];
+	outline.exp = this;
+	outline.table.style.zIndex = this.wrapper.style.zIndex - 1;
+	hs.pendingOutlines[this.outlineType] = null;
+},
+
+showLoading : function() {
+	if (this.onLoadStarted || this.loading) return;
+	
+	this.loading = hs.loading;
+	var exp = this;
+	this.loading.onclick = function() {
+		exp.cancelLoading();
+	};
+	var exp = this, 
+		l = this.x.get('loadingPos') +'px',
+		t = this.y.get('loadingPos') +'px';
+	setTimeout(function () { 
+		if (exp.loading) hs.setStyles(exp.loading, { left: l, top: t, zIndex: hs.zIndexCounter++ })}
+	, 100);
+},
+
+imageCreate : function() {
+	var exp = this;
+	
+	var img = document.createElement('img');
+    this.content = img;
+    img.onload = function () {
+    	if (hs.expanders[exp.key]) exp.contentLoaded(); 
+	};
+    if (hs.blockRightClick) img.oncontextmenu = function() { return false; };
+    img.className = 'highslide-image';
+    hs.setStyles(img, {
+    	visibility: 'hidden',
+    	display: 'block',
+    	position: 'absolute',
+		maxWidth: '9999px',
+		zIndex: 3
+	});
+    img.title = hs.lang.restoreTitle;
+	if (hs.safari && hs.uaVersion < 525) hs.container.appendChild(img);
+    if (hs.ie && hs.flushImgSize) img.src = null;
+	img.src = this.src;
+	
+	this.showLoading();
+},
+
+contentLoaded : function() {
+	try {	
+		if (!this.content) return;
+		this.content.onload = null;
+		if (this.onLoadStarted) return;
+		else this.onLoadStarted = true;
+		
+		var x = this.x, y = this.y;
+		
+		if (this.loading) {
+			hs.setStyles(this.loading, { top: '-9999px' });
+			this.loading = null;
+		}	
+			x.full = this.content.width;
+			y.full = this.content.height;
+			
+			hs.setStyles(this.content, {
+				width: x.t +'px',
+				height: y.t +'px'
+			});
+			this.wrapper.appendChild(this.content);
+			hs.container.appendChild(this.wrapper);
+		
+		x.calcBorders();
+		y.calcBorders();
+		
+		hs.setStyles (this.wrapper, {
+			left: (x.tpos + x.tb - x.cb) +'px',
+			top: (y.tpos + x.tb - y.cb) +'px'
+		});
+		this.getOverlays();
+		
+		var ratio = x.full / y.full;
+		x.calcExpanded();
+		this.justify(x);
+		
+		y.calcExpanded();
+		this.justify(y);
+		if (this.overlayBox) this.sizeOverlayBox(0, 1);
+
+		
+		if (this.allowSizeReduction) {
+				this.correctRatio(ratio);
+			if (this.isImage && this.x.full > (this.x.imgSize || this.x.size)) {
+				this.createFullExpand();
+				if (this.overlays.length == 1) this.sizeOverlayBox();
+			}
+		}
+		this.show();
+		
+	} catch (e) {
+		this.error(e);
+	}
+},
+
+justify : function (p, moveOnly) {
+	var tgtArr, tgt = p.target, dim = p == this.x ? 'x' : 'y';
+	
+		var hasMovedMin = false;
+		
+		var allowReduce = p.exp.allowSizeReduction;
+			p.pos = Math.round(p.pos - ((p.get('wsize') - p.t) / 2));
+		if (p.pos < p.scroll + p.marginMin) {
+			p.pos = p.scroll + p.marginMin;
+			hasMovedMin = true;		
+		}
+		if (!moveOnly && p.size < p.minSize) {
+			p.size = p.minSize;
+			allowReduce = false;
+		}
+		if (p.pos + p.get('wsize') > p.scroll + p.clientSize - p.marginMax) {
+			if (!moveOnly && hasMovedMin && allowReduce) {
+				p.size = Math.min(p.size, p.get(dim == 'y' ? 'fitsize' : 'maxsize'));
+			} else if (p.get('wsize') < p.get('fitsize')) {
+				p.pos = p.scroll + p.clientSize - p.marginMax - p.get('wsize');
+			} else { // image larger than viewport
+				p.pos = p.scroll + p.marginMin;
+				if (!moveOnly && allowReduce) p.size = p.get(dim == 'y' ? 'fitsize' : 'maxsize');
+			}			
+		}
+		
+		if (!moveOnly && p.size < p.minSize) {
+			p.size = p.minSize;
+			allowReduce = false;
+		}
+		
+	
+		
+	if (p.pos < p.marginMin) {
+		var tmpMin = p.pos;
+		p.pos = p.marginMin; 
+		
+		if (allowReduce && !moveOnly) p.size = p.size - (p.pos - tmpMin);
+		
+	}
+},
+
+correctRatio : function(ratio) {
+	var x = this.x, 
+		y = this.y,
+		changed = false,
+		xSize = Math.min(x.full, x.size),
+		ySize = Math.min(y.full, y.size),
+		useBox = (this.useBox || hs.padToMinWidth);
+	
+	if (xSize / ySize > ratio) { // width greater
+		xSize = ySize * ratio;
+		if (xSize < x.minSize) { // below minWidth
+			xSize = x.minSize;
+			ySize = xSize / ratio;
+		}
+		changed = true;
+	
+	} else if (xSize / ySize < ratio) { // height greater
+		ySize = xSize / ratio;
+		changed = true;
+	}
+	
+	if (hs.padToMinWidth && x.full < x.minSize) {
+		x.imgSize = x.full;
+		y.size = y.imgSize = y.full;
+	} else if (this.useBox) {
+		x.imgSize = xSize;
+		y.imgSize = ySize;
+	} else {
+		x.size = xSize;
+		y.size = ySize;
+	}
+	changed = this.fitOverlayBox(this.useBox ? null : ratio, changed);
+	if (useBox && y.size < y.imgSize) {
+		y.imgSize = y.size;
+		x.imgSize = y.size * ratio;
+	}
+	if (changed || useBox) {
+		x.pos = x.tpos - x.cb + x.tb;
+		x.minSize = x.size;
+		this.justify(x, true);
+	
+		y.pos = y.tpos - y.cb + y.tb;
+		y.minSize = y.size;
+		this.justify(y, true);
+		if (this.overlayBox) this.sizeOverlayBox();
+	}
+	
+	
+},
+fitOverlayBox : function(ratio, changed) {
+	var x = this.x, y = this.y;
+	if (this.overlayBox) {
+		while (y.size > this.minHeight && x.size > this.minWidth 
+				&&  y.get('wsize') > y.get('fitsize')) {
+			y.size -= 10;
+			if (ratio) x.size = y.size * ratio;
+			this.sizeOverlayBox(0, 1);
+			changed = true;
+		}
+	}
+	return changed;
+},
+
+show : function () {
+	var x = this.x, y = this.y;
+	this.doShowHide('hidden');
+	
+	// Apply size change
+	this.changeSize(
+		1, {
+			wrapper: {
+				width : x.get('wsize'),
+				height : y.get('wsize'),
+				left: x.pos,
+
+				top: y.pos
+			},
+			content: {
+				left: x.p1 + x.get('imgPad'),
+				top: y.p1 + y.get('imgPad'),
+				width:x.imgSize ||x.size,
+				height:y.imgSize ||y.size
+			}
+		},
+		hs.expandDuration
+	);
+},
+
+changeSize : function(up, to, dur) {
+	
+	if (this.outline && !this.outlineWhileAnimating) {
+		if (up) this.outline.setPosition();
+		else this.outline.destroy();
+	}
+	
+	
+	if (!up) this.destroyOverlays();
+	
+	var exp = this,
+		x = exp.x,
+		y = exp.y,
+		easing = this.easing;
+	if (!up) easing = this.easingClose || easing;
+	var after = up ?
+		function() {
+				
+			if (exp.outline) exp.outline.table.style.visibility = "visible";
+			setTimeout(function() {
+				exp.afterExpand();
+			}, 50);
+		} :
+		function() {
+			exp.afterClose();
+		};
+	if (up) hs.setStyles( this.wrapper, {
+		width: x.t +'px',
+		height: y.t +'px'
+	});
+	if (this.fadeInOut) {
+		hs.setStyles(this.wrapper, { opacity: up ? 0 : 1 });
+		hs.extend(to.wrapper, { opacity: up });
+	}
+	hs.animate( this.wrapper, to.wrapper, {
+		duration: dur,
+		easing: easing,
+		step: function(val, args) {
+			if (exp.outline && exp.outlineWhileAnimating && args.prop == 'top') {
+				var fac = up ? args.pos : 1 - args.pos;
+				var pos = {
+					w: x.t + (x.get('wsize') - x.t) * fac,
+					h: y.t + (y.get('wsize') - y.t) * fac,
+					x: x.tpos + (x.pos - x.tpos) * fac,
+					y: y.tpos + (y.pos - y.tpos) * fac
+				};
+				exp.outline.setPosition(pos, 0, 1);				
+			}
+		}
+	});
+	hs.animate( this.content, to.content, dur, easing, after);
+	if (up) {
+		this.wrapper.style.visibility = 'visible';
+		this.content.style.visibility = 'visible';
+		this.a.className += ' highslide-active-anchor';
+	}
+},
+
+
+
+
+afterExpand : function() {
+	this.isExpanded = true;	
+	this.focus();
+	if (hs.upcoming && hs.upcoming == this.a) hs.upcoming = null;
+	this.prepareNextOutline();
+	var p = hs.page, mX = hs.mouse.x + p.scrollLeft, mY = hs.mouse.y + p.scrollTop;
+	this.mouseIsOver = this.x.pos < mX && mX < this.x.pos + this.x.get('wsize')
+		&& this.y.pos < mY && mY < this.y.pos + this.y.get('wsize');	
+	if (this.overlayBox) this.showOverlays();
+	
+},
+
+
+prepareNextOutline : function() {
+	var key = this.key;
+	var outlineType = this.outlineType;
+	new hs.Outline(outlineType, 
+		function () { try { hs.expanders[key].preloadNext(); } catch (e) {} });
+},
+
+
+preloadNext : function() {
+	var next = this.getAdjacentAnchor(1);
+	if (next && next.onclick.toString().match(/hs\.expand/)) 
+		var img = hs.createElement('img', { src: hs.getSrc(next) });
+},
+
+
+getAdjacentAnchor : function(op) {
+	var current = this.getAnchorIndex(), as = hs.anchors.groups[this.slideshowGroup || 'none'];
+	return (as && as[current + op]) || null;
+},
+
+getAnchorIndex : function() {
+	var arr = hs.getAnchors().groups[this.slideshowGroup || 'none'];
+	if (arr) for (var i = 0; i < arr.length; i++) {
+		if (arr[i] == this.a) return i; 
+	}
+	return null;
+},
+
+
+cancelLoading : function() {
+	hs.discardElement (this.wrapper);
+	hs.expanders[this.key] = null;
+	if (this.loading) hs.loading.style.left = '-9999px';
+},
+
+writeCredits : function () {
+	this.credits = hs.createElement('a', {
+		href: hs.creditsHref,
+		target: hs.creditsTarget,
+		className: 'highslide-credits',
+		innerHTML: hs.lang.creditsText,
+		title: hs.lang.creditsTitle
+	});
+	this.createOverlay({ 
+		overlayId: this.credits, 
+		position: this.creditsPosition || 'top left' 
+	});
+},
+
+getInline : function(types, addOverlay) {
+	for (var i = 0; i < types.length; i++) {
+		var type = types[i], s = null;
+		if (!this[type +'Id'] && this.thumbsUserSetId)  
+			this[type +'Id'] = type +'-for-'+ this.thumbsUserSetId;
+		if (this[type +'Id']) this[type] = hs.getNode(this[type +'Id']);
+		if (!this[type] && !this[type +'Text'] && this[type +'Eval']) try {
+			s = eval(this[type +'Eval']);
+		} catch (e) {}
+		if (!this[type] && this[type +'Text']) {
+			s = this[type +'Text'];
+		}
+		if (!this[type] && !s) {
+			this[type] = hs.getNode(this.a['_'+ type + 'Id']);
+			if (!this[type]) {
+				var next = this.a.nextSibling;
+				while (next && !hs.isHsAnchor(next)) {
+					if ((new RegExp('highslide-'+ type)).test(next.className || null)) {
+						if (!next.id) this.a['_'+ type + 'Id'] = next.id = 'hsId'+ hs.idCounter++;
+						this[type] = hs.getNode(next.id);
+						break;
+					}
+					next = next.nextSibling;
+				}
+			}
+		}
+		
+		if (!this[type] && s) this[type] = hs.createElement('div', 
+				{ className: 'highslide-'+ type, innerHTML: s } );
+		
+		if (addOverlay && this[type]) {
+			var o = { position: (type == 'heading') ? 'above' : 'below' };
+			for (var x in this[type+'Overlay']) o[x] = this[type+'Overlay'][x];
+			o.overlayId = this[type];
+			this.createOverlay(o);
+		}
+	}
+},
+
+
+// on end move and resize
+doShowHide : function(visibility) {
+	if (hs.hideSelects) this.showHideElements('SELECT', visibility);
+	if (hs.hideIframes) this.showHideElements('IFRAME', visibility);
+	if (hs.geckoMac) this.showHideElements('*', visibility);
+},
+showHideElements : function (tagName, visibility) {
+	var els = document.getElementsByTagName(tagName);
+	var prop = tagName == '*' ? 'overflow' : 'visibility';
+	for (var i = 0; i < els.length; i++) {
+		if (prop == 'visibility' || (document.defaultView.getComputedStyle(
+				els[i], "").getPropertyValue('overflow') == 'auto'
+				|| els[i].getAttribute('hidden-by') != null)) {
+			var hiddenBy = els[i].getAttribute('hidden-by');
+			if (visibility == 'visible' && hiddenBy) {
+				hiddenBy = hiddenBy.replace('['+ this.key +']', '');
+				els[i].setAttribute('hidden-by', hiddenBy);
+				if (!hiddenBy) els[i].style[prop] = els[i].origProp;
+			} else if (visibility == 'hidden') { // hide if behind
+				var elPos = hs.getPosition(els[i]);
+				elPos.w = els[i].offsetWidth;
+				elPos.h = els[i].offsetHeight;
+			
+				
+					var clearsX = (elPos.x + elPos.w < this.x.get('opos') 
+						|| elPos.x > this.x.get('opos') + this.x.get('osize'));
+					var clearsY = (elPos.y + elPos.h < this.y.get('opos') 
+						|| elPos.y > this.y.get('opos') + this.y.get('osize'));
+				var wrapperKey = hs.getWrapperKey(els[i]);
+				if (!clearsX && !clearsY && wrapperKey != this.key) { // element falls behind image
+					if (!hiddenBy) {
+						els[i].setAttribute('hidden-by', '['+ this.key +']');
+						els[i].origProp = els[i].style[prop];
+						els[i].style[prop] = 'hidden';
+						
+					} else if (hiddenBy.indexOf('['+ this.key +']') == -1) {
+						els[i].setAttribute('hidden-by', hiddenBy + '['+ this.key +']');
+					}
+				} else if ((hiddenBy == '['+ this.key +']' || hs.focusKey == wrapperKey)
+						&& wrapperKey != this.key) { // on move
+					els[i].setAttribute('hidden-by', '');
+					els[i].style[prop] = els[i].origProp || '';
+				} else if (hiddenBy && hiddenBy.indexOf('['+ this.key +']') > -1) {
+					els[i].setAttribute('hidden-by', hiddenBy.replace('['+ this.key +']', ''));
+				}
+						
+			}
+		}
+	}
+},
+
+focus : function() {
+	this.wrapper.style.zIndex = hs.zIndexCounter += 2;
+	// blur others
+	for (var i = 0; i < hs.expanders.length; i++) {
+		if (hs.expanders[i] && i == hs.focusKey) {
+			var blurExp = hs.expanders[i];
+			blurExp.content.className += ' highslide-'+ blurExp.contentType +'-blur';
+				blurExp.content.style.cursor = hs.ieLt7 ? 'hand' : 'pointer';
+				blurExp.content.title = hs.lang.focusTitle;
+		}
+	}
+	
+	// focus this
+	if (this.outline) this.outline.table.style.zIndex 
+		= this.wrapper.style.zIndex - 1;
+	this.content.className = 'highslide-'+ this.contentType;
+		this.content.title = hs.lang.restoreTitle;
+		
+		if (hs.restoreCursor) {
+			hs.styleRestoreCursor = window.opera ? 'pointer' : 'url('+ hs.graphicsDir + hs.restoreCursor +'), pointer';
+			if (hs.ieLt7 && hs.uaVersion < 6) hs.styleRestoreCursor = 'hand';
+			this.content.style.cursor = hs.styleRestoreCursor;
+		}
+		
+	hs.focusKey = this.key;	
+	hs.addEventListener(document, window.opera ? 'keypress' : 'keydown', hs.keyHandler);	
+},
+moveTo: function(x, y) {
+	this.x.setPos(x);
+	this.y.setPos(y);
+},
+resize : function (e) {
+	var w, h, r = e.width / e.height;
+	w = Math.max(e.width + e.dX, Math.min(this.minWidth, this.x.full));
+	if (this.isImage && Math.abs(w - this.x.full) < 12) w = this.x.full;
+	h = w / r;
+	if (h < Math.min(this.minHeight, this.y.full)) {
+		h = Math.min(this.minHeight, this.y.full);
+		if (this.isImage) w = h * r;
+	}
+	this.resizeTo(w, h);
+},
+resizeTo: function(w, h) {
+	this.y.setSize(h);
+	this.x.setSize(w);
+	this.wrapper.style.height = this.y.get('wsize') +'px';
+},
+
+close : function() {
+	if (this.isClosing || !this.isExpanded) return;
+	this.isClosing = true;
+	
+	hs.removeEventListener(document, window.opera ? 'keypress' : 'keydown', hs.keyHandler);
+	
+	try {
+		this.content.
+style.cursor = 'default';
+		this.changeSize(
+			0, {
+				wrapper: {
+					width : this.x.t,
+					height : this.y.t,
+					left: this.x.tpos - this.x.cb + this.x.tb,
+					top: this.y.tpos - this.y.cb + this.y.tb
+				},
+				content: {
+					left: 0,
+					top: 0,
+					width: this.x.t,
+					height: this.y.t
+				}
+			}, hs.restoreDuration
+		);
+	} catch (e) { this.afterClose(); }
+},
+
+createOverlay : function (o) {
+	var el = o.overlayId;
+	if (typeof el == 'string') el = hs.getNode(el);
+	if (o.html) el = hs.createElement('div', { innerHTML: o.html });
+	if (!el || typeof el == 'string') return;
+	el.style.display = 'block';
+	this.genOverlayBox();
+	var width = o.width && /^[0-9]+(px|%)$/.test(o.width) ? o.width : 'auto';
+	if (/^(left|right)panel$/.test(o.position) && !/^[0-9]+px$/.test(o.width)) width = '200px';
+	var overlay = hs.createElement(
+		'div', {
+			id: 'hsId'+ hs.idCounter++,
+			hsId: o.hsId
+		}, {
+			position: 'absolute',
+			visibility: 'hidden',
+			width: width,
+			direction: hs.lang.cssDirection || '',
+			opacity: 0
+		},this.overlayBox,
+		true
+	);
+	
+	overlay.appendChild(el);
+	hs.extend(overlay, {
+		opacity: 1,
+		offsetX: 0,
+		offsetY: 0,
+		dur: (o.fade === 0 || o.fade === false || (o.fade == 2 && hs.ie)) ? 0 : 250
+	});
+	hs.extend(overlay, o);
+	
+		
+	if (this.gotOverlays) {
+		this.positionOverlay(overlay);
+		if (!overlay.hideOnMouseOut || this.mouseIsOver) 
+			hs.animate(overlay, { opacity: overlay.opacity }, overlay.dur);
+	}
+	hs.push(this.overlays, hs.idCounter - 1);
+},
+positionOverlay : function(overlay) {
+	var p = overlay.position || 'middle center',
+		offX = overlay.offsetX,
+		offY = overlay.offsetY;
+	if (overlay.parentNode != this.overlayBox) this.overlayBox.appendChild(overlay);
+	if (/left$/.test(p)) overlay.style.left = offX +'px'; 
+	
+	if (/center$/.test(p))	hs.setStyles (overlay, { 
+		left: '50%',
+		marginLeft: (offX - Math.round(overlay.offsetWidth / 2)) +'px'
+	});	
+	
+	if (/right$/.test(p)) overlay.style.right = - offX +'px';
+		
+	if (/^leftpanel$/.test(p)) { 
+		hs.setStyles(overlay, {
+			right: '100%',
+			marginRight: this.x.cb +'px',
+			top: - this.y.cb +'px',
+			bottom: - this.y.cb +'px',
+			overflow: 'auto'
+		});		 
+		this.x.p1 = overlay.offsetWidth;
+	
+	} else if (/^rightpanel$/.test(p)) {
+		hs.setStyles(overlay, {
+			left: '100%',
+			marginLeft: this.x.cb +'px',
+			top: - this.y.cb +'px',
+			bottom: - this.y.cb +'px',
+			overflow: 'auto'
+		});
+		this.x.p2 = overlay.offsetWidth;
+	}
+
+	if (/^top/.test(p)) overlay.style.top = offY +'px'; 
+	if (/^middle/.test(p))	hs.setStyles (overlay, { 
+		top: '50%', 
+		marginTop: (offY - Math.round(overlay.offsetHeight / 2)) +'px'
+	});	
+	if (/^bottom/.test(p)) overlay.style.bottom = - offY +'px';
+	if (/^above$/.test(p)) {
+		hs.setStyles(overlay, {
+			left: (- this.x.p1 - this.x.cb) +'px',
+			right: (- this.x.p2 - this.x.cb) +'px',
+			bottom: '100%',
+			marginBottom: this.y.cb +'px',
+			width: 'auto'
+		});
+		this.y.p1 = overlay.offsetHeight;
+	
+	} else if (/^below$/.test(p)) {
+		hs.setStyles(overlay, {
+			position: 'relative',
+			left: (- this.x.p1 - this.x.cb) +'px',
+			right: (- this.x.p2 - this.x.cb) +'px',
+			top: '100%',
+			marginTop: this.y.cb +'px',
+			width: 'auto'
+		});
+		this.y.p2 = overlay.offsetHeight;
+		overlay.style.position = 'absolute';
+	}
+},
+
+getOverlays : function() {	
+	this.getInline(['heading', 'caption'], true);
+	if (this.heading && this.dragByHeading) this.heading.className += ' highslide-move';
+	if (hs.showCredits) this.writeCredits();
+	for (var i = 0; i < hs.overlays.length; i++) {
+		var o = hs.overlays[i], tId = o.thumbnailId, sg = o.slideshowGroup;
+		if ((!tId && !sg) || (tId && tId == this.thumbsUserSetId)
+				|| (sg && sg === this.slideshowGroup)) {
+			this.createOverlay(o);
+		}
+	}
+	var os = [];
+	for (var i = 0; i < this.overlays.length; i++) {
+		var o = hs.$('hsId'+ this.overlays[i]);
+		if (/panel$/.test(o.position)) this.positionOverlay(o);
+		else hs.push(os, o);
+	}
+	for (var i = 0; i < os.length; i++) this.positionOverlay(os[i]);
+	this.gotOverlays = true;
+},
+genOverlayBox : function() {
+	if (!this.overlayBox) this.overlayBox = hs.createElement (
+		'div', {
+			className: this.wrapperClassName
+		}, {
+			position : 'absolute',
+			width: (this.x.size || (this.useBox ? this.width : null) 
+				|| this.x.full) +'px',
+			height: (this.y.size || this.y.full) +'px',
+			visibility : 'hidden',
+			overflow : 'hidden',
+			zIndex : hs.ie ? 4 : 'auto'
+		},
+		hs.container,
+		true
+	);
+},
+sizeOverlayBox : function(doWrapper, doPanels) {
+	var overlayBox = this.overlayBox, 
+		x = this.x,
+		y = this.y;
+	hs.setStyles( overlayBox, {
+		width: x.size +'px', 
+		height: y.size +'px'
+	});
+	if (doWrapper || doPanels) {
+		for (var i = 0; i < this.overlays.length; i++) {
+			var o = hs.$('hsId'+ this.overlays[i]);
+			var ie6 = (hs.ieLt7 || document.compatMode == 'BackCompat');
+			if (o && /^(above|below)$/.test(o.position)) {
+				if (ie6) {
+					o.style.width = (overlayBox.offsetWidth + 2 * x.cb
+						+ x.p1 + x.p2) +'px';
+				}
+				y[o.position == 'above' ? 'p1' : 'p2'] = o.offsetHeight;
+			}
+			if (o && ie6 && /^(left|right)panel$/.test(o.position)) {
+				o.style.height = (overlayBox.offsetHeight + 2* y.cb) +'px';
+			}
+		}
+	}
+	if (doWrapper) {
+		hs.setStyles(this.content, {
+			top: y.p1 +'px'
+		});
+		hs.setStyles(overlayBox, {
+			top: (y.p1 + y.cb) +'px'
+		});
+	}
+},
+
+showOverlays : function() {
+	var b = this.overlayBox;
+	b.className = '';
+	hs.setStyles(b, {
+		top: (this.y.p1 + this.y.cb) +'px',
+		left: (this.x.p1 + this.x.cb) +'px',
+		overflow : 'visible'
+	});
+	if (hs.safari) b.style.visibility = 'visible';
+	this.wrapper.appendChild (b);
+	for (var i = 0; i < this.overlays.length; i++) {
+		var o = hs.$('hsId'+ this.overlays[i]);
+		o.style.zIndex = o.zIndex || 4;
+		if (!o.hideOnMouseOut || this.mouseIsOver) {
+			o.style.visibility = 'visible';
+			hs.setStyles(o, { visibility: 'visible', display: '' });
+			hs.animate(o, { opacity: o.opacity }, o.dur);
+		}
+	}
+},
+
+destroyOverlays : function() {
+	if (!this.overlays.length) return;
+	hs.discardElement(this.overlayBox);
+},
+
+
+
+createFullExpand : function () {
+	this.fullExpandLabel = hs.createElement(
+		'a', {
+			href: 'javascript:hs.expanders['+ this.key +'].doFullExpand();',
+			title: hs.lang.fullExpandTitle,
+			className: 'highslide-full-expand'
+		}
+	);
+	
+	this.createOverlay({ 
+		overlayId: this.fullExpandLabel, 
+		position: hs.fullExpandPosition, 
+		hideOnMouseOut: true, 
+		opacity: hs.fullExpandOpacity
+	});
+},
+
+doFullExpand : function () {
+	try {
+		if (this.fullExpandLabel) hs.discardElement(this.fullExpandLabel);
+		
+		this.focus();
+		var xSize = this.x.size;
+		this.resizeTo(this.x.full, this.y.full);
+		
+		var xpos = this.x.pos - (this.x.size - xSize) / 2;
+		if (xpos < hs.marginLeft) xpos = hs.marginLeft;
+		
+		this.moveTo(xpos, this.y.pos);
+		this.doShowHide('hidden');
+	
+	} catch (e) {
+		this.error(e);
+	}
+},
+
+
+afterClose : function () {
+	this.a.className = this.a.className.replace('highslide-active-anchor', '');
+	
+	this.doShowHide('visible');
+		if (this.outline && this.outlineWhileAnimating) this.outline.destroy();
+	
+		hs.discardElement(this.wrapper);
+	
+	hs.expanders[this.key] = null;		
+	hs.reOrder();
+}
+
+};
+hs.langDefaults = hs.lang;
+// history
+var HsExpander = hs.Expander;
+if (hs.ie && window == window.top) {
+	(function () {
+		try {
+			document.documentElement.doScroll('left');
+		} catch (e) {
+			setTimeout(arguments.callee, 50);
+			return;
+		}
+		hs.ready();
+	})();
+}
+hs.addEventListener(document, 'DOMContentLoaded', hs.ready);
+hs.addEventListener(window, 'load', hs.ready);
+
+// set handlers
+hs.addEventListener(document, 'ready', function() {
+	if (hs.expandCursor) {
+		var style = hs.createElement('style', { type: 'text/css' }, null, 
+			document.getElementsByTagName('HEAD')[0]);
+			
+		function addRule(sel, dec) {		
+			if (hs.ie && hs.uaVersion < 9) {
+				var last = document.styleSheets[document.styleSheets.length - 1];
+				if (typeof(last.addRule) == "object") last.addRule(sel, dec);
+			} else {
+				style.appendChild(document.createTextNode(sel + " {" + dec + "}"));
+			}
+		}
+		function fix(prop) {
+			return 'expression( ( ( ignoreMe = document.documentElement.'+ prop +
+				' ? document.documentElement.'+ prop +' : document.body.'+ prop +' ) ) + \'px\' );';
+		}
+		if (hs.expandCursor) addRule ('.highslide img', 
+			'cursor: url('+ hs.graphicsDir + hs.expandCursor +'), pointer !important;');
+	}
+});
+hs.addEventListener(window, 'resize', function() {
+	hs.getPageSize();
+});
+hs.addEventListener(document, 'mousemove', function(e) {
+	hs.mouse = { x: e.clientX, y: e.clientY	};
+});
+hs.addEventListener(document, 'mousedown', hs.mouseClickHandler);
+hs.addEventListener(document, 'mouseup', hs.mouseClickHandler);
+
+hs.addEventListener(document, 'ready', hs.getAnchors);
+hs.addEventListener(window, 'load', hs.preloadImages);
+}
+</script><script type="text/javascript">    
+    hs.graphicsDir = '/images/dmx/highslide/';
+    hs.outlineType = 'rounded-white';
+</script><!--*******************END OF REALLY UNNECESSARILY LONG BLOCK OF CODE*****************************************************-->
+<div style="clear: both;">&nbsp;</div>
